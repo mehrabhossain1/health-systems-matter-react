@@ -1,5 +1,5 @@
-import { FaFacebook, FaLinkedin } from "react-icons/fa";
-import logo from "../../assets/logo.png";
+// import { FaFacebook, FaLinkedin } from "react-icons/fa";
+// import logo from "../../assets/logo.png";
 import "../../App.css";
 import navbarBottom from "../../assets/navbarbottom.png";
 import ownerImg from "../../assets/ownerImg.jpeg";
