@@ -41,37 +41,46 @@
   color: #888;
 } */
 
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideOut {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+/* Keyframes for images coming in and going out */
+@keyframes move-in-out {
+  0%,
   100% {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(100px) scale(0.8);
+  }
+  25%,
+  75% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-100px) scale(1.2);
   }
 }
 
-.image {
-  position: absolute;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+/* Delay stagger for each image */
+.animate-image-1 {
+  animation: move-in-out 6s ease-in-out infinite;
+  animation-delay: 0s;
 }
 
-.image-enter {
-  animation: slideIn 0.5s forwards;
+.animate-image-2 {
+  animation: move-in-out 6s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
-.image-exit {
-  animation: slideOut 0.5s forwards;
+.animate-image-3 {
+  animation: move-in-out 6s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.animate-image-4 {
+  animation: move-in-out 6s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+.animate-image-5 {
+  animation: move-in-out 6s ease-in-out infinite;
+  animation-delay: 4s;
 }
