@@ -1,18 +1,12 @@
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import logo from "../../../assets/logo.png";
 
 const MainNav = () => {
   return (
-    <nav className="bg-[#01748D] dark:bg-gray-800 dark:border-gray-700 ">
-      <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto text-white border-b">
+    <nav className="dark:bg-gray-800 dark:border-gray-700">
+      <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto text-gray-600">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8"
-            alt="Flowbite Logo"
-          />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Health Systems Matter
-          </span>
+          <img src={logo} className="h-14" alt="Logo" />
         </a>
         <div className="flex items-center space-x-6">
           <span className="text-lg font-medium">Follow Us</span>

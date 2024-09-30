@@ -5,8 +5,8 @@ const NavLinks = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-[#01748D] py-4 border-b">
-      <div className="flex items-center justify-between px-4 mx-auto max-w-7xl">
+    <nav className="bg-[#01748D] sticky top-0 z-10">
+      <div className="flex items-center justify-between px-4 py-5 mx-auto border-b max-w-7xl">
         {/* Hamburger Icon (visible on small screens) */}
         <div className="md:hidden">
           <button
@@ -33,7 +33,7 @@ const NavLinks = () => {
         </div>
 
         {/* Nav Links - Hidden on mobile, visible on larger screens */}
-        <ul className="items-center justify-center hidden mx-auto space-x-8 md:flex">
+        <ul className="items-center justify-center hidden mx-auto space-x-8 md:flex ">
           <li>
             <Link
               to="/about"

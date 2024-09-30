@@ -1,6 +1,3 @@
-// import { FaFacebook, FaLinkedin } from "react-icons/fa";
-// import logo from "../../assets/logo.png";
-
 import "../../App.css";
 import BottomNav from "../ui/Navbar/BottomNav";
 import FirstNav from "../ui/Navbar/FirstNav";
