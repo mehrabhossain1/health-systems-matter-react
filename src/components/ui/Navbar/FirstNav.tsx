@@ -2,7 +2,7 @@ import ownerImg from "../../../assets/ownerImg.jpeg";
 
 const FirstNav = () => {
   return (
-    <div className=" p-2 text-sm header-top bg-[#01748D] ">
+    <div className=" p-2 text-sm header-top bg-[#01748D]">
       <div className="flex justify-between">
         <div className="flex items-center gap-2">
           <img src={ownerImg} alt="owner image" className="w-8 rounded-full" />

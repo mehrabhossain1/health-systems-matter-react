@@ -1,10 +1,10 @@
 const AboutUsSection = () => {
   return (
-    <div className="border bg-[#E4E7EA] py-32 mt-20">
+    <div className="py-32 mt-20 border bg-gray-50">
       <div className="max-w-screen-xl w-full px-[20px] mx-auto">
         {/* Section Title with Underline */}
         <div className="flex items-center mb-10 space-x-4">
-          <h1 className="text-4xl font-light text-gray-800">About Us</h1>
+          <h1 className="text-5xl font-light text-gray-800">About Us</h1>
           <div className="flex-grow border-b-2 border-gray-500"></div>
         </div>
 

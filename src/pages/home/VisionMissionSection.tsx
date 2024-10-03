@@ -3,7 +3,7 @@ const VisionMissionSection = () => {
     <div className="py-20 mt-20">
       <div className="max-w-screen-xl w-full px-[20px] mx-auto">
         {/* Section Title */}
-        <h1 className="text-4xl font-light text-center text-gray-800 mb-14">
+        <h1 className="text-5xl font-light text-center text-gray-800 mb-14">
           Vision and Mission
         </h1>
 
