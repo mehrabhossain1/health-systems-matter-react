@@ -1,8 +1,16 @@
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import logo from "../../assets/logo.png"; // Replace with your actual logo path
 import "../../App.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import { useEffect } from "react";
 
 const Footer = () => {
+  // useEffect(() => {
+  //   AOS.init();
+  //   AOS.refresh();
+  // }, []);
+
   return (
     <footer className="py-10 text-gray-200 bg-gray-800">
       <div className="max-w-screen-xl px-6 mx-auto">

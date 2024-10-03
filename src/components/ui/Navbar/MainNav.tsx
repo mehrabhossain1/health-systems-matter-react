@@ -1,16 +1,15 @@
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import logo from "../../../assets/logo.png";
 import { Link } from "react-router-dom";
+import "./MainNav.css";
 
 const MainNav = () => {
   return (
     <nav className="dark:bg-gray-800 dark:border-gray-700">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto text-gray-600">
-        {/* Left side text */}
-        <div className="flex-1 text-xs italic font-medium text-[#01748D]">
-          <span>
-            Becoming A Better <br /> Global Health Leader
-          </span>
+        {/* Left side text with blinking effect */}
+        <div className="flex-1 text-xs italic font-medium text-[#01748D] blinking-text">
+          <span>Becoming A Better Global Health Leader</span>
         </div>
 
         {/* Logo in the center */}

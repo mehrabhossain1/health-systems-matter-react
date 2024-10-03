@@ -2,10 +2,22 @@ import activityImage1 from "../../assets/hero1.webp";
 import activityImage2 from "../../assets/hero2.webp";
 import activityImage3 from "../../assets/hero3.webp";
 import "../../App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const ActivitiesAndApproach = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
-    <section className="p-6 py-20 bg-gray-100 md:p-10 dark:bg-gray-900">
+    <section
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      className="p-6 py-20 bg-gray-100 md:p-10 dark:bg-gray-900"
+    >
       <div className="max-w-screen-xl w-full px-[20px] mx-auto py-20">
         <h2 className="mb-20 text-5xl font-light text-center text-gray-800 underline decoration-[#01748D] dark:text-gray-300">
           Activities and Approach

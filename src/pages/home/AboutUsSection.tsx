@@ -1,6 +1,15 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const AboutUsSection = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
-    <div className="py-32 mt-20 border bg-gray-50">
+    <div data-aos="fade-up" className="py-32 mt-20 border bg-gray-50">
       <div className="max-w-screen-xl w-full px-[20px] mx-auto">
         {/* Section Title with Underline */}
         <div className="flex items-center mb-10 space-x-4">

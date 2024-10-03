@@ -4,10 +4,21 @@ import hero3 from "../../assets/hero3.webp";
 import hero4 from "../../assets/hero4.webp";
 import hero5 from "../../assets/hero5.webp";
 import "../../App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const HeroSection = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
-    <div className="relative flex flex-col lg:flex-row items-center justify-between h-auto lg:h-[500px] p-6 md:p-10 banner overflow-hidden">
+    <div
+      data-aos="zoom-in-down"
+      className="relative flex flex-col lg:flex-row items-center justify-between h-auto lg:h-[500px] p-6 md:p-10 banner overflow-hidden"
+    >
       {/* Left Side Text (1/3 width on large screens) */}
       <h1 className="w-full lg:w-[40%] text-center text-gray-600 lg:text-left font-normal mb-6 lg:mb-0 ">
         <span>Unlock your potential and elevate your expertise with </span>

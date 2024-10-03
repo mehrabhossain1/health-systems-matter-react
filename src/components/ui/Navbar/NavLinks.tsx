@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import "./NavLinks.css";
 
 const NavLinks = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,78 +34,26 @@ const NavLinks = () => {
         </div>
 
         {/* Nav Links - Hidden on mobile, visible on larger screens */}
-        <ul className="items-center justify-center hidden mx-auto space-x-8 md:flex ">
-          <li>
-            <Link
-              to="/about"
-              className="text-white hover:text-white hover:underline"
-            >
-              ABOUT
-            </Link>
-          </li>
-          <span className="text-white">|</span>
-          <li>
-            <Link
-              to="/resources"
-              className="text-white hover:text-white hover:underline"
-            >
-              RESOURCES
-            </Link>
-          </li>
-          <span className="text-white">|</span>
-          <li>
-            <Link
-              to="/bookmarks"
-              className="text-white hover:text-white hover:underline"
-            >
-              BOOKMARKS
-            </Link>
-          </li>
-          <span className="text-white">|</span>
-          <li>
-            <Link
-              to="/newsroom"
-              className="text-white hover:text-white hover:underline"
-            >
-              NEWSROOM
-            </Link>
-          </li>
-          <span className="text-white">|</span>
-          <li>
-            <Link
-              to="/blog"
-              className="text-white hover:text-white hover:underline"
-            >
-              BLOG
-            </Link>
-          </li>
-          <span className="text-white">|</span>
-          <li>
-            <Link
-              to="/newsletter"
-              className="text-white hover:text-white hover:underline"
-            >
-              NEWSLETTER
-            </Link>
-          </li>
-          <span className="text-white">|</span>
-          <li>
-            <Link
-              to="/youtube"
-              className="text-white hover:text-white hover:underline"
-            >
-              YOUTUBE
-            </Link>
-          </li>
-          <span className="text-white">|</span>
-          <li>
-            <Link
-              to="/contact"
-              className="text-white hover:text-white hover:underline"
-            >
-              CONTACT
-            </Link>
-          </li>
+        <ul className="items-center justify-center hidden mx-auto space-x-8 md:flex">
+          {[
+            "ABOUT",
+            "RESOURCES",
+            "BOOKMARKS",
+            "NEWSROOM",
+            "BLOG",
+            "NEWSLETTER",
+            "YOUTUBE",
+            "CONTACT",
+          ].map((link) => (
+            <li key={link}>
+              <Link
+                to={`/${link.toLowerCase()}`}
+                className="text-white transition-all duration-300 hover:text-white hover:underline"
+              >
+                {link}
+              </Link>
+            </li>
+          ))}
         </ul>
 
         {/* Mobile Menu (visible when isMenuOpen is true) */}
@@ -114,78 +63,26 @@ const NavLinks = () => {
           } overflow-hidden transition-all duration-500 ease-in-out md:hidden w-full flex flex-col items-center space-y-4 mt-4`}
         >
           <ul className="flex flex-col items-center space-y-4">
-            <li>
-              <Link
-                to="/about"
-                className="text-white hover:text-white hover:underline"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                ABOUT
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/resources"
-                className="text-white hover:text-white hover:underline"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                RESOURCES
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/bookmarks"
-                className="text-white hover:text-white hover:underline"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                BOOKMARKS
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/newsroom"
-                className="text-white hover:text-white hover:underline"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                NEWSROOM
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/blog"
-                className="text-white hover:text-white hover:underline"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                BLOG
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/newsletter"
-                className="text-white hover:text-white hover:underline"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                NEWSLETTER
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/youtube"
-                className="text-white hover:text-white hover:underline"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                YOUTUBE
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/contact"
-                className="text-white hover:text-white hover:underline"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                CONTACT
-              </Link>
-            </li>
+            {[
+              "ABOUT",
+              "RESOURCES",
+              "BOOKMARKS",
+              "NEWSROOM",
+              "BLOG",
+              "NEWSLETTER",
+              "YOUTUBE",
+              "CONTACT",
+            ].map((link) => (
+              <li key={link}>
+                <Link
+                  to={`/${link.toLowerCase()}`}
+                  className="text-white transition-all duration-300 hover:text-white hover:underline"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

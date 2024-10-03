@@ -1,9 +1,16 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaPaperPlane } from "react-icons/fa"; // You can use an icon for the send button
 import "../../App.css"; // Ensure to include your CSS file
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ContactSection = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contactNo, setContactNo] = useState("");
@@ -24,7 +31,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="py-32 bg-gray-100 dark:bg-gray-900">
+    <section data-aos="fade-up" className="py-32 bg-gray-100 dark:bg-gray-900">
       <div className="flex flex-col max-w-screen-xl px-6 mx-auto md:flex-row">
         {/* Left Section */}
         <div className="mb-10 md:w-1/2 md:mb-0 md:pr-8">

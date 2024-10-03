@@ -4,6 +4,8 @@ import testimonialImage1 from "../../assets/hero1.webp";
 import testimonialImage2 from "../../assets/hero2.webp";
 import testimonialImage3 from "../../assets/hero3.webp";
 import "../../App.css"; // For custom animations if needed
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const testimonials = [
   {
@@ -30,6 +32,11 @@ const testimonials = [
 ];
 
 const TestimonialSection = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fadeClass, setFadeClass] = useState("fade-in");
 
@@ -65,7 +72,10 @@ const TestimonialSection = () => {
   }, [currentIndex]); // Only re-run effect when currentIndex changes
 
   return (
-    <section className="py-32 bg-gray-50 dark:bg-gray-900">
+    <section
+      data-aos="fade-right"
+      className="py-32 bg-gray-50 dark:bg-gray-900"
+    >
       <div className="max-w-screen-xl px-6 mx-auto">
         <h2 className="mb-16 text-5xl font-light text-center text-gray-800 dark:text-gray-300">
           What People Are Saying

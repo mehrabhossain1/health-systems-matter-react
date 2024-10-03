@@ -1,6 +1,15 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const VisionMissionSection = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
-    <div className="py-20 mt-20">
+    <div data-aos="fade-up" className="py-20 mt-20">
       <div className="max-w-screen-xl w-full px-[20px] mx-auto">
         {/* Section Title */}
         <h1 className="text-5xl font-light text-center text-gray-800 mb-14">

@@ -1,0 +1,21 @@
+/* Add this to your CSS file */
+a {
+  position: relative; /* For the underline */
+  text-decoration: none; /* Remove the default underline */
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: white; /* Color of the underline */
+  transform: scaleX(0); /* Start with the underline not visible */
+  transition: transform 0.3s ease; /* Transition for the underline */
+}
+
+a:hover::after {
+  transform: scaleX(1); /* Make the underline visible on hover */
+}

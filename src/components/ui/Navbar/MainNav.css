@@ -1,0 +1,13 @@
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    opacity: 0; /* Fully invisible */
+  }
+}
+
+.blinking-text {
+  animation: blink 3s infinite; /* Duration of 1 second and infinite repeat */
+}
