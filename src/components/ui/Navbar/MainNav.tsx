@@ -1,20 +1,32 @@
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import logo from "../../../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const MainNav = () => {
   return (
     <nav className="dark:bg-gray-800 dark:border-gray-700">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto text-gray-600">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src={logo} className="h-14" alt="Logo" />
-        </a>
-        <div className="flex items-center space-x-6">
-          <span className="text-lg font-medium">Follow Us</span>
+        {/* Left side text */}
+        <div className="flex-1 text-xs italic font-medium text-[#01748D]">
+          <span>
+            Becoming A Better <br /> Global Health Leader
+          </span>
+        </div>
+
+        {/* Logo in the center */}
+        <Link
+          to="/"
+          className="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img src={logo} className="h-10 mx-auto" alt="Logo" />
+        </Link>
+
+        {/* Social icons on the right */}
+        <div className="flex items-center justify-end flex-1 space-x-6">
           <a
             href="https://www.linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            // className="hover:text-blue-400"
           >
             <FaLinkedin className="w-6 h-6" />
           </a>
@@ -22,7 +34,6 @@ const MainNav = () => {
             href="https://www.facebook.com"
             target="_blank"
             rel="noopener noreferrer"
-            // className="hover:text-blue-400"
           >
             <FaFacebook className="w-6 h-6" />
           </a>

@@ -9,9 +9,12 @@ const HeroSection = () => {
   return (
     <div className="relative flex flex-col lg:flex-row items-center justify-between h-auto lg:h-[500px] p-6 md:p-10 banner overflow-hidden">
       {/* Left Side Text (1/3 width on large screens) */}
-      <h1 className="w-full lg:w-[40%] text-center lg:text-left font-light mb-6 lg:mb-0">
-        <span className="font-bold">World Bank Group Guarantees</span> deliver
-        efficiency and boost impact
+      <h1 className="w-full lg:w-[40%] text-center text-gray-600 lg:text-left font-normal mb-6 lg:mb-0 ">
+        <span>Unlock your potential and elevate your expertise with </span>
+        <br />
+        <span className="font-bold text-gray-700">
+          Health Systems Matter (HSM)
+        </span>
       </h1>
 
       {/* Right Side with 5 Images (2/3 width on large screens) */}
