@@ -1,0 +1,16 @@
+@keyframes staggered-appear {
+  0% {
+    opacity: 0; /* Fully invisible at the start */
+    transform: translateY(20px); /* Slightly moves down */
+  }
+  100% {
+    opacity: 1; /* Fully visible at the end */
+    transform: translateY(0); /* Back to its original position */
+  }
+}
+
+.letter {
+  display: inline-block; /* Allows each letter to be treated individually */
+  opacity: 0; /* Start invisible */
+  animation: staggered-appear 0.5s forwards; /* Animation duration */
+}
