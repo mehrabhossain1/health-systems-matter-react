@@ -109,7 +109,7 @@ const ContactSection = () => {
             </div>
             <button
               type="submit"
-              className="flex items-center justify-center w-full p-2 bg-[#01748D] text-white rounded-lg hover:bg-[#015f68] transition"
+              className="flex items-center justify-center w-full p-2 text-white rounded-lg bg-gradient-to-r from-[#01748D] to-[#00A6D1] hover:from-[#015f68] hover:to-[#008ab6] transition"
             >
               <FaPaperPlane className="mr-2" />
               Send
