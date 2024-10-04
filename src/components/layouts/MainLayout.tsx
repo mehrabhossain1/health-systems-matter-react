@@ -15,12 +15,14 @@ const MainLayout = () => {
       <Container>
         <Outlet />
       </Container>
-      <AboutUsSection />
-      <VisionMissionSection />
-      <ActivitiesAndApproach />
-      <TestimonialsSection />
-      <ContactSection />
-      <Footer />
+      <div className="overflow-x-hidden">
+        <AboutUsSection />
+        <VisionMissionSection />
+        <ActivitiesAndApproach />
+        <TestimonialsSection />
+        <ContactSection />
+        <Footer />
+      </div>
     </>
   );
 };

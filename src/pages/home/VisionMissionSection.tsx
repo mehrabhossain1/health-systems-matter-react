@@ -9,7 +9,7 @@ const VisionMissionSection = () => {
   }, []);
 
   return (
-    <div data-aos="fade-up" className="py-20 mt-20">
+    <div data-aos="fade-up" data-aos-duration="1000" className="py-20 mt-20">
       <div className="max-w-screen-xl w-full px-[20px] mx-auto">
         {/* Section Title */}
         <h1 className="text-5xl font-light text-center text-gray-800 mb-14">
@@ -19,7 +19,11 @@ const VisionMissionSection = () => {
         {/* Main Content */}
         <div className="flex flex-col items-center gap-8 mb-14 lg:flex-row">
           {/* Left Side Content */}
-          <div className="lg:w-2/3">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="lg:w-2/3"
+          >
             <h2 className="mb-4 text-xl font-semibold text-gray-700">Vision</h2>
             <p className="mb-4 text-gray-700">
               The vision of Health Systems Matter is to create an evidence-based
@@ -52,7 +56,11 @@ const VisionMissionSection = () => {
           </div>
 
           {/* Right Side Image Section */}
-          <div className="flex flex-col gap-4 lg:w-1/3">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="flex flex-col gap-4 lg:w-1/3"
+          >
             <img
               src="https://via.placeholder.com/400x250" // Replace with your image URL
               alt="Health Advocacy"

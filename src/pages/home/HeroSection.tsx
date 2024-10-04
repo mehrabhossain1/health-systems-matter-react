@@ -42,6 +42,7 @@ const HeroSection: React.FC = () => {
   return (
     <div
       data-aos="zoom-in-down"
+      data-aos-duration="1000"
       className="relative flex flex-col lg:flex-row items-center justify-between h-auto lg:h-[500px] p-6 md:p-10 banner overflow-hidden"
     >
       {/* Left Side Text (1/3 width on large screens) */}

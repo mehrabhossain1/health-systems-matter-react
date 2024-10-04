@@ -16,6 +16,7 @@ const ActivitiesAndApproach = () => {
     <section
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1000"
       className="p-6 py-20 bg-gray-100 md:p-10 dark:bg-gray-900"
     >
       <div className="max-w-screen-xl w-full px-[20px] mx-auto py-20">
@@ -25,7 +26,11 @@ const ActivitiesAndApproach = () => {
 
         <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2">
           {/* Left Side Images */}
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="grid grid-cols-1 gap-4 sm:grid-cols-2"
+          >
             <img
               src={activityImage1}
               alt="Activity 1"
@@ -44,7 +49,11 @@ const ActivitiesAndApproach = () => {
           </div>
 
           {/* Right Side Content */}
-          <div className="space-y-4 text-gray-700 dark:text-gray-300">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="space-y-4 text-gray-700 dark:text-gray-300"
+          >
             <p>
               In order to be aligned with the vision and mission of Health
               Systems Matter, the specific activities are as follows:

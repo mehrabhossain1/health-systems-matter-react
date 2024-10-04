@@ -9,7 +9,11 @@ const AboutUsSection = () => {
   }, []);
 
   return (
-    <div data-aos="fade-up" className="py-32 mt-20 border bg-gray-50">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      className="py-32 mt-20 border bg-gray-50"
+    >
       <div className="max-w-screen-xl w-full px-[20px] mx-auto">
         {/* Section Title with Underline */}
         <div className="flex items-center mb-10 space-x-4">

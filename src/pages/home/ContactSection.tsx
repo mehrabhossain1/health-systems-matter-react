@@ -31,7 +31,11 @@ const ContactSection = () => {
   };
 
   return (
-    <section data-aos="fade-up" className="py-32 bg-gray-100 dark:bg-gray-900">
+    <section
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      className="py-32 bg-gray-100 dark:bg-gray-900"
+    >
       <div className="flex flex-col max-w-screen-xl px-6 mx-auto md:flex-row">
         {/* Left Section */}
         <div className="mb-10 md:w-1/2 md:mb-0 md:pr-8">

@@ -74,6 +74,7 @@ const TestimonialSection = () => {
   return (
     <section
       data-aos="fade-right"
+      data-aos-duration="1000"
       className="py-32 bg-gray-50 dark:bg-gray-900"
     >
       <div className="max-w-screen-xl px-6 mx-auto">
