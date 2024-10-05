@@ -1,16 +1,71 @@
 @keyframes staggered-appear {
   0% {
-    opacity: 0; /* Fully invisible at the start */
-    transform: translateY(20px); /* Slightly moves down */
+    opacity: 0;
+    transform: translateY(20px);
   }
   100% {
-    opacity: 1; /* Fully visible at the end */
-    transform: translateY(0); /* Back to its original position */
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .letter {
-  display: inline-block; /* Allows each letter to be treated individually */
-  opacity: 0; /* Start invisible */
-  animation: staggered-appear 0.5s forwards; /* Animation duration */
+  display: inline-block;
+  opacity: 0;
+  animation: staggered-appear 0.5s forwards;
+}
+
+/* Height set to 100vh */
+.responsive-height {
+  height: 100vh;
+  padding: 0; /* Ensure there's no additional padding affecting height */
+  box-sizing: border-box; /* Make sure padding and border are included in the height */
+  overflow: hidden; /* Hide any content that overflows */
+  display: flex; /* Flexbox to ensure content aligns properly */
+  flex-direction: column; /* Make the content stack vertically */
+  justify-content: center; /* Center the content vertically */
+}
+
+/* Keyframes for images coming in and going out */
+@keyframes move-in-out {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateX(100px) scale(0.8);
+  }
+  25%,
+  75% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-100px) scale(1.2);
+  }
+}
+
+/* Delay stagger for each image */
+.animate-image-1 {
+  animation: move-in-out 6s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+.animate-image-2 {
+  animation: move-in-out 6s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.animate-image-3 {
+  animation: move-in-out 6s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.animate-image-4 {
+  animation: move-in-out 6s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+.animate-image-5 {
+  animation: move-in-out 6s ease-in-out infinite;
+  animation-delay: 4s;
 }

@@ -6,18 +6,15 @@ import "./MainNav.css";
 const MainNav = () => {
   return (
     <nav className="dark:bg-gray-800 dark:border-gray-700">
-      <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto text-gray-600">
+      <div className="flex items-center justify-between h-full max-w-screen-xl p-4 mx-auto text-gray-600">
         {/* Left side text with blinking effect */}
-        <div className="flex-1 text-xs italic font-medium text-[#01748D] blinking-text">
+        <div className="flex-1 text-xs italic font-medium text-[#01748D] blinking-text text-center md:text-left">
           <span>Becoming A Better Global Health Leader</span>
         </div>
 
         {/* Logo in the center */}
-        <Link
-          to="/"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
-        >
-          <img src={logo} className="h-10 mx-auto" alt="Logo" />
+        <Link to="/" className="flex items-center justify-center">
+          <img src={logo} className="h-10" alt="Logo" />
         </Link>
 
         {/* Social icons on the right */}

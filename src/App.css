@@ -42,7 +42,7 @@
 } */
 
 /* Keyframes for images coming in and going out */
-@keyframes move-in-out {
+/* @keyframes move-in-out {
   0%,
   100% {
     opacity: 0;
@@ -57,10 +57,10 @@
     opacity: 0;
     transform: translateX(-100px) scale(1.2);
   }
-}
+} */
 
 /* Delay stagger for each image */
-.animate-image-1 {
+/* .animate-image-1 {
   animation: move-in-out 6s ease-in-out infinite;
   animation-delay: 0s;
 }
@@ -83,7 +83,7 @@
 .animate-image-5 {
   animation: move-in-out 6s ease-in-out infinite;
   animation-delay: 4s;
-}
+} */
 
 .fade-in {
   opacity: 1;

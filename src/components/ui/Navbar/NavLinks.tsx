@@ -58,6 +58,7 @@ const NavLinks = () => {
         <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-expanded={isMenuOpen}
             className="text-white focus:outline-none"
           >
             <svg
@@ -80,7 +81,7 @@ const NavLinks = () => {
         </div>
 
         {/* Nav Links - Hidden on mobile, visible on larger screens */}
-        <ul className="items-center justify-center hidden mx-auto space-x-8 md:flex">
+        <ul className="flex items-center justify-center hidden mx-auto space-x-8 md:flex">
           {links.map((link) => (
             <li key={link.name} className="relative group">
               <Link
@@ -96,7 +97,7 @@ const NavLinks = () => {
                     <li key={subLink.name}>
                       <Link
                         to={subLink.to}
-                        className="block px-20 py-2 transition-all duration-300 hover:bg-[#01748D] hover:text-white"
+                        className="block px-4 py-2 transition-all duration-300 hover:bg-[#01748D] hover:text-white"
                       >
                         {subLink.name}
                       </Link>
