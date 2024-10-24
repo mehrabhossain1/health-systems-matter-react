@@ -17,7 +17,7 @@ const AboutUsSection = () => {
       <div className="max-w-screen-xl w-full px-[20px] mx-auto">
         {/* Section Title with Underline */}
         <div className="flex items-center mb-10 space-x-4">
-          <h1 className="text-5xl font-light text-gray-800">About Us</h1>
+          <h1 className="text-5xl font-light text-gray-800">About</h1>
           <div className="flex-grow border-b-2 border-gray-500"></div>
         </div>
 

@@ -81,7 +81,7 @@ const NavLinks = () => {
         </div>
 
         {/* Nav Links - Hidden on mobile, visible on larger screens */}
-        <ul className="flex items-center justify-center hidden mx-auto space-x-8 md:flex">
+        <ul className="flex items-center justify-center mx-auto space-x-8 md:flex">
           {links.map((link) => (
             <li key={link.name} className="relative group">
               <Link
