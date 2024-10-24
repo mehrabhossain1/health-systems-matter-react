@@ -1,0 +1,55 @@
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0; /* Align to the left of the screen */
+  width: 100vw; /* Full width dropdown */
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px; /* Set your desired maximum width */
+  margin: 0 auto; /* Center the content within the mega menu */
+  padding: 0 20px; /* Add padding for some space on the sides */
+}
+
+.mega-menu-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.mega-menu-column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #01748d;
+}
+
+.mega-menu-column a {
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.mega-menu-column a:hover {
+  color: #01748d;
+}
+
+/* Responsive for mobile view */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .mega-menu {
+    padding: 10px;
+  }
+
+  .mega-menu-column {
+    margin-bottom: 20px;
+  }
+}

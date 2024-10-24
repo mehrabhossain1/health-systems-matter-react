@@ -1,16 +1,12 @@
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import logo from "../../../assets/logo.png";
 import { Link } from "react-router-dom";
-import "./MainNav.css";
 
 const MainNav = () => {
   return (
     <nav className="h-20 dark:bg-gray-800 dark:border-gray-700">
       <div className="flex items-center justify-between h-full max-w-screen-xl p-4 mx-auto text-gray-600">
         {/* Left side text with blinking effect */}
-        {/* <div className="flex-1 text-xs italic font-medium text-[#01748D] blinking-text text-center md:text-left">
-          <span>Becoming A Better Global Health Leader</span>
-        </div> */}
 
         {/* Logo in the center */}
         <Link to="/" className="flex items-center justify-center">
@@ -19,19 +15,19 @@ const MainNav = () => {
 
         {/* Social icons on the right */}
         <div className="flex items-center justify-end flex-1 space-x-6">
-          <a
-            href="https://www.linkedin.com"
+          <Link
+            to="https://www.linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin className="w-6 h-6 text-[#243642] transition-all hover:text-[#01748D]" />
-          </a>
+            <FaLinkedin className="size-8 text-[#243642] transition-all hover:text-[#01748D]" />
+          </Link>
           <a
             href="https://www.facebook.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaFacebook className="w-6 h-6 text-[#243642] transition-all hover:text-[#01748D]" />
+            <FaFacebook className="size-8 text-[#243642] transition-all hover:text-[#01748D]" />
           </a>
         </div>
       </div>
