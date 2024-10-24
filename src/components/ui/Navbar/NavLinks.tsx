@@ -46,7 +46,18 @@ const NavLinks = () => {
     },
     { name: "NEWSROOM", to: "/newsroom" },
     { name: "BLOG", to: "/blog" },
-    { name: "NEWSLETTER", to: "/newsletter" },
+    {
+      name: "NEWSLETTER",
+      to: "/newsletter",
+      subLinks: [
+        { name: "Overview", to: "/newsletter/overview" },
+        {
+          name: "Subscribe for newsletter",
+          to: "/newsletter/subscribe-for-newsletter",
+        },
+        { name: "All previous issues", to: "/newsletter/all-previous-issues" },
+      ],
+    },
     { name: "YOUTUBE", to: "/youtube" },
     { name: "CONTACT", to: "/contact" },
   ];
