@@ -43,14 +43,16 @@ const HeroSection: React.FC = () => {
     <div
       data-aos="zoom-in-down"
       data-aos-duration="1000"
-      className="relative flex flex-col lg:flex-row items-center justify-between h-auto lg:h-[calc(100vh-300px)] p-6 md:p-10 banner overflow-hidden"
+      className="relative max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center justify-between h-auto lg:h-[calc(100vh-300px)] p-6 md:p-10 banner overflow-hidden"
     >
       {/* Left Side Text (1/3 width on large screens) */}
-      <h2 className="w-full lg:w-[40%] text-center text-gray-600 lg:text-left font-light mb-6 lg:mb-0 ">
-        <span>Unlock your potential and elevate your expertise with </span>
+      <h2 className="w-full md:w-[40%] text-center text-gray-600 lg:text-left font-light mb-6 lg:mb-0 ">
+        <span className="underline">Knowledge for Solutions! </span>
+        <br />
+        <span>Don't Settle</span>
         <br />
         <span className="font-semibold text-[#01748D]">
-          <StaggeredText text="Health Systems Matter (HSM)" />
+          <StaggeredText text="Explore to be Enriched with (HSM)" />
         </span>
       </h2>
 

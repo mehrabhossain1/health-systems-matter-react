@@ -5,12 +5,12 @@ import "./MainNav.css";
 
 const MainNav = () => {
   return (
-    <nav className="dark:bg-gray-800 dark:border-gray-700">
+    <nav className="h-20 dark:bg-gray-800 dark:border-gray-700">
       <div className="flex items-center justify-between h-full max-w-screen-xl p-4 mx-auto text-gray-600">
         {/* Left side text with blinking effect */}
-        <div className="flex-1 text-xs italic font-medium text-[#01748D] blinking-text text-center md:text-left">
+        {/* <div className="flex-1 text-xs italic font-medium text-[#01748D] blinking-text text-center md:text-left">
           <span>Becoming A Better Global Health Leader</span>
-        </div>
+        </div> */}
 
         {/* Logo in the center */}
         <Link to="/" className="flex items-center justify-center">
@@ -24,14 +24,14 @@ const MainNav = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin className="w-6 h-6" />
+            <FaLinkedin className="w-6 h-6 text-[#243642] transition-all hover:text-[#01748D]" />
           </a>
           <a
             href="https://www.facebook.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaFacebook className="w-6 h-6" />
+            <FaFacebook className="w-6 h-6 text-[#243642] transition-all hover:text-[#01748D]" />
           </a>
         </div>
       </div>

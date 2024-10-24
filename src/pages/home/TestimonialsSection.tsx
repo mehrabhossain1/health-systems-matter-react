@@ -31,7 +31,7 @@ const testimonials = [
   },
 ];
 
-const TestimonialSection = () => {
+const TestimonialsSection = () => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -139,4 +139,4 @@ const TestimonialSection = () => {
   );
 };
 
-export default TestimonialSection;
+export default TestimonialsSection;
