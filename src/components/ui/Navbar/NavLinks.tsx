@@ -51,12 +51,12 @@ const components: { title: string; href: string; description: string }[] = [
 ];
 
 // About sublinks
-const aboutSubLinks: { title: string; href: string; description: string }[] = [
+const aboutSubLinks: { title: string; href: string; description?: string }[] = [
   {
     title: "About HSM",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    href: "/about/about-hsm",
+    // description:
+    //   "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
     title: "Vision and mission",
@@ -263,8 +263,8 @@ const moreSubLinks: {
 
 export default function NavLinks() {
   return (
-    <div className="bg-[#01748D] sticky top-0 z-50">
-      <NavigationMenu className="h-16 max-w-screen-xl mx-auto border-b">
+    <div className="bg-[#01748D] sticky top-0 z-50 ">
+      <NavigationMenu className="h-20 max-w-screen-xl mx-auto border-b">
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger>ABOUT</NavigationMenuTrigger>

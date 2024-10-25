@@ -63,7 +63,7 @@ const bookmarksData = [
 
 const BookMarksSection = () => {
   return (
-    <section className="py-12 bg-black">
+    <section className="py-12 bg-gradient-to-r from-[#01748D] to-[#1CA6C6]">
       <div className="container mx-auto">
         <h2 className="mb-8 text-4xl font-bold text-center text-white">
           Bookmarks
