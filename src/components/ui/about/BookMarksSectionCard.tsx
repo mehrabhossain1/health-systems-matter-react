@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Card,
   CardContent,
@@ -7,7 +8,19 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-const BookMarksSectionCard = ({ title, description, href, customStyle }) => {
+interface BookMarksSectionCardProps {
+  title: string;
+  description: string;
+  href: string;
+  customStyle: number; // Assuming this is an index for styles
+}
+
+const BookMarksSectionCard: React.FC<BookMarksSectionCardProps> = ({
+  title,
+  description,
+  href,
+  customStyle,
+}) => {
   const styles = [
     "bg-gradient-to-r from-blue-500 to-purple-500 text-white",
     "bg-gradient-to-r from-green-500 to-teal-500 text-white",

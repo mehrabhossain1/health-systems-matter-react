@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Card,
   CardContent,
@@ -7,7 +8,17 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-const NewsletterCard = ({ title, description, href }) => {
+interface NewsletterCardProps {
+  title: string;
+  description: string;
+  href: string;
+}
+
+const NewsletterCard: React.FC<NewsletterCardProps> = ({
+  title,
+  description,
+  href,
+}) => {
   return (
     <Card className="p-4 text-white rounded-lg shadow-md bg-gradient-to-r from-teal-500 to-blue-500">
       <CardHeader>

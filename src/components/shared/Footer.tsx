@@ -1,90 +1,90 @@
-import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-import logo from "../../assets/logo.png"; // Replace with your actual logo path
-import "../../App.css";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
-// import { useEffect } from "react";
+import { FaFacebook, FaInstagram, FaLinkedin, FaOrcid } from "react-icons/fa";
+import logo from "../../assets/logo.png";
 
-const Footer = () => {
-  // useEffect(() => {
-  //   AOS.init();
-  //   AOS.refresh();
-  // }, []);
-
+const Footer: React.FC = () => {
   return (
-    <footer className="py-10 text-gray-200 bg-gray-800">
-      <div className="max-w-screen-xl px-6 mx-auto">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
-          {/* Logo Section */}
-          <div className="flex flex-col items-center md:items-start">
-            <img src={logo} alt="Logo" className="h-auto mb-4 w-72" />
-            <p className="text-center text-gray-400 md:text-left">
-              Health Systems Matter is dedicated to improving global health
-              through strategic information dissemination.
-            </p>
-          </div>
-
-          {/* Navigation Links */}
-          <div className="flex flex-col items-center md:items-start">
-            <h4 className="mb-4 text-lg font-semibold text-gray-300">
-              Quick Links
-            </h4>
-            <a href="#home" className="hover:text-[#01748D] mb-2">
-              Home
-            </a>
-            <a href="#services" className="hover:text-[#01748D] mb-2">
-              Services
-            </a>
-            <a href="#about" className="hover:text-[#01748D] mb-2">
-              About Us
-            </a>
-            <a href="#contact" className="hover:text-[#01748D] mb-2">
-              Contact
-            </a>
-          </div>
-
-          {/* Social Media Links */}
-          <div className="flex flex-col items-center md:items-start">
-            <h4 className="mb-4 text-lg font-semibold text-gray-300">
-              Follow Us
-            </h4>
-            <div className="flex space-x-4">
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-200 hover:text-[#01748D]"
-              >
-                <FaLinkedinIn size={24} />
-              </a>
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-200 hover:text-[#01748D]"
-              >
-                <FaFacebookF size={24} />
-              </a>
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-200 hover:text-[#01748D]"
-              >
-                <FaTwitter size={24} />
-              </a>
-            </div>
-          </div>
+    <footer className="py-10 bg-[#243642] text-gray-300">
+      <div className="grid grid-cols-1 gap-8 px-4 mx-auto max-w-7xl md:grid-cols-3">
+        {/* First Grid */}
+        <div className="flex flex-col items-center justify-center">
+          <img src={logo} alt="Logo" className="mb-6 w-80" />
+          <p className="pb-10 text-center">
+            Founded in 2024, HSM is a career development platform for public
+            health professionals around the world.
+          </p>
+          <p className="font-bold text-center">Health Systems Matter</p>
+          <p className="text-center">Dhaka, Bangladesh</p>
         </div>
 
-        {/* Bottom Section */}
-        <div className="mt-10 text-center">
-          <p className="text-gray-400">
-            &copy; {new Date().getFullYear()} Health Systems Matter. All Rights
-            Reserved.
+        {/* Second Grid */}
+        <div className="flex flex-col">
+          <ul className="space-y-2">
+            <li>
+              <a href="#about" className="hover:underline">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#resources" className="hover:underline">
+                Resources
+              </a>
+            </li>
+            <li>
+              <a href="#bookmarks" className="hover:underline">
+                Bookmarks
+              </a>
+            </li>
+            <li>
+              <a href="#newsroom" className="hover:underline">
+                Newsroom
+              </a>
+            </li>
+            <li>
+              <a href="#blog" className="hover:underline">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href="#newsletter" className="hover:underline">
+                Newsletter
+              </a>
+            </li>
+            <li>
+              <a href="#youtube" className="hover:underline">
+                YouTube
+              </a>
+            </li>
+            <li>
+              <a href="#site-owner" className="hover:underline">
+                About the Site Owner
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Last Grid */}
+        <div className="flex flex-col items-center justify-center">
+          <blockquote className="mb-6 italic text-[#F18A00] text-center">
+            “Believe work can be better. Know deeper. Do Better.”
+          </blockquote>
+          <p className="font-semibold text-center">
+            Scope of Collaboration and Support
           </p>
+
+          <div className="flex mt-4 space-x-4">
+            <FaFacebook size={32} />
+            <FaLinkedin size={32} />
+            <FaInstagram size={32} />
+            <FaOrcid size={32} />
+          </div>
         </div>
       </div>
+
+      {/* Copyright */}
+      <p className="mt-20 font-serif text-base font-semibold text-center text-gray-300 border-t">
+        &copy; Monaemul Islam Sizear {new Date().getFullYear()} All rights
+        reserved. Privacy Policy and Terms of use.
+      </p>
     </footer>
   );
 };

@@ -217,6 +217,50 @@ const contactSubLinks: {
   },
 ];
 
+// More sublinks
+const moreSubLinks: {
+  title: string;
+  href: string;
+  description: string;
+}[] = [
+  {
+    title: "Family",
+    href: "/docs/primitives/alert-dialog",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response.",
+  },
+  {
+    title: "Me in Numbers",
+    href: "/docs/primitives/hover-card",
+    description:
+      "For sighted users to preview content available behind a link.",
+  },
+  {
+    title: "My Book",
+    href: "/docs/primitives/progress",
+    description:
+      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+  },
+  {
+    title: "Featured in media",
+    href: "/docs/primitives/progress",
+    description:
+      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+  },
+  {
+    title: "Travel history",
+    href: "/docs/primitives/progress",
+    description:
+      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+  },
+  {
+    title: "Log in",
+    href: "/docs/primitives/progress",
+    description:
+      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+  },
+];
+
 export default function NavLinks() {
   return (
     <div className="bg-[#01748D] sticky top-0 z-50">
@@ -358,15 +402,54 @@ export default function NavLinks() {
                     </a>
                   </NavigationMenuLink>
                 </li>
-                <ListItem href="/docs" title="Introduction">
+                <ListItem href="/docs" title="Profile summary">
                   Re-usable components built using Radix UI and Tailwind CSS.
                 </ListItem>
-                <ListItem href="/docs/installation" title="Installation">
+                <ListItem href="/docs/installation" title="Education">
                   How to install dependencies and structure your app.
                 </ListItem>
-                <ListItem href="/docs/primitives/typography" title="Typography">
+                <ListItem href="/docs/primitives/typography" title="Career">
                   Styles for headings, paragraphs, lists...etc
                 </ListItem>
+                <ListItem
+                  href="/docs/primitives/typography"
+                  title="Current Professional Affiliations"
+                >
+                  Styles for headings, paragraphs, lists...etc
+                </ListItem>
+                <ListItem
+                  href="/docs/primitives/typography"
+                  title="Achievement and Awards"
+                >
+                  Styles for headings, paragraphs, lists...etc
+                </ListItem>
+                <ListItem
+                  href="/docs/primitives/typography"
+                  title="Publications"
+                >
+                  Styles for headings, paragraphs, lists...etc
+                </ListItem>
+                <ListItem href="/docs/primitives/typography" title="Contact me">
+                  Styles for headings, paragraphs, lists...etc
+                </ListItem>
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+
+          {/* More */}
+          <NavigationMenuItem>
+            <NavigationMenuTrigger>MORE</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1280px] ">
+                {moreSubLinks.map((component) => (
+                  <ListItem
+                    key={component.title}
+                    title={component.title}
+                    href={component.href}
+                  >
+                    {component.description}
+                  </ListItem>
+                ))}
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>

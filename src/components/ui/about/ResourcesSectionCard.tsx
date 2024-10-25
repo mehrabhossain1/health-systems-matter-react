@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Card,
   CardContent,
@@ -7,7 +8,13 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-const ResourcesSectionCard = ({ customStyle }: any) => {
+interface ResourcesSectionCardProps {
+  customStyle: number; // Index for style selection
+}
+
+const ResourcesSectionCard: React.FC<ResourcesSectionCardProps> = ({
+  customStyle,
+}) => {
   // Custom styles for each card, indexed for variety
   const styles = [
     "bg-gradient-to-r from-blue-500 to-purple-500 text-white",
