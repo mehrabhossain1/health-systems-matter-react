@@ -52,7 +52,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export default function NavLinks() {
   return (
-    <div className="bg-[#01748D]">
+    <div className="bg-[#01748D] sticky top-0">
       <NavigationMenu className="h-16 max-w-screen-xl mx-auto border-b">
         <NavigationMenuList>
           <NavigationMenuItem>

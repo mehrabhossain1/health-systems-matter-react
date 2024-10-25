@@ -1,19 +1,13 @@
 // import AboutUsSection from "./AboutUsSection";
 
+import HeroSection from "./HeroSection";
+
 // import VisionMissionSection from "./VisionMissionSection";
 
 const Home = () => {
   return (
     <>
-      <div className="overflow-hidden">
-        {/* <HeroSection /> */}
-        {/* <AboutUsSection />
-        <VisionMissionSection />
-        <ActivitiesAndApproach />
-        <TestimonialsSection />
-        <ContactSection />
-        <TestSection /> */}
-      </div>
+      <HeroSection />
     </>
   );
 };
