@@ -28,6 +28,12 @@ const NewsletterSection = () => {
         <h2 className="mb-8 text-4xl font-bold text-center text-gray-800">
           Newsletter
         </h2>
+        <p>
+          Welcome to Health Systems Matter! We’re excited to have you here. Look
+          out for our monthly newsletter, which will arrive in your inbox by the
+          first week of each month. We look forward to keeping you informed and
+          engaged!
+        </p>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {newsletterSubLinks.map((item, index) => (
             <NewsletterCard
