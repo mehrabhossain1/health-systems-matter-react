@@ -14,12 +14,20 @@ const FirstNav = () => {
               className="w-10 rounded-full"
             />
           </Link>
-          <Link to="/" className="text-2xl font-semibold text-white">
+          <Link
+            to="/"
+            className="text-2xl font-semibold text-white hover:text-[#F18A00]"
+          >
             | Sizear
           </Link>
         </div>
         <div className="flex space-x-2 gift">
-          <Button variant="outline">GIFT</Button>
+          <Button
+            className="bg-[#F18A00] border-none text-white"
+            variant="outline"
+          >
+            GIFT
+          </Button>
           <Button variant="outline">Get Involved</Button>
         </div>
       </div>
