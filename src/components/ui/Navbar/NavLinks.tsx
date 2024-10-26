@@ -1,6 +1,6 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
-
+import "./NavLinks.css";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -263,7 +263,7 @@ const moreSubLinks: {
 
 export default function NavLinks() {
   return (
-    <div className="bg-[#01748D] sticky top-0 z-50 ">
+    <div className="bg-[#01748D] sticky top-0 z-50 font-sans">
       <NavigationMenu className="h-20 max-w-screen-xl mx-auto border-b">
         <NavigationMenuList>
           <NavigationMenuItem>
@@ -380,9 +380,10 @@ export default function NavLinks() {
 
           {/* About Sizear */}
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="text-xl font-semibold">
+            <NavigationMenuTrigger className="text-xl font-semibold italic text-orange-400 transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#01748D] hover:text-white p-2 rounded-md shadow-lg pulse-animation">
               About Sizear
             </NavigationMenuTrigger>
+
             <NavigationMenuContent>
               <ul className="grid gap-3 p-6 md:w-100% lg:w-[1280px] lg:grid-cols-[.75fr_1fr]">
                 <li className="row-span-3">

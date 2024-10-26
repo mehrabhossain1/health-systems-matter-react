@@ -34,7 +34,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-between max-w-screen-xl p-6 mx-auto md:flex-row-reverse md:p-12">
+    <div className="flex flex-col items-center justify-between max-w-screen-xl p-6 mx-auto border md:flex-row-reverse md:p-12">
       {/* Lottie animation on top for smaller screens */}
       <div className="flex justify-center mb-6 md:w-1/2 md:justify-end md:mt-0">
         <Lottie
@@ -72,7 +72,7 @@ const HeroSection = () => {
         {/* Third line */}
         <motion.h2
           variants={itemVariants2}
-          className="font-serif text-4xl font-medium leading-tight md:text-6xl md:text-center"
+          className="font-serif text-2xl font-medium leading-tight md:text-5xl md:text-center"
         >
           Explore to be Enriched with{" "}
           <span className="text-[#01748D] font-semibold">HSM</span>

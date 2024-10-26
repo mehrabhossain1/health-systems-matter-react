@@ -6,7 +6,7 @@ import {
   FaArrowUp,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo2.png";
 
 const Footer: React.FC = () => {
   // Function to scroll to the top
