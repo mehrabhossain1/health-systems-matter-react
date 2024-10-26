@@ -110,19 +110,10 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Improved Copyright Section */}
-        <div className="flex justify-between pt-6 mt-10 text-white border-t border-gray-200">
-          <p className="text-sm text-center text-gray-200">
+        <div className="pt-6 mt-10 text-white border-t border-gray-200">
+          <p className="text-sm tracking-wide text-center text-gray-200">
             &copy; {new Date().getFullYear()} Monaemul Islam Sizear. All rights
-            reserved.
-          </p>
-          <p className="text-sm text-center text-gray-200">
-            <a href="#privacy-policy" className="hover:underline">
-              Privacy Policy
-            </a>
-            <span className="px-2">|</span>
-            <a href="#terms-of-use" className="hover:underline">
-              Terms of Use
-            </a>
+            reserved. Privacy Policy and Terms of use.
           </p>
         </div>
       </div>
