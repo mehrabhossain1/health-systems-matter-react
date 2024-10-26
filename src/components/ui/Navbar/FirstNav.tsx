@@ -14,10 +14,7 @@ const FirstNav = () => {
               className="w-10 rounded-full"
             />
           </Link>
-          <Link
-            to="/"
-            className="text-2xl font-semibold text-white hover:text-[#F18A00]"
-          >
+          <Link to="/" className="text-2xl font-semibold text-[#F18A00]">
             | Sizear
           </Link>
         </div>
