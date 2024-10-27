@@ -17,14 +17,14 @@ const FirstNav = () => {
           </Link>
           <Link
             to="/"
-            className="text-2xl font-semibold italic text-orange-400 transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#01748D] hover:text-white p-2 rounded-md shadow-lg pulse-animation"
+            className="text-2xl font-semibold italic text-[#F18A00] transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#01748D] hover:text-white p-2 rounded-md shadow-lg pulse-animation"
           >
             | Sizear
           </Link>
         </div>
 
         <div className="flex items-center justify-center space-x-2">
-          <BlinkingButton />
+          <BlinkingButton children="GIFT" />
 
           <Button variant="outline">Get Involved</Button>
         </div>

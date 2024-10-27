@@ -1,7 +1,7 @@
 import "./BlinkingButton.css";
 
-const BlinkingButton = () => {
-  return <button className="button">GIFT</button>;
+const BlinkingButton = ({ children }: { children: React.ReactNode }) => {
+  return <button className="button">{children}</button>;
 };
 
 export default BlinkingButton;
