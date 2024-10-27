@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ownerImg from "../../../assets/ownerImg.png";
 import { Button } from "../button";
+import BlinkingButton from "../blinkingButton/BlinkingButton";
 
 const FirstNav = () => {
   return (
@@ -22,13 +23,9 @@ const FirstNav = () => {
           </Link>
         </div>
 
-        <div className="flex space-x-2 gift">
-          <Button
-            className="bg-[#F18A00] border-none text-white"
-            variant="outline"
-          >
-            GIFT
-          </Button>
+        <div className="flex items-center justify-center space-x-2">
+          <BlinkingButton />
+
           <Button variant="outline">Get Involved</Button>
         </div>
       </div>
