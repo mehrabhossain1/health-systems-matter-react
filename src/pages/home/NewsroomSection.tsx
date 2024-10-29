@@ -35,7 +35,7 @@ const NewsroomSection = () => {
       <div className="max-w-screen-xl mx-auto">
         <div className="flex flex-row items-center gap-10 py-10 pb-20">
           <h2
-            className="text-6xl font-semibold text-gray-800 pe-10"
+            className="pl-10 text-6xl font-semibold text-gray-700 pe-10"
             style={{ fontFamily: "DynaPuff" }}
           >
             Newsroom
