@@ -13,6 +13,7 @@ interface NewsletterCardProps {
   description: string;
   href: string;
   icon: React.ReactNode; // New prop for the icon
+  cardClassName?: string; // New prop for the card class
 }
 
 const NewsletterCard: React.FC<NewsletterCardProps> = ({
@@ -20,9 +21,12 @@ const NewsletterCard: React.FC<NewsletterCardProps> = ({
   description,
   href,
   icon,
+  cardClassName = "", // Default to empty string if not provided
 }) => {
   return (
-    <Card className="flex flex-col justify-between h-full p-4 transition-all transform bg-white border-none rounded-none shadow-lg hover:shadow-2xl hover:-translate-y-1">
+    <Card
+      className={`flex flex-col justify-between h-full p-4 transition-all transform bg-white border-none rounded-none shadow-lg hover:shadow-2xl hover:-translate-y-1 ${cardClassName}`}
+    >
       <div className="relative flex justify-center">
         <div className="absolute top-4 right-4 flex items-center justify-center w-12 h-12 text-[#1975BA]">
           {icon}

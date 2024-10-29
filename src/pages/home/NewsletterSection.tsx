@@ -45,7 +45,9 @@ const NewsletterSection = () => {
           which will arrive in your inbox by the first week of each month. We
           look forward to keeping you informed and engaged!
         </p>
-        <div className="flex flex-row items-center gap-4">
+        <div className="relative flex justify-center gap-6">
+          {" "}
+          {/* Center the cards with a gap */}
           {newsletterSubLinks.map((item, index) => (
             <motion.div
               key={index}
@@ -53,15 +55,20 @@ const NewsletterSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className={`relative ${
-                index === 1 ? "mt-10" : index === 2 ? "-mt-5" : "mt-0"
-              }`} // Adjust margin for staggered effect
+              className={`relative transition-transform duration-300 ${
+                index === 1
+                  ? "translate-y-0"
+                  : index === 0
+                  ? "translate-y-6"
+                  : "-translate-y-6"
+              }`}
             >
               <NewsletterCard
                 title={item.title}
                 description={item.description}
                 href={item.href}
                 icon={item.icon}
+                cardClassName="h-full" // Make sure the card takes full height
               />
             </motion.div>
           ))}
