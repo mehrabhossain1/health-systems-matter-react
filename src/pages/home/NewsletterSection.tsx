@@ -23,11 +23,17 @@ const newsletterSubLinks = [
 
 const NewsletterSection = () => {
   return (
-    <section className="py-12 bg-gray-100">
-      <div className="container mx-auto">
-        <h2 className="mb-8 text-4xl font-bold text-center text-gray-800">
-          Newsletter
-        </h2>
+    <section className="py-12 bg-[#1975BA]">
+      <div className="max-w-screen-xl mx-auto">
+        <div className="flex flex-row-reverse items-center gap-10 py-10 pb-20 mb-5 ">
+          <h2
+            className="text-6xl font-semibold text-white pe-10"
+            style={{ fontFamily: "DynaPuff" }}
+          >
+            Newsletter
+          </h2>
+          <div className="flex-1 ml-4 border-t border-white"></div>
+        </div>
         <p>
           Welcome to Health Systems Matter! We’re excited to have you here. Look
           out for our monthly newsletter, which will arrive in your inbox by the
