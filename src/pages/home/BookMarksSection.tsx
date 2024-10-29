@@ -6,6 +6,7 @@ import {
   FaUniversity,
   FaInfoCircle,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const bookmarksData = [
   {
@@ -79,6 +80,12 @@ const bookmarksData = [
   },
 ];
 
+// Define animation variants
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
+
 const BookMarksSection = () => {
   return (
     <section
@@ -97,15 +104,24 @@ const BookMarksSection = () => {
           </h2>
           <div className="flex-1 ml-4 border-t border-white"></div>
         </div>
+
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {bookmarksData.map((bookmark, index) => (
-            <BookMarksSectionCard
+            <motion.div
               key={index}
-              title={bookmark.title}
-              description={bookmark.description}
-              href={bookmark.href}
-              Icon={bookmark.Icon}
-            />
+              variants={itemVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }} // Adjusts when animation triggers
+              transition={{ duration: 0.4, delay: index * 0.1 }} // Staggered effect
+            >
+              <BookMarksSectionCard
+                title={bookmark.title}
+                description={bookmark.description}
+                href={bookmark.href}
+                Icon={bookmark.Icon}
+              />
+            </motion.div>
           ))}
         </div>
       </div>
