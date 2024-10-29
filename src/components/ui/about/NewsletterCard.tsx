@@ -20,7 +20,7 @@ const NewsletterCard: React.FC<NewsletterCardProps> = ({
   href,
 }) => {
   return (
-    <Card className="p-4 text-white rounded-lg shadow-md bg-gradient-to-r from-teal-500 to-blue-500">
+    <Card className="p-4 text-white border-none shadow-md bg-gradient-to-r from-teal-500 to-blue-500">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription>{description}</CardDescription>

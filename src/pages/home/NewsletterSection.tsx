@@ -25,7 +25,7 @@ const NewsletterSection = () => {
   return (
     <section className="py-12 bg-[#1975BA]">
       <div className="max-w-screen-xl mx-auto">
-        <div className="flex flex-row-reverse items-center gap-10 py-10 pb-20 mb-5 ">
+        <div className="flex flex-row-reverse items-center gap-10 py-10 ">
           <h2
             className="text-6xl font-semibold text-white pe-10"
             style={{ fontFamily: "DynaPuff" }}
@@ -34,11 +34,11 @@ const NewsletterSection = () => {
           </h2>
           <div className="flex-1 ml-4 border-t border-white"></div>
         </div>
-        <p>
-          Welcome to Health Systems Matter! We’re excited to have you here. Look
-          out for our monthly newsletter, which will arrive in your inbox by the
-          first week of each month. We look forward to keeping you informed and
-          engaged!
+        <p className="w-3/4 pb-20 mx-auto text-2xl italic text-center text-gray-200">
+          Welcome to <span className="font-bold">Health Systems Matter!</span>{" "}
+          We’re excited to have you here. Look out for our monthly newsletter,
+          which will arrive in your inbox by the first week of each month. We
+          look forward to keeping you informed and engaged!
         </p>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {newsletterSubLinks.map((item, index) => (
