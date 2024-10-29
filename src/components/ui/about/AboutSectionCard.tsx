@@ -22,7 +22,7 @@ const AboutSectionCard = ({
       className={`h-full flex flex-col shadow-lg pb-10 border-none ${bgColor} rounded-none transition-transform transform hover:scale-105`}
     >
       <CardHeader className="p-6">
-        <CardTitle className="pt-5 text-4xl font-semibold text-gray-800 transition-colors hover:text-yellow-500 hover:underline underline-offset-4">
+        <CardTitle className="pt-5 text-4xl font-semibold text-gray-800 transition-colors cursor-pointer hover:text-yellow-500 hover:underline underline-offset-4">
           {title}
         </CardTitle>
       </CardHeader>

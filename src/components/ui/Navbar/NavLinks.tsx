@@ -51,29 +51,22 @@ const components: { title: string; href: string; description: string }[] = [
 ];
 
 // About sublinks
-const aboutSubLinks: { title: string; href: string; description?: string }[] = [
+const aboutSubLinks: { title: string; href: string }[] = [
   {
     title: "About HSM",
     href: "/about/about-hsm",
-    // description:
-    //   "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
     title: "Vision and mission",
     href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
   },
   {
     title: "Approach and activities",
     href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
   {
     title: "Testimonials",
     href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
   },
 ];
 
@@ -81,65 +74,50 @@ const aboutSubLinks: { title: string; href: string; description?: string }[] = [
 const BookmarksSubLinks: {
   title: string;
   href: string;
-  description: string;
 }[] = [
   {
     title: "Overview",
     href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
     title: "Key public health organizations",
     href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
   },
   {
     title: "Major journals",
     href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
   {
     title: "Data and facts",
     href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
   },
   {
     title: "Training and courses",
     href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
   },
   {
     title: "Career scope",
     href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
   },
   {
     title: "Scholarship",
     href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
   },
   {
     title: "Newsletter",
     href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
   },
   {
     title: "YouTube",
     href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
   },
   {
     title: "Podcast",
     href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
   },
   {
     title: "Useful sites",
     href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
   },
 ];
 
@@ -147,73 +125,52 @@ const BookmarksSubLinks: {
 const newsletterSubLinks: {
   title: string;
   href: string;
-  description: string;
 }[] = [
   {
     title: "Overview",
     href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
     title: "Subscribe for newsletter",
     href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
   },
   {
     title: "All previous issues",
     href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
 ];
 const newsroomSubLinks: {
   title: string;
   href: string;
-  description: string;
 }[] = [
   {
     title: "Overview",
     href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
     title: "Upcoming events",
     href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
   },
   {
     title: "Do you know?",
     href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
 ];
 const contactSubLinks: {
   title: string;
   href: string;
-  description: string;
 }[] = [
   {
     title: "Stay Connected",
     href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
     title: "Subscribe",
     href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
   },
   {
     title: "Support",
     href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
 ];
 
@@ -221,43 +178,30 @@ const contactSubLinks: {
 const moreSubLinks: {
   title: string;
   href: string;
-  description: string;
 }[] = [
   {
     title: "Family",
     href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
     title: "Me in Numbers",
     href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
   },
   {
     title: "My Book",
     href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
   {
     title: "Featured in media",
     href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
   {
     title: "Travel history",
     href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
   {
     title: "Log in",
     href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
 ];
 
@@ -274,10 +218,8 @@ export default function NavLinks() {
                   <ListItem
                     key={component.title}
                     title={component.title}
-                    href={component.href}
-                  >
-                    {component.description}
-                  </ListItem>
+                    to={component.href}
+                  ></ListItem>
                 ))}
               </ul>
             </NavigationMenuContent>
@@ -290,10 +232,8 @@ export default function NavLinks() {
                   <ListItem
                     key={component.title}
                     title={component.title}
-                    href={component.href}
-                  >
-                    {component.description}
-                  </ListItem>
+                    to={component.href}
+                  ></ListItem>
                 ))}
               </ul>
             </NavigationMenuContent>
@@ -322,10 +262,8 @@ export default function NavLinks() {
                   <ListItem
                     key={component.title}
                     title={component.title}
-                    href={component.href}
-                  >
-                    {component.description}
-                  </ListItem>
+                    to={component.href}
+                  ></ListItem>
                 ))}
               </ul>
             </NavigationMenuContent>
@@ -345,10 +283,8 @@ export default function NavLinks() {
                   <ListItem
                     key={component.title}
                     title={component.title}
-                    href={component.href}
-                  >
-                    {component.description}
-                  </ListItem>
+                    to={component.href}
+                  ></ListItem>
                 ))}
               </ul>
             </NavigationMenuContent>
@@ -369,10 +305,8 @@ export default function NavLinks() {
                   <ListItem
                     key={component.title}
                     title={component.title}
-                    href={component.href}
-                  >
-                    {component.description}
-                  </ListItem>
+                    to={component.href}
+                  ></ListItem>
                 ))}
               </ul>
             </NavigationMenuContent>
@@ -403,34 +337,31 @@ export default function NavLinks() {
                     </a>
                   </NavigationMenuLink>
                 </li>
-                <ListItem href="/docs" title="Profile summary">
+                <ListItem to="/docs" title="Profile summary">
                   Re-usable components built using Radix UI and Tailwind CSS.
                 </ListItem>
-                <ListItem href="/docs/installation" title="Education">
+                <ListItem to="/docs/installation" title="Education">
                   How to install dependencies and structure your app.
                 </ListItem>
-                <ListItem href="/docs/primitives/typography" title="Career">
+                <ListItem to="/docs/primitives/typography" title="Career">
                   Styles for headings, paragraphs, lists...etc
                 </ListItem>
                 <ListItem
-                  href="/docs/primitives/typography"
+                  to="/docs/primitives/typography"
                   title="Current Professional Affiliations"
                 >
                   Styles for headings, paragraphs, lists...etc
                 </ListItem>
                 <ListItem
-                  href="/docs/primitives/typography"
+                  to="/docs/primitives/typography"
                   title="Achievement and Awards"
                 >
                   Styles for headings, paragraphs, lists...etc
                 </ListItem>
-                <ListItem
-                  href="/docs/primitives/typography"
-                  title="Publications"
-                >
+                <ListItem to="/docs/primitives/typography" title="Publications">
                   Styles for headings, paragraphs, lists...etc
                 </ListItem>
-                <ListItem href="/docs/primitives/typography" title="Contact me">
+                <ListItem to="/docs/primitives/typography" title="Contact me">
                   Styles for headings, paragraphs, lists...etc
                 </ListItem>
               </ul>
@@ -446,10 +377,8 @@ export default function NavLinks() {
                   <ListItem
                     key={component.title}
                     title={component.title}
-                    href={component.href}
-                  >
-                    {component.description}
-                  </ListItem>
+                    to={component.href}
+                  ></ListItem>
                 ))}
               </ul>
             </NavigationMenuContent>
@@ -461,13 +390,13 @@ export default function NavLinks() {
 }
 
 const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
+  React.ElementRef<typeof Link>,
+  React.ComponentPropsWithoutRef<typeof Link>
+>(({ className, title, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
-        <a
+        <Link
           ref={ref}
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
@@ -475,11 +404,10 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="text-sm leading-snug line-clamp-2 text-muted-foreground">
-            {children}
-          </p>
-        </a>
+          <div className="text-lg font-medium leading-wide hover:underline">
+            {title}
+          </div>
+        </Link>
       </NavigationMenuLink>
     </li>
   );
