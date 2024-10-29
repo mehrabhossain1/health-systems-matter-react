@@ -6,21 +6,27 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { IconType } from "react-icons"; // Import the type for icons
 
 interface BookMarksSectionCardProps {
   title: string;
   description: string;
   href: string;
+  Icon: IconType; // Expecting an icon component from react-icons
 }
 
 const BookMarksSectionCard: React.FC<BookMarksSectionCardProps> = ({
   title,
   description,
   href,
+  Icon,
 }) => {
   return (
-    <Card className="p-6 transition-transform rounded-none border-none transform bg-white shadow-lg hover:shadow-xl hover:bg-[#f4e1d2] hover:-translate-y-1">
-      <CardHeader>
+    <Card className="p-6 transition-transform transform border-none rounded-none shadow-lg bg-gray-50 hover:shadow-xl hover:-translate-y-1">
+      <CardHeader className="flex flex-col items-center">
+        {/* Icon at the top */}
+        <Icon className="text-4xl text-[#01748D] mb-4" />
+
         <CardTitle>
           <a
             href={href}
