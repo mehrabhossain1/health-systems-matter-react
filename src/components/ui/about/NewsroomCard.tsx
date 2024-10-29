@@ -1,39 +1,32 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 interface NewsroomCardProps {
   title: string;
   description: string;
   href: string;
+  image: string; // New prop for the image
 }
 
 const NewsroomCard: React.FC<NewsroomCardProps> = ({
   title,
   description,
   href,
+  image,
 }) => {
   return (
-    <Card className="p-4 text-white rounded-lg shadow-md bg-gradient-to-r from-indigo-500 to-purple-500">
-      <CardHeader>
-        <CardTitle>{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <p>Stay updated on the latest newsroom events and insights.</p>
-      </CardContent>
-      <CardFooter>
-        <a href={href} className="text-sm underline hover:text-gray-200">
-          Learn More
-        </a>
-      </CardFooter>
-    </Card>
+    <div className="overflow-hidden transition-transform transform bg-white shadow-lg hover:scale-105">
+      <img src={image} alt={title} className="object-cover w-full h-40" />
+      <div className="p-4">
+        <Link
+          to={href}
+          className="block mb-2 text-lg font-semibold text-gray-800 hover:text-[#01748D] hover:underline transition-colors"
+        >
+          {title}
+        </Link>
+        <p className="text-gray-600">{description}</p>
+      </div>
+    </div>
   );
 };
 
