@@ -34,7 +34,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-between max-w-screen-xl p-6 mx-auto border md:flex-row-reverse md:p-12">
+    <div className="flex flex-col items-center justify-between max-w-screen-xl p-6 mx-auto md:flex-row-reverse md:p-12">
       {/* Lottie animation on top for smaller screens */}
       <div className="flex justify-center mb-6 md:w-1/2 md:justify-end md:mt-0">
         <Lottie
