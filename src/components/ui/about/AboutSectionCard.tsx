@@ -26,20 +26,24 @@ const AboutSectionCard = ({
           {title}
         </CardTitle>
       </CardHeader>
+
       <CardContent className="flex-1 p-6">
-        <CardDescription className="text-lg text-gray-800">
+        <CardDescription className="pl-8 text-lg text-gray-800">
           {description}
         </CardDescription>
+
         <hr className="my-4 border-gray-300" />
-        <p className="text-sm font-medium text-gray-800 transition-colors cursor-pointer hover:text-yellow-500 hover:underline">
+
+        <p className="pl-8 text-sm font-medium text-gray-800 transition-colors cursor-pointer hover:text-yellow-500 hover:underline">
           Read More <span className="text-xl">→</span>
         </p>
       </CardContent>
-      <CardFooter className="p-0 mt-4">
+
+      <CardFooter className="flex justify-end p-0 mt-4">
         <img
           src={dummyImage}
           alt="Dummy"
-          className="object-cover w-full rounded-none h-60"
+          className="object-cover w-full pl-8 rounded-none h-60"
         />
       </CardFooter>
     </Card>

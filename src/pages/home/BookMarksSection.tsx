@@ -1,4 +1,5 @@
 import BookMarksSectionCard from "@/components/ui/about/BookMarksSectionCard";
+import bg from "../../assets/bookmarks/bg.webp";
 
 const bookmarksData = [
   {
@@ -63,9 +64,14 @@ const bookmarksData = [
 
 const BookMarksSection = () => {
   return (
-    <section className="py-12 bg-gradient-to-r from-[#01748D] to-[#1CA6C6]">
-      <div className="container mx-auto">
-        <h2 className="mb-8 text-4xl font-bold text-center text-white">
+    <section
+      className="relative py-20 bg-fixed bg-center bg-cover md:py-28"
+      style={{
+        backgroundImage: `url(${bg})`,
+      }}
+    >
+      <div className="max-w-screen-xl mx-auto">
+        <h2 className="mb-12 text-4xl font-bold text-center text-white">
           Bookmarks
         </h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -75,7 +81,6 @@ const BookMarksSection = () => {
               title={bookmark.title}
               description={bookmark.description}
               href={bookmark.href}
-              customStyle={index}
             />
           ))}
         </div>

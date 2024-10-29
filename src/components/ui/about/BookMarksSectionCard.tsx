@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Card,
-  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
@@ -12,48 +11,35 @@ interface BookMarksSectionCardProps {
   title: string;
   description: string;
   href: string;
-  customStyle: number; // Assuming this is an index for styles
 }
 
 const BookMarksSectionCard: React.FC<BookMarksSectionCardProps> = ({
   title,
   description,
   href,
-  customStyle,
 }) => {
-  const styles = [
-    "bg-gradient-to-r from-blue-500 to-purple-500 text-white",
-    "bg-gradient-to-r from-green-500 to-teal-500 text-white",
-    "bg-gradient-to-r from-red-500 to-orange-500 text-white",
-    "bg-gradient-to-r from-indigo-500 to-blue-500 text-white",
-    "bg-gradient-to-r from-yellow-500 to-red-500 text-white",
-    "bg-gradient-to-r from-teal-500 to-green-500 text-white",
-    "bg-gradient-to-r from-purple-500 to-pink-500 text-white",
-    "bg-gradient-to-r from-pink-500 to-red-500 text-white",
-    "bg-gradient-to-r from-gray-700 to-gray-900 text-white",
-    "bg-gradient-to-r from-blue-600 to-green-600 text-white",
-    "bg-gradient-to-r from-purple-600 to-yellow-600 text-white",
-  ];
-
   return (
-    <Card
-      className={`p-4 border-none rounded-lg shadow-lg ${
-        styles[customStyle % styles.length]
-      }`}
-    >
+    <Card className="p-6 transition-transform rounded-none border-none transform bg-white shadow-lg hover:shadow-xl hover:bg-[#f4e1d2] hover:-translate-y-1">
       <CardHeader>
-        <CardTitle>{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
+        <CardTitle>
+          <a
+            href={href}
+            className="text-2xl font-semibold text-gray-800 hover:underline"
+          >
+            {title}
+          </a>
+        </CardTitle>
+        <CardDescription className="mt-2 text-sm text-gray-700">
+          {description}
+        </CardDescription>
       </CardHeader>
-      <CardContent>
-        <p>Explore this bookmark for more details.</p>
-      </CardContent>
-      <CardFooter>
+
+      <CardFooter className="mt-6">
         <a
           href={href}
-          className="text-sm text-white underline hover:text-gray-200"
+          className="px-4 py-2 text-sm flex justify-center items-center gap-2 font-medium text-gray-700 transition-colors border border-[#01748D] hover:text-white hover:bg-[#01748D] hover:border-[#01748D]"
         >
-          Visit Link
+          Read More <span className="text-xl">→</span>
         </a>
       </CardFooter>
     </Card>

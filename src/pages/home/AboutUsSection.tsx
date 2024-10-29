@@ -13,7 +13,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 const AboutUsSection = () => {
   return (
     <section
-      className="relative py-12 pb-20 bg-center bg-cover bg-slate-700"
+      className="relative py-12 pb-40 bg-center bg-cover bg-slate-700"
       style={{
         backgroundImage: `url(${aboutbg})`,
       }}

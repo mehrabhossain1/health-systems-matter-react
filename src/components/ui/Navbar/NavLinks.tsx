@@ -246,10 +246,8 @@ export default function NavLinks() {
                   <ListItem
                     key={component.title}
                     title={component.title}
-                    href={component.href}
-                  >
-                    {component.description}
-                  </ListItem>
+                    to={component.href}
+                  ></ListItem>
                 ))}
               </ul>
             </NavigationMenuContent>
