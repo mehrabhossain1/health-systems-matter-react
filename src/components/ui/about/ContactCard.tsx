@@ -1,6 +1,5 @@
 import {
   Card,
-  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
@@ -11,24 +10,27 @@ interface ContactCardProps {
   title: string;
   description: string;
   href: string;
+  icon: React.ReactNode;
 }
 
 const ContactCard: React.FC<ContactCardProps> = ({
   title,
   description,
   href,
+  icon,
 }) => {
   return (
-    <Card className="p-4 bg-white rounded-lg shadow-md">
-      <CardHeader>
-        <CardTitle className="text-lg font-semibold">{title}</CardTitle>
-        <CardDescription className="text-sm text-gray-600">
-          {description}
-        </CardDescription>
+    <Card className="p-4 bg-gray-100 border-none">
+      <CardHeader className="flex items-center space-x-3">
+        <span className="text-gray-800">{icon}</span>
+        <CardTitle className="text-lg font-semibold text-gray-800 transition-colors duration-200 cursor-pointer hover:underline hover:text-red-500">
+          {title}
+        </CardTitle>
       </CardHeader>
-      <CardContent>
-        <p>Connect with us for more information and updates.</p>
-      </CardContent>
+      <CardDescription className="mt-2 text-sm text-gray-600">
+        {description}
+      </CardDescription>
+
       <CardFooter>
         <a
           href={href}
