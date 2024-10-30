@@ -27,7 +27,7 @@ const SubscribeModal: React.FC = () => {
   return (
     <>
       {isModalOpen && (
-        <div className="fixed bottom-0 z-50 flex items-center justify-center w-full p-6 bg-gray-600 shadow-lg bg-opacity-90">
+        <div className="fixed bottom-0 z-50 flex items-center justify-center w-full p-6 bg-gray-800 shadow-lg bg-opacity-90">
           <div className="relative w-full max-w-screen-md">
             {/* Close button */}
             <button
@@ -41,7 +41,7 @@ const SubscribeModal: React.FC = () => {
             {/* Modal Content */}
             <div className="w-full text-center">
               {/* Modal Title */}
-              <h2 className="mb-4 text-xl font-bold text-white">
+              <h2 className="mb-4 text-3xl font-bold text-red-500">
                 Subscribe to HSM Monthly Newsletter
               </h2>
 
