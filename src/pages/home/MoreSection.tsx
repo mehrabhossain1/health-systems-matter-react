@@ -46,7 +46,7 @@ const moreSubLinks = [
 
 const MoreSection: React.FC = () => {
   return (
-    <section className="py-12 bg-gray-100">
+    <section className="py-12 bg-[#f5f5dc]">
       <div className="max-w-screen-xl pb-10 mx-auto text-center">
         {/* Section title with horizontal lines */}
         <div className="flex items-center justify-center gap-6 py-10">
