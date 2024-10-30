@@ -25,7 +25,7 @@ const BookMarksSectionCard: React.FC<BookMarksSectionCardProps> = ({
     <Card className="p-6 transition-transform transform border-none rounded-none shadow-lg bg-gray-50 hover:shadow-xl hover:-translate-y-1">
       <CardHeader className="flex flex-col items-center">
         {/* Icon at the top */}
-        <Icon className="text-4xl text-[#01748D] mb-4" />
+        <Icon className="text-7xl text-[#01748D] mb-4" />
 
         <CardTitle>
           <a
