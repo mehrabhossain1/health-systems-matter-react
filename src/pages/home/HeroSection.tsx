@@ -1,18 +1,6 @@
-import Lottie from "lottie-react";
-import animationData from "../../lotties/banner.json";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
-  // Lottie settings
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
   // Animation variants for stagger effect
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -36,19 +24,19 @@ const HeroSection = () => {
   return (
     <div className="flex flex-col items-center justify-between max-w-screen-xl p-6 mx-auto md:flex-row-reverse md:p-12">
       {/* Lottie animation on top for smaller screens */}
-      <div className="flex justify-center mb-6 md:w-1/2 md:justify-end md:mt-0">
-        <Lottie
+      <div className="flex justify-centermb-6 md:w-1/2 md:justify-end md:mt-0">
+        {/* <Lottie
           animationData={defaultOptions.animationData}
           loop={defaultOptions.loop}
           autoplay={defaultOptions.autoplay}
           style={{ height: "350px", width: "350px" }}
           className="md:mr-4"
-        />
+        /> */}
       </div>
 
       {/* Hero text with framer-motion animation */}
       <motion.div
-        className="text-[#243642] text-center md:text-left md:w-1/2"
+        className="text-[#243642] pb-20 text-center md:text-left md:w-1/2"
         initial="hidden"
         animate="visible"
         variants={containerVariants}

@@ -1,8 +1,13 @@
 import { motion } from "framer-motion";
 import heroImage from "../../assets/youtube/bg.jpeg"; // Replace with actual image path
 import contentImage from "../../assets/ownerImg.png"; // Replace with actual image path
+import { useEffect } from "react";
 
 const AboutHSM = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="p-8 text-gray-800 bg-gray-100 md:p-12 lg:p-20">
       {/* Hero Section */}

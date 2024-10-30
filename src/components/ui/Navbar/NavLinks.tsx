@@ -13,41 +13,47 @@ import {
 import { Link } from "react-router-dom";
 import ownerImg from "../../../assets/ownerImg.png";
 
-const components: { title: string; href: string; description: string }[] = [
+// Main Resources items
+const resourcesSubLinks = [
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    title: "Overview",
+    href: "/resources/overview",
   },
   {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
+    title: "Essential reading list",
+    href: "/resources/reading-list",
   },
   {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    title: "Reports",
+    href: "/resources/reports",
+    nestedLinks: [
+      { title: "1. Topic Wise Reports", href: "/resources/reports/topic-wise" },
+      { title: "2. Major Reports", href: "/resources/reports/major" },
+    ],
   },
   {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    title: "Articles",
+    href: "/resources/articles",
   },
   {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+    title: "Policy primer and Presentations",
+    href: "/resources/policy-primer",
   },
   {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+    title: "Books",
+    href: "/resources/books",
+  },
+  {
+    title: "Interviews and insights",
+    href: "/resources/interviews",
+  },
+  {
+    title: "Commentaries and blogs",
+    href: "/resources/commentaries",
+  },
+  {
+    title: "Tools and Resources",
+    href: "/resources/tools",
   },
 ];
 
@@ -225,20 +231,36 @@ export default function NavLinks() {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
+          {/* Resources Section */}
           <NavigationMenuItem>
             <NavigationMenuTrigger>RESOURCES</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1280px] ">
-                {components.map((component) => (
-                  <ListItem
-                    key={component.title}
-                    title={component.title}
-                    to={component.href}
-                  ></ListItem>
+              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1280px]">
+                {resourcesSubLinks.map((link) => (
+                  <li key={link.title} className="relative group">
+                    {/* Main Link */}
+                    <ListItem title={link.title} to={link.href} />
+
+                    {/* Nested Links */}
+                    {link.nestedLinks && link.nestedLinks.length > 0 && (
+                      <ul className="absolute top-0 z-10 hidden w-full mt-1 bg-white group-hover:block left-full">
+                        {link.nestedLinks.map((nestedLink) => (
+                          <li key={nestedLink.title}>
+                            <ListItem
+                              title={nestedLink.title}
+                              to={nestedLink.href}
+                              className="p-3 m-1 transition-all duration-300 ease-in-out transform rounded-lg shadow-lg hover:text-[#01748D] hover:shadow-xl hover:scale-105" // Add styles for nested items
+                            />
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
                 ))}
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
+
           <NavigationMenuItem>
             <NavigationMenuTrigger>BOOKMARKS</NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -322,11 +344,11 @@ export default function NavLinks() {
                 <li className="row-span-3">
                   <NavigationMenuLink asChild>
                     <a
-                      className="flex flex-col items-center justify-center w-full h-full p-6 no-underline rounded-md rounded-full outline-none select-none bg-gradient-to-b from-muted/50 to-muted focus:shadow-md"
+                      className="flex flex-col items-center justify-center w-full h-full p-6 no-underline rounded-md outline-none select-none bg-gradient-to-b from-muted/50 to-muted focus:shadow-md"
                       href="/"
                     >
                       <div className="w-24 h-24 mt-4 mb-2">
-                        <img src={ownerImg} className="" alt="" />
+                        <img src={ownerImg} className="rounded-full " alt="" />
                       </div>
                     </a>
                   </NavigationMenuLink>
@@ -393,7 +415,7 @@ const ListItem = React.forwardRef<
         <Link
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-transform transform hover:scale-105 hover:bg-[#01748D] hover:underline hover:text-white hover:shadow-lg focus:text-red-500",
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-transform transform hover:scale-105 hover:text-[#01748D] hover:underline hover:shadow-lg focus:text-red-500",
             className
           )}
           {...props}

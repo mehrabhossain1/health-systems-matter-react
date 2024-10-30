@@ -1,51 +1,49 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 
 interface ResourcesSectionCardProps {
-  customStyle: number; // Index for style selection
+  title: string;
+  description: string;
+  imageUrl: string;
 }
 
 const ResourcesSectionCard: React.FC<ResourcesSectionCardProps> = ({
-  customStyle,
+  title,
+  description,
+  imageUrl,
 }) => {
-  // Custom styles for each card, indexed for variety
-  const styles = [
-    "bg-gradient-to-r from-blue-500 to-purple-500 text-white",
-    "bg-gradient-to-r from-green-500 to-teal-500 text-white",
-    "bg-gradient-to-r from-red-500 to-orange-500 text-white",
-    "bg-gradient-to-r from-indigo-500 to-blue-500 text-white",
-    "bg-gradient-to-r from-yellow-500 to-red-500 text-white",
-    "bg-gradient-to-r from-teal-500 to-green-500 text-white",
-    "bg-gradient-to-r from-purple-500 to-pink-500 text-white",
-    "bg-gradient-to-r from-pink-500 to-red-500 text-white",
-    "bg-gradient-to-r from-gray-700 to-gray-900 text-white",
-  ];
-
   return (
-    <Card className={`p-4 rounded-lg shadow-lg ${styles[customStyle]}`}>
-      <CardHeader>
-        <CardTitle>Resource Title {customStyle + 1}</CardTitle>
-        <CardDescription>
-          Brief description for resource {customStyle + 1}
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
-        <p>
-          Content for resource {customStyle + 1} goes here. It can be brief or
-          detailed as needed.
-        </p>
-      </CardContent>
-      <CardFooter>
-        <p className="text-sm">More details or link</p>
-      </CardFooter>
-    </Card>
+    <motion.div
+      whileHover={{ scale: 1.05 }} // Scale effect on hover
+      whileTap={{ scale: 0.95 }} // Scale effect on click
+      transition={{ type: "spring", stiffness: 300 }}
+    >
+      <Card className="overflow-hidden bg-white rounded-lg shadow-lg">
+        <img src={imageUrl} alt={title} className="object-cover w-full h-40" />
+        <CardHeader>
+          <CardTitle className="relative group">
+            <span className="cursor-pointer transition-colors duration-200 group-hover:underline group-hover:text-[#01748D]">
+              {title}
+            </span>
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p>{description}</p>
+        </CardContent>
+        <CardFooter className="flex justify-end">
+          <button className="px-4 py-2 text-sm font-semibold text-white bg-[#01748D] rounded hover:bg-[#015F6D] transition">
+            More Details
+          </button>
+        </CardFooter>
+      </Card>
+    </motion.div>
   );
 };
 
