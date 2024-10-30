@@ -1,5 +1,5 @@
 import React from "react";
-import ContactCard from "@/components/ui/about/ContactCard"; // Make sure this is the correct import for your card component
+import ContactCard from "@/components/ui/about/ContactCard"; // Ensure this is the correct path for your ContactCard component
 
 const moreSubLinks: {
   title: string;
@@ -42,12 +42,19 @@ const MoreSection: React.FC = () => {
   return (
     <section className="py-12 bg-gray-100">
       <div className="container mx-auto text-center">
-        <h2
-          className="text-6xl font-semibold text-gray-800 pe-10"
-          style={{ fontFamily: "DynaPuff" }}
-        >
-          More
-        </h2>
+        {/* Section title with horizontal lines */}
+        <div className="flex items-center justify-center gap-6 py-10">
+          <div className="flex-1 h-px bg-gray-400"></div>
+          <h2
+            className="text-6xl font-semibold text-gray-800"
+            style={{ fontFamily: "DynaPuff" }}
+          >
+            More
+          </h2>
+          <div className="flex-1 h-px bg-gray-400"></div>
+        </div>
+
+        {/* Cards Section */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {moreSubLinks.map((link, index) => (
             <ContactCard

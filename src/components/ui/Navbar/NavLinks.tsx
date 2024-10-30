@@ -11,6 +11,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { Link } from "react-router-dom";
+import ownerImg from "../../../assets/ownerImg.png";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -321,17 +322,12 @@ export default function NavLinks() {
                 <li className="row-span-3">
                   <NavigationMenuLink asChild>
                     <a
-                      className="flex flex-col justify-end w-full h-full p-6 no-underline rounded-md outline-none select-none bg-gradient-to-b from-muted/50 to-muted focus:shadow-md"
+                      className="flex flex-col items-center justify-center w-full h-full p-6 no-underline rounded-md rounded-full outline-none select-none bg-gradient-to-b from-muted/50 to-muted focus:shadow-md"
                       href="/"
                     >
-                      <div className="mt-4 mb-2 text-lg font-medium">
-                        Sizear's Image
+                      <div className="w-24 h-24 mt-4 mb-2">
+                        <img src={ownerImg} className="" alt="" />
                       </div>
-                      <p className="text-sm leading-tight text-muted-foreground">
-                        Beautifully designed components that you can copy and
-                        paste into your apps. Accessible. Customizable. Open
-                        Source.
-                      </p>
                     </a>
                   </NavigationMenuLink>
                 </li>
