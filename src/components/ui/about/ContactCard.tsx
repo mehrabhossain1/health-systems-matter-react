@@ -1,47 +1,38 @@
-import {
-  Card,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+// ContactCard.tsx
 import React from "react";
+import { motion } from "framer-motion";
 
 interface ContactCardProps {
   title: string;
   description: string;
   href: string;
-  icon?: React.ReactNode;
+  image: string;
 }
 
 const ContactCard: React.FC<ContactCardProps> = ({
   title,
   description,
   href,
-  icon,
+  image,
 }) => {
   return (
-    <Card className="p-6 transition-transform duration-300 transform bg-gray-100 border-none hover:scale-105 hover:shadow-xl">
-      <CardHeader className="flex flex-col items-center space-y-3">
-        <div className="text-gray-600 transition-colors duration-300 hover:text-red-500">
-          {icon}
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      className="overflow-hidden transition-all transform bg-white rounded-lg shadow-lg hover:shadow-xl"
+    >
+      <a href={href} className="block h-full">
+        {/* Image Section */}
+        <img src={image} alt={title} className="object-cover w-full h-40" />
+
+        {/* Text Section */}
+        <div className="p-6">
+          <h3 className="text-xl font-semibold text-gray-800 transition-all duration-300 hover:underline hover:text-red-500">
+            {title}
+          </h3>
+          <p className="mt-2 text-gray-600">{description}</p>
         </div>
-        <CardTitle className="text-lg font-semibold text-gray-800 transition-colors duration-200 cursor-pointer hover:underline hover:text-red-500">
-          {title}
-        </CardTitle>
-      </CardHeader>
-      <CardDescription className="mt-2 text-sm text-center text-gray-600">
-        {description}
-      </CardDescription>
-      <CardFooter className="text-center">
-        <a
-          href={href}
-          className="text-sm text-blue-500 underline hover:text-blue-700"
-        >
-          Learn More
-        </a>
-      </CardFooter>
-    </Card>
+      </a>
+    </motion.div>
   );
 };
 

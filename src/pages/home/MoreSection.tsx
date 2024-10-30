@@ -1,47 +1,53 @@
 import React from "react";
-import ContactCard from "@/components/ui/about/ContactCard"; // Ensure this is the correct path for your ContactCard component
+import ContactCard from "@/components/ui/about/ContactCard";
 
-const moreSubLinks: {
-  title: string;
-  href: string;
-  description: string;
-}[] = [
+const moreSubLinks = [
   {
     title: "Family",
     href: "/docs/primitives/alert-dialog",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
+    image:
+      "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg", // Replace with your actual image path
   },
   {
     title: "Me in Numbers",
     href: "/docs/primitives/hover-card",
     description:
       "For sighted users to preview content available behind a link.",
+    image:
+      "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg", // Replace with your actual image path
   },
   {
     title: "My Book",
     href: "/docs/primitives/progress",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    image:
+      "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg", // Replace with your actual image path
   },
   {
-    title: "Featured in media",
+    title: "Featured in Media",
     href: "/docs/primitives/progress",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    image:
+      "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg", // Replace with your actual image path
   },
   {
-    title: "Travel history",
+    title: "Travel History",
     href: "/docs/primitives/progress",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    image:
+      "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg", // Replace with your actual image path
   },
 ];
 
 const MoreSection: React.FC = () => {
   return (
     <section className="py-12 bg-gray-100">
-      <div className="container mx-auto text-center">
+      <div className="max-w-screen-xl pb-10 mx-auto text-center">
         {/* Section title with horizontal lines */}
         <div className="flex items-center justify-center gap-6 py-10">
           <div className="flex-1 h-px bg-gray-400"></div>
@@ -62,6 +68,7 @@ const MoreSection: React.FC = () => {
               title={link.title}
               description={link.description}
               href={link.href}
+              image={link.image}
             />
           ))}
         </div>
