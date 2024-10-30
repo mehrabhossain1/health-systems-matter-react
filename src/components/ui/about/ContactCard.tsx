@@ -5,12 +5,13 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import React from "react";
 
 interface ContactCardProps {
   title: string;
   description: string;
   href: string;
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
 }
 
 const ContactCard: React.FC<ContactCardProps> = ({
@@ -20,18 +21,19 @@ const ContactCard: React.FC<ContactCardProps> = ({
   icon,
 }) => {
   return (
-    <Card className="p-4 bg-gray-100 border-none">
-      <CardHeader className="flex items-center space-x-3">
-        <span className="text-gray-800">{icon}</span>
+    <Card className="p-6 transition-transform duration-300 transform bg-gray-100 border-none hover:scale-105 hover:shadow-xl">
+      <CardHeader className="flex flex-col items-center space-y-3">
+        <div className="text-gray-600 transition-colors duration-300 hover:text-red-500">
+          {icon}
+        </div>
         <CardTitle className="text-lg font-semibold text-gray-800 transition-colors duration-200 cursor-pointer hover:underline hover:text-red-500">
           {title}
         </CardTitle>
       </CardHeader>
-      <CardDescription className="mt-2 text-sm text-gray-600">
+      <CardDescription className="mt-2 text-sm text-center text-gray-600">
         {description}
       </CardDescription>
-
-      <CardFooter>
+      <CardFooter className="text-center">
         <a
           href={href}
           className="text-sm text-blue-500 underline hover:text-blue-700"

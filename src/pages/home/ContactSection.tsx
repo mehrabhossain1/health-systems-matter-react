@@ -39,7 +39,7 @@ const ContactSection: React.FC = () => {
             className="text-6xl font-semibold text-gray-800 pe-10"
             style={{ fontFamily: "DynaPuff" }}
           >
-            Newsletter
+            Contact
           </h2>
           <div className="flex-1 ml-4 border-t border-black"></div>
         </div>
