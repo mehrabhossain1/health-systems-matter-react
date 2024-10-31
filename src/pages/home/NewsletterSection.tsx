@@ -32,7 +32,7 @@ const NewsletterSection = () => {
       <div className="absolute inset-x-0 top-0 h-32 bg-[#1975BA] rounded-b-full transform -translate-y-1/2"></div>
       <div className="absolute inset-x-0 bottom-0 h-32 bg-[#1975BA] rounded-t-full transform translate-y-1/2"></div>
 
-      <div className="max-w-screen-xl py-12 pb-20 mx-auto">
+      <div className="max-w-screen-xl py-12 pb-24 mx-auto">
         <div className="flex flex-row-reverse items-center gap-10 py-10 pt-20">
           <h2
             className="text-6xl font-semibold text-[#1975BA] pe-10"

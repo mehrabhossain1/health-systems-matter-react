@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTimes } from "react-icons/fa";
 
 const SubscribeModal: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -27,21 +27,21 @@ const SubscribeModal: React.FC = () => {
   return (
     <>
       {isModalOpen && (
-        <div className="fixed bottom-0 z-50 flex items-center justify-center w-full p-6 bg-gray-800 shadow-lg bg-opacity-90">
-          <div className="relative w-full max-w-screen-md">
+        <div className="fixed bottom-0 right-0 z-50 flex items-center justify-center w-1/3 p-6 bg-gray-800 rounded-md shadow-lg bg-opacity-90">
+          <div className="relative w-full max-w-xs">
             {/* Close button */}
             <button
               onClick={closeModal}
-              className="absolute text-xl text-gray-100 top-2 right-2 hover:text-white"
+              className="absolute top-0 right-0 p-2 text-white bg-red-500 rounded-full hover:bg-red-600 focus:outline-none"
               aria-label="Close"
             >
-              &times;
+              <FaTimes size={24} />
             </button>
 
             {/* Modal Content */}
-            <div className="w-full text-center">
+            <div className="w-full ">
               {/* Modal Title */}
-              <h2 className="mb-4 text-3xl font-bold text-red-500">
+              <h2 className="mb-4 text-3xl font-bold text-slate-100">
                 Subscribe to HSM Monthly Newsletter
               </h2>
 
@@ -71,7 +71,7 @@ const SubscribeModal: React.FC = () => {
                   href="https://facebook.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white transition transform hover:scale-110"
+                  className="text-white transition transform hover:scale-110 hover:text-red-500"
                 >
                   <FaFacebookF size={24} />
                 </a>
@@ -79,7 +79,7 @@ const SubscribeModal: React.FC = () => {
                   href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white transition transform hover:scale-110"
+                  className="text-white transition transform hover:scale-110 hover:text-red-500"
                 >
                   <FaInstagram size={24} />
                 </a>
