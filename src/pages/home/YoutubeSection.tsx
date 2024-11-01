@@ -10,7 +10,7 @@ const YoutubeSection = () => {
 
   return (
     <section className="py-12 bg-[#0A2240]">
-      <div className="flex flex-col items-center max-w-screen-xl py-20 mx-auto lg:flex-row">
+      <div className="flex flex-col items-center max-w-screen-xl py-20 mx-auto overflow-x-hidden lg:flex-row">
         {/* Text Section */}
         <div className="mb-8 lg:w-1/2 lg:mb-0 lg:pr-8" data-aos="fade-right">
           <div className="flex flex-row items-center gap-10 py-10 pb-20">
