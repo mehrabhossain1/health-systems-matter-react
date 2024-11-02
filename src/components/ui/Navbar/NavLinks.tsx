@@ -415,12 +415,12 @@ const ListItem = React.forwardRef<
         <Link
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-transform transform hover:scale-105 hover:text-[#01748D] hover:underline hover:shadow-lg focus:text-red-500",
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-transform transform hover:underline decoration-[#55D5FE] underline-offset-4 focus:text-red-500",
             className
           )}
           {...props}
         >
-          <div className="text-lg font-medium leading-wide">{title}</div>
+          <div className="text-sm font-normal leading-wide">{title}</div>
         </Link>
       </NavigationMenuLink>
     </li>
