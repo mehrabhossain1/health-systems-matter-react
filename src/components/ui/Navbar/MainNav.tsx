@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const MainNav = () => {
   return (
-    <nav className="h-20 ">
+    <nav className="h-20 border-t">
       <div className="grid items-center h-full max-w-screen-xl grid-cols-3 px-4 mx-auto">
         {/* Left Text */}
         <div className="flex justify-start">

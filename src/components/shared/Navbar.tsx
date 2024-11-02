@@ -1,4 +1,4 @@
-import BottomNav from "../ui/Navbar/BottomNav";
+// import BottomNav from "../ui/Navbar/BottomNav";
 import FirstNav from "../ui/Navbar/FirstNav";
 import MainNav from "../ui/Navbar/MainNav";
 import NavLinks from "../ui/Navbar/NavLinks";
@@ -9,7 +9,7 @@ const Navbar = () => {
       <FirstNav />
       <MainNav />
       <NavLinks />
-      <BottomNav />
+      {/* <BottomNav /> */}
     </>
   );
 };

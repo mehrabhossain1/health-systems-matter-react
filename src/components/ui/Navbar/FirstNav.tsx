@@ -5,7 +5,7 @@ import BlinkingButton from "../blinkingButton/BlinkingButton";
 
 const FirstNav = () => {
   return (
-    <div className="p-2 text-sm header-top bg-[#01748D]">
+    <div className="p-2 text-sm header-top h-12 bg-[#134074]">
       <div className="flex justify-between h-full">
         <div className="flex items-center gap-2">
           <Link to="/">

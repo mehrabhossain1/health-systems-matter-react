@@ -27,7 +27,7 @@ const AboutUsSection = () => {
         <div className="flex items-center gap-10 py-10 pb-20 mb-5">
           <h2
             className="pl-10 text-6xl font-semibold text-white"
-            style={{ fontFamily: "DynaPuff" }}
+            style={{ fontFamily: "Clash Display" }}
           >
             About
           </h2>
