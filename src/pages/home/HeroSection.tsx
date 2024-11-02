@@ -16,10 +16,6 @@ const HeroSection = () => {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
   };
-  const itemVariants2 = {
-    hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0 },
-  };
 
   return (
     <div className="flex flex-col items-center justify-between max-w-screen-xl p-6 mx-auto md:flex-row-reverse md:p-12">
@@ -54,17 +50,17 @@ const HeroSection = () => {
           variants={itemVariants}
           className="mb-2 font-serif text-2xl font-light leading-tight md:text-5xl md:mb-10 md:mt-5"
         >
-          Don't Settle.
+          Don't Settle. Explore to be Enriched with{" "}
+          <span className="text-[#134074] font-semibold">HSM</span>
         </motion.h2>
 
         {/* Third line */}
-        <motion.h2
+        {/* <motion.h2
           variants={itemVariants2}
           className="font-serif text-2xl font-medium leading-tight md:text-5xl md:text-center"
         >
-          Explore to be Enriched with{" "}
-          <span className="text-[#01748D] font-semibold">HSM</span>
-        </motion.h2>
+          
+        </motion.h2> */}
       </motion.div>
     </div>
   );

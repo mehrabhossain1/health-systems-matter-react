@@ -215,7 +215,7 @@ const moreSubLinks: {
 export default function NavLinks() {
   return (
     <div className="bg-[#134074] sticky top-0 z-50">
-      <NavigationMenu className="h-20 max-w-screen-xl mx-auto border-t border-b">
+      <NavigationMenu className="h-20 max-w-screen-xl mx-auto border-b">
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger>ABOUT</NavigationMenuTrigger>
@@ -420,7 +420,7 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="text-sm font-normal leading-wide">{title}</div>
+          <div className="text-base font-light">{title}</div>
         </Link>
       </NavigationMenuLink>
     </li>
