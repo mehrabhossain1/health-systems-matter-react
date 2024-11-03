@@ -7,7 +7,7 @@ import logo from "../../../assets/logo2.png";
 
 const FirstNav = () => {
   return (
-    <div className="p-2 text-sm header-top h-16 bg-[#134074]">
+    <div className="p-2 text-sm header-top h-16 bg-[#383F6D]">
       <div className="flex items-center justify-between h-full">
         {/* Grid 1 */}
         <div className="flex items-center gap-2">

@@ -214,7 +214,7 @@ const moreSubLinks: {
 
 export default function NavLinks() {
   return (
-    <div className="bg-[#134074] sticky top-0 z-50">
+    <div className="bg-[#383F6D] sticky top-0 z-50">
       <NavigationMenu className="h-16 max-w-screen-xl mx-auto">
         <NavigationMenuList>
           <NavigationMenuItem>
