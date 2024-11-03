@@ -20,13 +20,13 @@ const HeroSection = () => {
 
   return (
     <div className="relative h-screen ">
-      <div className="flex flex-col items-center justify-between max-w-screen-xl p-6 mx-auto md:flex-row-reverse md:p-12">
+      <div className="flex flex-col items-center justify-between max-w-screen-xl mx-auto md:flex-row-reverse md:p-12">
         <div className="flex justify-center mb-6 md:w-1/2 md:justify-end md:mt-0">
           {/* Lottie animation placeholder */}
         </div>
 
         <motion.div
-          className="text-[#243642] pb-20 text-center md:text-left md:w-1/2"
+          className="text-[#243642] text-center md:text-left md:w-1/2"
           initial="hidden"
           animate="visible"
           variants={containerVariants}
@@ -42,7 +42,7 @@ const HeroSection = () => {
             className="mb-2 font-serif text-2xl font-light leading-tight md:text-5xl md:mb-10 md:mt-5"
           >
             Don't Settle. Explore to be Enriched with{" "}
-            <span className="text-[#383F6D] font-semibold">HSM</span>
+            <span className="text-[#EE8922] font-semibold">HSM</span>
           </motion.h2>
         </motion.div>
 
