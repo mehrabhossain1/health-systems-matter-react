@@ -45,14 +45,14 @@ const FirstNav = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaFacebook className="text-2xl text-white" />
+                <FaFacebook className="text-2xl text-white hover:text-[#55D5FE]" />
               </Link>
               <Link
                 to="https://www.linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedin className="text-2xl text-white" />
+                <FaLinkedin className="text-2xl text-white hover:text-[#55D5FE]" />
               </Link>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import ResourcesSectionCard from "@/components/ui/about/ResourcesSectionCard";
-import "./css/ResourcesBG.css";
+// import "./css/ResourcesBG.css";
 
 const resourcesSubLinks = [
   {
@@ -70,15 +70,10 @@ const ResourcesSection = () => {
       <div className="max-w-screen-xl pb-10 mx-auto">
         <div className="flex items-center justify-center gap-6 py-10 pb-20">
           <div className="flex-1 h-px bg-gray-100"></div>
-          <h2
-            className="text-6xl font-semibold text-gray-100"
-            style={{ fontFamily: "DynaPuff" }}
-          >
-            Resources
-          </h2>
+          <h2 className="font-serif text-6xl text-gray-100">Resources</h2>
           <div className="flex-1 h-px bg-gray-100"></div>
         </div>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {resourcesSubLinks.map((link, index) => (
             <ResourcesSectionCard
               key={index}

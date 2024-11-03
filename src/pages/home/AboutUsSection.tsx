@@ -25,10 +25,7 @@ const AboutUsSection = () => {
       <div className="relative max-w-screen-xl mx-auto">
         {/* Title with horizontal line */}
         <div className="flex items-center gap-10 py-10 pb-20 mb-5">
-          <h2
-            className="pl-10 text-6xl font-semibold text-white"
-            style={{ fontFamily: "Clash Display" }}
-          >
+          <h2 className="pl-10 font-serif text-6xl font-semibold text-[#55D5FE]">
             About
           </h2>
           <div className="flex-1 ml-4 border-t border-white"></div>
@@ -36,7 +33,7 @@ const AboutUsSection = () => {
 
         <Swiper
           slidesPerView={1}
-          spaceBetween={0}
+          spaceBetween={10}
           loop={true}
           pagination={{
             clickable: true,
@@ -66,28 +63,28 @@ const AboutUsSection = () => {
             <AboutSectionCard
               title="About HSM"
               description="52 percent of maternal deaths occur in the postpartum period..."
-              bgColor="bg-[#f5f5dc]"
+              bgColor="bg-[#0A2240]"
             />
           </SwiperSlide>
           <SwiperSlide>
             <AboutSectionCard
               title="Vision and Mission"
-              description="28 states saw drug overdose deaths increase by more than 30 percent..."
-              bgColor="bg-[#d1e0e0]"
+              description="28 states saw drug overdose deaths increase than 30.."
+              bgColor="bg-[#383F6D]"
             />
           </SwiperSlide>
           <SwiperSlide>
             <AboutSectionCard
               title="Activities and Approach"
               description="At least 3.8 million people have lost their Medicaid coverage..."
-              bgColor="bg-[#f4e1d2]"
+              bgColor="bg-[#0A2240]"
             />
           </SwiperSlide>
           <SwiperSlide>
             <AboutSectionCard
               title="Testimonials"
               description="At least 3.8 million people have lost their Medicaid coverage..."
-              bgColor="bg-[#e2f4e1]"
+              bgColor="bg-[#383F6D]"
             />
           </SwiperSlide>
         </Swiper>

@@ -41,7 +41,7 @@ const HeroSection = () => {
           {/* First line */}
           <motion.h2
             variants={itemVariants}
-            className="mb-2 font-sans text-3xl font-bold underline-offset-[14px] leading-tight md:text-5xl text-[#F18A00] underline"
+            className="mb-2 font-sans text-3xl font-bold underline-offset-[14px] leading-tight md:text-5xl text-[#55D5FE] underline"
           >
             Knowledge for Solutions!
           </motion.h2>

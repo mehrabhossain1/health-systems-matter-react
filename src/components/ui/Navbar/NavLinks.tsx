@@ -307,7 +307,7 @@ export default function NavLinks() {
           {/* About Sizear */}
           <div>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="p-2 text-xl font-semibold text-[#F18A00] transition duration-300 ease-in-out transform rounded-md shadow-lg hover:scale-105 pulse-animation">
+              <NavigationMenuTrigger className="p-2 text-xl font-semibold text-[#55D5FE] transition duration-300 ease-in-out transform rounded-md shadow-lg hover:scale-105 pulse-animation">
                 About Sizear
               </NavigationMenuTrigger>
 
