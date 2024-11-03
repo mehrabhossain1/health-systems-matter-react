@@ -8,7 +8,6 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { Link } from "react-router-dom";
 import ownerImg from "../../../assets/ownerImg.png";
@@ -243,13 +242,13 @@ export default function NavLinks() {
 
                     {/* Nested Links */}
                     {link.nestedLinks && link.nestedLinks.length > 0 && (
-                      <ul className="absolute top-0 z-10 hidden w-full mt-1 bg-white group-hover:block left-full">
+                      <ul className="absolute top-0 z-10 hidden w-full bg-[#383F6D] mt-1 border rounded-sm left-20 group-hover:block">
                         {link.nestedLinks.map((nestedLink) => (
                           <li key={nestedLink.title}>
                             <ListItem
                               title={nestedLink.title}
                               to={nestedLink.href}
-                              className="p-3 m-1 transition-all duration-300 ease-in-out transform rounded-lg shadow-lg hover:text-[#01748D] hover:shadow-xl hover:scale-105" // Add styles for nested items
+                              className="p-3 m-1 transition-all duration-300 ease-in-out transform bg-[#383F6D]" // Add styles for nested items
                             />
                           </li>
                         ))}
@@ -289,13 +288,13 @@ export default function NavLinks() {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
-          <NavigationMenuItem>
+          {/* <NavigationMenuItem>
             <Link to="/docs">
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 BLOG
               </NavigationMenuLink>
             </Link>
-          </NavigationMenuItem>
+          </NavigationMenuItem> */}
           <NavigationMenuItem>
             <NavigationMenuTrigger>NEWSLETTER</NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -310,13 +309,13 @@ export default function NavLinks() {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
-          <NavigationMenuItem>
+          {/* <NavigationMenuItem>
             <Link to="/docs">
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 YOUTUBE
               </NavigationMenuLink>
             </Link>
-          </NavigationMenuItem>
+          </NavigationMenuItem> */}
 
           <NavigationMenuItem>
             <NavigationMenuTrigger>CONTACT</NavigationMenuTrigger>
@@ -415,7 +414,7 @@ const ListItem = React.forwardRef<
         <Link
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-transform transform hover:underline decoration-[#55D5FE] underline-offset-4",
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-transform transform hover:underline decoration-[#55D5FE] underline-offset-8",
             className
           )}
           {...props}
