@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
           <motion.button
             onClick={scrollToTop}
             whileHover={{ scale: 1.1 }}
-            className="flex items-center space-x-2 text-lg font-semibold text-white hover:text-[#F18A00] transition duration-300"
+            className="flex items-center space-x-2 text-lg font-semibold text-white hover:text-[#FFF4B7] transition duration-300"
             aria-label="Back to Top"
           >
             <span className="tracking-[3px]">BACK TO TOP</span>
@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
 
           {/* Last Grid */}
           <div className="flex flex-col items-center justify-center">
-            <blockquote className="mb-6 italic text-[#F18A00] text-center">
+            <blockquote className="mb-6 italic text-[#FFF4B7] text-center">
               “Believe work can be better. Know deeper. Do Better.”
             </blockquote>
             <p className="font-semibold text-center">

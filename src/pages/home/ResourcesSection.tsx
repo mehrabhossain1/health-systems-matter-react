@@ -1,5 +1,4 @@
 import ResourcesSectionCard from "@/components/ui/about/ResourcesSectionCard";
-// import "./css/ResourcesBG.css";
 
 const resourcesSubLinks = [
   {
@@ -59,14 +58,7 @@ const ResourcesSection = () => {
   ];
 
   return (
-    <section className="relative py-12 bg-gray-200">
-      {/* Wave Background Divs */}
-      <div className="wave-container">
-        <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div>
-      </div>
-
+    <section className="py-12 bg-gray-300">
       <div className="max-w-screen-xl pb-10 mx-auto">
         <div className="flex items-center justify-center gap-6 py-10 pb-20">
           <div className="flex-1 h-px bg-gray-800"></div>

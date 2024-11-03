@@ -18,7 +18,7 @@ const ContactCard: React.FC<ContactCardProps> = ({
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
-      className="overflow-hidden transition-all transform bg-white rounded-lg shadow-lg hover:shadow-xl"
+      className="overflow-hidden transition-all transform bg-gray-100 rounded-lg shadow-lg hover:shadow-xl"
     >
       <a href={href} className="block h-full">
         {/* Image Section */}

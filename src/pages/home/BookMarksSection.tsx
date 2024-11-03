@@ -88,14 +88,7 @@ const itemVariants = {
 
 const BookMarksSection = () => {
   return (
-    <section
-      className="relative py-20 bg-fixed bg-center bg-cover md:py-28 bg-[#003161]"
-      style={
-        {
-          // backgroundImage: `url(${bg})`,
-        }
-      }
-    >
+    <section className="relative py-20 bg-fixed bg-center bg-cover md:py-28 bg-[#003161]">
       <div className="max-w-screen-xl mx-auto">
         <div className="flex items-center gap-10 py-10 pb-20 mb-5 ">
           <h2
