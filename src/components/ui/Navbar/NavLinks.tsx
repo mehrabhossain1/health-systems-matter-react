@@ -182,8 +182,8 @@ const contactSubLinks: {
 
 export default function NavLinks() {
   return (
-    <div className="bg-[#383F6D] sticky top-0 z-50">
-      <NavigationMenu className="h-16 max-w-screen-xl gap-5 mx-auto">
+    <div className="bg-[#01748D] sticky top-0 z-50">
+      <NavigationMenu className="h-16 max-w-screen-xl gap-5 mx-auto border-b">
         <NavigationMenuList className="flex md:gap-20">
           <div className="flex">
             <NavigationMenuItem>
@@ -307,7 +307,7 @@ export default function NavLinks() {
           {/* About Sizear */}
           <div>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="p-2 text-xl font-semibold text-[#FFF4B7] transition duration-300 ease-in-out transform rounded-md shadow-lg hover:scale-105 pulse-animation">
+              <NavigationMenuTrigger className="p-2 text-xl font-semibold hover:text-[#F18A00] transition duration-300 ease-in-out transform hover:scale-105 pulse-animation">
                 About Sizear
               </NavigationMenuTrigger>
 
@@ -400,7 +400,7 @@ const ListItem = React.forwardRef<
         <Link
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-transform transform hover:underline decoration-[#55D5FE] underline-offset-8",
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-transform transform hover:underline underline-offset-8",
             className
           )}
           {...props}

@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import ownerImg from "../../../assets/ownerImg.png";
 import { Button } from "../button";
 import BlinkingButton from "../blinkingButton/BlinkingButton";
-import { FaFacebook, FaLinkedin } from "react-icons/fa"; // Importing icons
-import logo from "../../../assets/logo2.png";
+import logo from "../../../assets/logo3.png";
+import "./css/blink.css";
 
 const FirstNav = () => {
   return (
-    <div className="p-2 text-sm header-top h-16 bg-[#0A2240]">
+    <div className="p-2 text-sm header-top h-full bg-[#0A2240]">
       <div className="flex items-center justify-between h-full">
         {/* Grid 1 */}
         <div className="flex items-center gap-2">
@@ -20,15 +20,19 @@ const FirstNav = () => {
           </Link>
           <Link
             to="/"
-            className="p-2 text-xl decoration-[#55D5FE] font-normal text-white transition duration-300 ease-in-out transform rounded-md shadow-lg  hover:scale-110 pulse-animation hover:underline underline-offset-8"
+            className="p-2 text-xl decoration-[#F18A00] font-normal text-white hover:text-[#F18A00] transition duration-300 ease-in-out transform rounded-md shadow-lg  hover:scale-110 pulse-animation hover:underline underline-offset-8"
           >
             | Sizear
           </Link>
         </div>
 
         {/* Grid 2. I want logo here */}
-        <img className="h-10" src={logo} alt="" />
-
+        <Link to="/">
+          <img className="h-12" src={logo} alt="Logo" />
+          <p className="text-[#F18A00] text-center italic blink">
+            Becoming a better global health leader
+          </p>
+        </Link>
         {/* Grid 3.  */}
         <div className="flex items-center justify-center space-x-2">
           {/* Social Media Icons */}
@@ -38,22 +42,6 @@ const FirstNav = () => {
               <Button variant="outline" size="sm">
                 Get Involved
               </Button>
-            </div>
-            <div className="flex items-center justify-center space-x-2">
-              <Link
-                to="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaFacebook className="text-2xl text-white hover:text-[#FFF4B7]" />
-              </Link>
-              <Link
-                to="https://www.linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin className="text-2xl text-white hover:text-[#55D5FE]" />
-              </Link>
             </div>
           </div>
         </div>

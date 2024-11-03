@@ -6,7 +6,7 @@ import {
   FaArrowUp,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
-import logo from "../../assets/logo2.png";
+import logo from "../../assets/logo3.png";
 
 const Footer: React.FC = () => {
   // Function to scroll to the top
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
           <motion.button
             onClick={scrollToTop}
             whileHover={{ scale: 1.1 }}
-            className="flex items-center space-x-2 text-lg font-semibold text-white hover:text-[#FFF4B7] transition duration-300"
+            className="flex items-center space-x-2 text-lg font-semibold text-white hover:text-[#F18A00] transition duration-300"
             aria-label="Back to Top"
           >
             <span className="tracking-[3px]">BACK TO TOP</span>
@@ -93,18 +93,46 @@ const Footer: React.FC = () => {
 
           {/* Last Grid */}
           <div className="flex flex-col items-center justify-center">
-            <blockquote className="mb-6 italic text-[#FFF4B7] text-center">
+            <blockquote className="mb-6 italic text-[#F18A00] text-center">
               “Believe work can be better. Know deeper. Do Better.”
             </blockquote>
             <p className="font-semibold text-center">
               Scope of Collaboration and Support
             </p>
 
-            <div className="flex mt-4 space-x-4">
-              <FaFacebook size={32} />
-              <FaLinkedin size={32} />
-              <FaInstagram size={32} />
-              <FaOrcid size={32} />
+            <div className="flex mt-6 space-x-4">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-[#3b5998] text-white rounded-full shadow-lg hover:shadow-xl transition"
+              >
+                <FaFacebook size={30} />
+              </a>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-[#0077b5] text-white rounded-full shadow-lg hover:shadow-xl transition"
+              >
+                <FaLinkedin size={30} />
+              </a>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-[#CC2F57] text-white rounded-full shadow-lg hover:shadow-xl transition"
+              >
+                <FaInstagram size={30} />
+              </a>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-[#A1C73A] text-white rounded-full shadow-lg hover:shadow-xl transition"
+              >
+                <FaOrcid size={30} />
+              </a>
             </div>
           </div>
         </div>
