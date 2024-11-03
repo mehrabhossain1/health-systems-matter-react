@@ -45,7 +45,7 @@ const FirstNav = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaFacebook className="text-2xl text-white hover:text-[#55D5FE]" />
+                <FaFacebook className="text-2xl text-white hover:text-[#FFF4B7]" />
               </Link>
               <Link
                 to="https://www.linkedin.com"

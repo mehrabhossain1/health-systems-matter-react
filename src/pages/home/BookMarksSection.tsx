@@ -1,5 +1,5 @@
 import BookMarksSectionCard from "@/components/ui/about/BookMarksSectionCard";
-import bg from "../../assets/bookmarks/bg.webp";
+// import bg from "../../assets/bookmarks/bg.webp";
 import {
   FaBook,
   FaHeartbeat,
@@ -89,10 +89,12 @@ const itemVariants = {
 const BookMarksSection = () => {
   return (
     <section
-      className="relative py-20 bg-fixed bg-center bg-cover md:py-28"
-      style={{
-        backgroundImage: `url(${bg})`,
-      }}
+      className="relative py-20 bg-fixed bg-center bg-cover md:py-28 bg-[#003161]"
+      style={
+        {
+          // backgroundImage: `url(${bg})`,
+        }
+      }
     >
       <div className="max-w-screen-xl mx-auto">
         <div className="flex items-center gap-10 py-10 pb-20 mb-5 ">

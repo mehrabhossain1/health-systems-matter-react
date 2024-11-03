@@ -25,7 +25,7 @@ const AboutUsSection = () => {
       <div className="relative max-w-screen-xl mx-auto">
         {/* Title with horizontal line */}
         <div className="flex items-center gap-10 py-10 pb-20 mb-5">
-          <h2 className="pl-10 font-serif text-6xl font-semibold text-[#55D5FE]">
+          <h2 className="pl-10 font-serif text-6xl font-semibold text-white">
             About
           </h2>
           <div className="flex-1 ml-4 border-t border-white"></div>

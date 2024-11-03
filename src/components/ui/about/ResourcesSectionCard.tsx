@@ -25,11 +25,11 @@ const ResourcesSectionCard: React.FC<ResourcesSectionCardProps> = ({
       whileTap={{ scale: 0.95 }} // Scale effect on click
       transition={{ type: "spring", stiffness: 300 }}
     >
-      <Card className="overflow-hidden bg-white rounded-lg shadow-lg">
+      <Card className="overflow-hidden bg-gray-100 rounded-none shadow-lg">
         <img src={imageUrl} alt={title} className="object-cover w-full h-40" />
         <CardHeader>
           <CardTitle className="relative group">
-            <span className="cursor-pointer transition-colors duration-200 group-hover:underline group-hover:text-[#01748D]">
+            <span className="cursor-pointer transition-colors duration-200 group-hover:underline group-hover:text-[#003161]">
               {title}
             </span>
           </CardTitle>
@@ -38,7 +38,7 @@ const ResourcesSectionCard: React.FC<ResourcesSectionCardProps> = ({
           <p>{description}</p>
         </CardContent>
         <CardFooter className="flex justify-end">
-          <button className="px-4 py-2 text-sm font-semibold text-white bg-[#01748D] rounded hover:bg-[#015F6D] transition">
+          <button className="px-4 py-2 text-sm font-semibold text-white bg-[#003161] hover:bg-[#003161] transition">
             More Details
           </button>
         </CardFooter>

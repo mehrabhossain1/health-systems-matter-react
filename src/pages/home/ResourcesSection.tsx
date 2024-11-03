@@ -59,7 +59,7 @@ const ResourcesSection = () => {
   ];
 
   return (
-    <section className="relative py-12 bg-gradient">
+    <section className="relative py-12 bg-gray-200">
       {/* Wave Background Divs */}
       <div className="wave-container">
         <div className="wave"></div>
@@ -69,9 +69,9 @@ const ResourcesSection = () => {
 
       <div className="max-w-screen-xl pb-10 mx-auto">
         <div className="flex items-center justify-center gap-6 py-10 pb-20">
-          <div className="flex-1 h-px bg-gray-100"></div>
-          <h2 className="font-serif text-6xl text-gray-100">Resources</h2>
-          <div className="flex-1 h-px bg-gray-100"></div>
+          <div className="flex-1 h-px bg-gray-800"></div>
+          <h2 className="font-serif text-6xl text-gray-700">Resources</h2>
+          <div className="flex-1 h-px bg-gray-800"></div>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {resourcesSubLinks.map((link, index) => (
@@ -79,7 +79,7 @@ const ResourcesSection = () => {
               key={index}
               title={link.title}
               description={`Description for ${link.title}`}
-              imageUrl={images[index]} // Use the mock image URLs
+              imageUrl={images[index]}
             />
           ))}
         </div>
