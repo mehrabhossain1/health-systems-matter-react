@@ -180,136 +180,107 @@ const contactSubLinks: {
   },
 ];
 
-// More sublinks
-const moreSubLinks: {
-  title: string;
-  href: string;
-}[] = [
-  {
-    title: "Family",
-    href: "/docs/primitives/alert-dialog",
-  },
-  {
-    title: "Me in Numbers",
-    href: "/docs/primitives/hover-card",
-  },
-  {
-    title: "My Book",
-    href: "/docs/primitives/progress",
-  },
-  {
-    title: "Featured in media",
-    href: "/docs/primitives/progress",
-  },
-  {
-    title: "Travel history",
-    href: "/docs/primitives/progress",
-  },
-  {
-    title: "Log in",
-    href: "/docs/primitives/progress",
-  },
-];
-
 export default function NavLinks() {
   return (
     <div className="bg-[#383F6D] sticky top-0 z-50">
-      <NavigationMenu className="h-16 max-w-screen-xl mx-auto">
-        <NavigationMenuList>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>ABOUT</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1280px] ">
-                {aboutSubLinks.map((component) => (
-                  <ListItem
-                    key={component.title}
-                    title={component.title}
-                    to={component.href}
-                  ></ListItem>
-                ))}
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-          {/* Resources Section */}
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>RESOURCES</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1280px]">
-                {resourcesSubLinks.map((link) => (
-                  <li key={link.title} className="relative group">
-                    {/* Main Link */}
-                    <ListItem title={link.title} to={link.href} />
+      <NavigationMenu className="h-16 max-w-screen-xl gap-5 mx-auto">
+        <NavigationMenuList className="flex md:gap-20">
+          <div className="flex">
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>ABOUT</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1280px] ">
+                  {aboutSubLinks.map((component) => (
+                    <ListItem
+                      key={component.title}
+                      title={component.title}
+                      to={component.href}
+                    ></ListItem>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            {/* Resources Section */}
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>RESOURCES</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1280px]">
+                  {resourcesSubLinks.map((link) => (
+                    <li key={link.title} className="relative group">
+                      {/* Main Link */}
+                      <ListItem title={link.title} to={link.href} />
 
-                    {/* Nested Links */}
-                    {link.nestedLinks && link.nestedLinks.length > 0 && (
-                      <ul className="absolute top-0 z-10 hidden w-full bg-[#383F6D] mt-1 border rounded-sm left-20 group-hover:block">
-                        {link.nestedLinks.map((nestedLink) => (
-                          <li key={nestedLink.title}>
-                            <ListItem
-                              title={nestedLink.title}
-                              to={nestedLink.href}
-                              className="p-3 m-1 transition-all duration-300 ease-in-out transform bg-[#383F6D]" // Add styles for nested items
-                            />
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
+                      {/* Nested Links */}
+                      {link.nestedLinks && link.nestedLinks.length > 0 && (
+                        <ul className="absolute top-0 z-10 hidden w-full bg-[#383F6D] mt-1 border rounded-sm left-20 group-hover:block">
+                          {link.nestedLinks.map((nestedLink) => (
+                            <li key={nestedLink.title}>
+                              <ListItem
+                                title={nestedLink.title}
+                                to={nestedLink.href}
+                                className="p-3 m-1 transition-all duration-300 ease-in-out transform bg-[#383F6D]" // Add styles for nested items
+                              />
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
 
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>BOOKMARKS</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1280px] ">
-                {BookmarksSubLinks.map((component) => (
-                  <ListItem
-                    key={component.title}
-                    title={component.title}
-                    to={component.href}
-                  ></ListItem>
-                ))}
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>NEWSROOM</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1280px] ">
-                {newsroomSubLinks.map((component) => (
-                  <ListItem
-                    key={component.title}
-                    title={component.title}
-                    to={component.href}
-                  ></ListItem>
-                ))}
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-          {/* <NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>BOOKMARKS</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1280px] ">
+                  {BookmarksSubLinks.map((component) => (
+                    <ListItem
+                      key={component.title}
+                      title={component.title}
+                      to={component.href}
+                    ></ListItem>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>NEWSROOM</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1280px] ">
+                  {newsroomSubLinks.map((component) => (
+                    <ListItem
+                      key={component.title}
+                      title={component.title}
+                      to={component.href}
+                    ></ListItem>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+
+            {/* <NavigationMenuItem>
             <Link to="/docs">
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 BLOG
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem> */}
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>NEWSLETTER</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1280px] ">
-                {newsletterSubLinks.map((component) => (
-                  <ListItem
-                    key={component.title}
-                    title={component.title}
-                    to={component.href}
-                  ></ListItem>
-                ))}
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-          {/* <NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>NEWSLETTER</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1280px] ">
+                  {newsletterSubLinks.map((component) => (
+                    <ListItem
+                      key={component.title}
+                      title={component.title}
+                      to={component.href}
+                    ></ListItem>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            {/* <NavigationMenuItem>
             <Link to="/docs">
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 YOUTUBE
@@ -317,87 +288,102 @@ export default function NavLinks() {
             </Link>
           </NavigationMenuItem> */}
 
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>CONTACT</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1280px] ">
-                {contactSubLinks.map((component) => (
-                  <ListItem
-                    key={component.title}
-                    title={component.title}
-                    to={component.href}
-                  ></ListItem>
-                ))}
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>CONTACT</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1280px] ">
+                  {contactSubLinks.map((component) => (
+                    <ListItem
+                      key={component.title}
+                      title={component.title}
+                      to={component.href}
+                    ></ListItem>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          </div>
 
           {/* About Sizear */}
-          <NavigationMenuItem>
-            <NavigationMenuTrigger className="p-2 text-xl font-normal text-orange-400 transition duration-300 ease-in-out transform rounded-md shadow-lg hover:scale-105 hover:text-white pulse-animation">
-              About Sizear
-            </NavigationMenuTrigger>
+          <div>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className="p-2 text-xl font-semibold text-[#F18A00] transition duration-300 ease-in-out transform rounded-md shadow-lg hover:scale-105 pulse-animation">
+                About Sizear
+              </NavigationMenuTrigger>
 
-            <NavigationMenuContent>
-              <ul className="grid gap-3 p-6 md:w-100% lg:w-[1280px] lg:grid-cols-[.75fr_1fr]">
-                <li className="row-span-3">
-                  <NavigationMenuLink asChild>
-                    <a
-                      className="flex flex-col items-center justify-center w-full h-full p-6 no-underline rounded-md outline-none select-none bg-gradient-to-b from-muted/50 to-muted focus:shadow-md"
-                      href="/"
-                    >
-                      <div className="w-24 h-24 mt-4 mb-2">
-                        <img src={ownerImg} className="rounded-full " alt="" />
-                      </div>
-                    </a>
-                  </NavigationMenuLink>
-                </li>
-                <ListItem to="/docs" title="Profile summary">
-                  Re-usable components built using Radix UI and Tailwind CSS.
-                </ListItem>
-                <ListItem to="/docs/installation" title="Education">
-                  How to install dependencies and structure your app.
-                </ListItem>
-                <ListItem to="/docs/primitives/typography" title="Career">
-                  Styles for headings, paragraphs, lists...etc
-                </ListItem>
-                <ListItem
-                  to="/docs/primitives/typography"
-                  title="Current Professional Affiliations"
-                >
-                  Styles for headings, paragraphs, lists...etc
-                </ListItem>
-                <ListItem
-                  to="/docs/primitives/typography"
-                  title="Achievement and Awards"
-                >
-                  Styles for headings, paragraphs, lists...etc
-                </ListItem>
-                <ListItem to="/docs/primitives/typography" title="Publications">
-                  Styles for headings, paragraphs, lists...etc
-                </ListItem>
-                <ListItem to="/docs/primitives/typography" title="Contact me">
-                  Styles for headings, paragraphs, lists...etc
-                </ListItem>
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-
-          {/* More */}
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>MORE</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1280px] ">
-                {moreSubLinks.map((component) => (
+              <NavigationMenuContent>
+                <ul className="grid gap-3 p-6 md:w-100% lg:w-[1280px] lg:grid-cols-[.75fr_1fr]">
+                  <li className="row-span-3">
+                    <NavigationMenuLink asChild>
+                      <a
+                        className="flex flex-col items-center justify-center w-full h-full p-6 no-underline rounded-md outline-none select-none from-muted/50 to-muted focus:shadow-md"
+                        href="/"
+                      >
+                        <div className="w-24 h-24 mt-4 mb-2">
+                          <img src={ownerImg} className="rounded-full" alt="" />
+                        </div>
+                      </a>
+                    </NavigationMenuLink>
+                  </li>
+                  <ListItem to="/docs" title="Profile summary">
+                    Re-usable components built using Radix UI and Tailwind CSS.
+                  </ListItem>
+                  <ListItem to="/docs/installation" title="Education">
+                    How to install dependencies and structure your app.
+                  </ListItem>
+                  <ListItem to="/docs/primitives/typography" title="Career">
+                    Styles for headings, paragraphs, lists...etc
+                  </ListItem>
                   <ListItem
-                    key={component.title}
-                    title={component.title}
-                    to={component.href}
-                  ></ListItem>
-                ))}
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
+                    to="/docs/primitives/typography"
+                    title="Current Professional Affiliations"
+                  >
+                    Styles for headings, paragraphs, lists...etc
+                  </ListItem>
+                  <ListItem
+                    to="/docs/primitives/typography"
+                    title="Achievement and Awards"
+                  >
+                    Styles for headings, paragraphs, lists...etc
+                  </ListItem>
+                  <ListItem
+                    to="/docs/primitives/typography"
+                    title="Publications"
+                  >
+                    Styles for headings, paragraphs, lists...etc
+                  </ListItem>
+
+                  <ListItem to="/docs/primitives/typography" title="Contact me">
+                    Styles for headings, paragraphs, lists...etc
+                  </ListItem>
+                  <ListItem to="/docs/primitives/typography" title="Family">
+                    Styles for headings, paragraphs, lists...etc
+                  </ListItem>
+                  <ListItem
+                    to="/docs/primitives/typography"
+                    title="Me in Numbers"
+                  >
+                    Styles for headings, paragraphs, lists...etc
+                  </ListItem>
+                  <ListItem to="/docs/primitives/typography" title="My Book">
+                    Styles for headings, paragraphs, lists...etc
+                  </ListItem>
+                  <ListItem
+                    to="/docs/primitives/typography"
+                    title="Featured in media"
+                  >
+                    Styles for headings, paragraphs, lists...etc
+                  </ListItem>
+                  <ListItem
+                    to="/docs/primitives/typography"
+                    title="Travel history"
+                  >
+                    Styles for headings, paragraphs, lists...etc
+                  </ListItem>
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          </div>
         </NavigationMenuList>
       </NavigationMenu>
     </div>

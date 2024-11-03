@@ -41,7 +41,7 @@ const HeroSection = () => {
           {/* First line */}
           <motion.h2
             variants={itemVariants}
-            className="mb-2 font-sans text-3xl font-bold leading-tight md:text-5xl text-[#F18A00] underline"
+            className="mb-2 font-sans text-3xl font-bold underline-offset-[14px] leading-tight md:text-5xl text-[#F18A00] underline"
           >
             Knowledge for Solutions!
           </motion.h2>
@@ -52,7 +52,7 @@ const HeroSection = () => {
             className="mb-2 font-serif text-2xl font-light leading-tight md:text-5xl md:mb-10 md:mt-5"
           >
             Don't Settle. Explore to be Enriched with{" "}
-            <span className="text-[#134074] font-semibold">HSM</span>
+            <span className="text-[#383F6D] font-semibold">HSM</span>
           </motion.h2>
 
           {/* Third line */}

@@ -15,12 +15,12 @@ const FirstNav = () => {
             <img
               src={ownerImg}
               alt="owner image"
-              className="w-10 rounded-full"
+              className="w-8 rounded-full"
             />
           </Link>
           <Link
             to="/"
-            className="p-2 text-xl font-normal text-white transition duration-300 ease-in-out transform rounded-md shadow-lg hover:scale-110 hover:text-[#F18A00] pulse-animation hover:underline underline-offset-8"
+            className="p-2 text-xl decoration-[#55D5FE] font-normal text-white transition duration-300 ease-in-out transform rounded-md shadow-lg  hover:scale-110 pulse-animation hover:underline underline-offset-8"
           >
             | Sizear
           </Link>
