@@ -1,4 +1,4 @@
-import navbarBottom from "../../../assets/navbarbottom.png";
+import navbarBottom from "../../../assets/navbarb.jpeg";
 
 const BottomNav = () => {
   return (

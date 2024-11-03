@@ -7,8 +7,8 @@
   cursor: pointer;
   display: inline-block;
   font-family: Arial;
-  font-size: 18px;
-  padding: 10px 15px;
+  font-size: 12px;
+  padding: 5px 10px;
   text-align: center;
   text-decoration: none;
   -webkit-animation: glowing 1500ms infinite;
@@ -22,8 +22,8 @@
     -webkit-box-shadow: 0 0 3px #b20000;
   }
   50% {
-    background-color: #ff0000;
-    -webkit-box-shadow: 0 0 40px #ff0000;
+    background-color: #e40d0d;
+    -webkit-box-shadow: 0 0 40px #e40d0d;
   }
   100% {
     background-color: #b20000;
@@ -37,8 +37,8 @@
     -moz-box-shadow: 0 0 3px #b20000;
   }
   50% {
-    background-color: #ff0000;
-    -moz-box-shadow: 0 0 40px #ff0000;
+    background-color: #e40d0d;
+    -moz-box-shadow: 0 0 40px #e40d0d;
   }
   100% {
     background-color: #b20000;
@@ -52,8 +52,8 @@
     box-shadow: 0 0 3px #b20000;
   }
   50% {
-    background-color: #ff0000;
-    box-shadow: 0 0 40px #ff0000;
+    background-color: #e40d0d;
+    box-shadow: 0 0 40px #e40d0d;
   }
   100% {
     background-color: #b20000;
@@ -67,8 +67,8 @@
     box-shadow: 0 0 3px #b20000;
   }
   50% {
-    background-color: #ff0000;
-    box-shadow: 0 0 40px #ff0000;
+    background-color: #e40d0d;
+    box-shadow: 0 0 40px #e40d0d;
   }
   100% {
     background-color: #b20000;

@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const MainNav = () => {
   return (
-    <nav className="h-20">
+    <nav className="h-20 bg-[#134074] border-b">
       <div className="grid items-center h-full max-w-screen-xl grid-cols-3 px-4 mx-auto">
         {/* Left Text */}
         <div className="flex justify-start">
-          <p className="text-sm italic font-medium tracking-widest text-right text-[#01748D]">
+          <p className="text-sm italic font-medium tracking-widest text-right">
             X
           </p>
         </div>
@@ -21,8 +21,8 @@ const MainNav = () => {
 
         {/* Right Text */}
         <div className="flex justify-end">
-          <p className="text-sm italic font-medium tracking-widest text-right text-[#01748D]">
-            Becoming a Better <br /> Global Health Leader
+          <p className="text-sm italic font-medium text-left text-white md:tracking-wider">
+            Becoming A Better Global Health Leader
           </p>
         </div>
       </div>
