@@ -64,15 +64,15 @@ const aboutSubLinks: { title: string; href: string }[] = [
   },
   {
     title: "Vision and mission",
-    href: "/docs/primitives/hover-card",
+    href: "/about/vision-mission",
   },
   {
     title: "Approach and activities",
-    href: "/docs/primitives/progress",
+    href: "/about/activities-approach",
   },
   {
     title: "Testimonials",
-    href: "/docs/primitives/scroll-area",
+    href: "/about/testimonials",
   },
 ];
 
