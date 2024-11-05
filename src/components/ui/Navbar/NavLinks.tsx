@@ -310,7 +310,7 @@ export default function NavLinks() {
           {/* About Sizear */}
           <div>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="p-2 text-xl font-semibold hover:text-[#F18A00] transition duration-300 ease-in-out transform hover:scale-105 pulse-animation">
+              <NavigationMenuTrigger className="p-2 text-xl font-semibold text-[#F18A00] hover:decoration-[#ffb452] hover:text-[#ffb452] transition duration-300 ease-in-out transform hover:scale-105 pulse-animation">
                 About Sizear
               </NavigationMenuTrigger>
 
@@ -403,7 +403,7 @@ const ListItem = React.forwardRef<
         <Link
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-transform transform hover:underline underline-offset-8",
+            "block select-none space-y-1 rounded-md p-3 leading-none decoration-[#55D5FE] no-underline outline-none transition-transform transform hover:underline underline-offset-8",
             className
           )}
           {...props}

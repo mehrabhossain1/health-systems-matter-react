@@ -21,7 +21,7 @@ const FirstNav = () => {
           </Link>
           <Link
             to="/"
-            className="p-2 text-xl decoration-[#F18A00] font-normal text-white hover:text-[#F18A00] transition duration-300 ease-in-out transform rounded-md shadow-lg  hover:scale-110 pulse-animation hover:underline underline-offset-8"
+            className="p-2 text-xl decoration-[#F18A00] font-normal text-[#F18A00] hover:text-[#ffb452] hover:decoration-[#ffb452] transition duration-300 ease-in-out transform rounded-md shadow-lg hover:scale-110 pulse-animation hover:underline underline-offset-8"
           >
             | Sizear
           </Link>
