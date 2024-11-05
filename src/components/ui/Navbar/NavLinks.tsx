@@ -137,15 +137,15 @@ const newsletterSubLinks: {
 }[] = [
   {
     title: "Overview",
-    href: "/docs/primitives/alert-dialog",
+    href: "/newsletter/overview",
   },
   {
     title: "Subscribe for newsletter",
-    href: "/docs/primitives/hover-card",
+    href: "/newsletter/subscribe-for-newsletter",
   },
   {
     title: "All previous issues",
-    href: "/docs/primitives/progress",
+    href: "/newsletter/all-previous-issues",
   },
 ];
 const newsroomSubLinks: {
@@ -154,15 +154,15 @@ const newsroomSubLinks: {
 }[] = [
   {
     title: "Overview",
-    href: "/docs/primitives/alert-dialog",
+    href: "/newsroom/overview",
   },
   {
     title: "Upcoming events",
-    href: "/docs/primitives/hover-card",
+    href: "/newsroom/upcoming-events",
   },
   {
     title: "Do you know?",
-    href: "/docs/primitives/progress",
+    href: "/newsroom/do-you-know",
   },
 ];
 const contactSubLinks: {
@@ -171,7 +171,7 @@ const contactSubLinks: {
 }[] = [
   {
     title: "Stay Connected",
-    href: "/docs/primitives/alert-dialog",
+    href: "/contact/stay-connected",
   },
   {
     title: "Subscribe",

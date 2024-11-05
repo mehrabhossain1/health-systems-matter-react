@@ -14,7 +14,14 @@ import PublicHealthOrganizations from "@/pages/bookmarks/PublicHealthOrganizatio
 import Scholarship from "@/pages/bookmarks/Scholarship";
 import TrainingAndCourses from "@/pages/bookmarks/TrainingAndCourses";
 import UsefulSites from "@/pages/bookmarks/UsefulSites";
+import StayConnected from "@/pages/contact/StayConnected";
 import Home from "@/pages/home";
+import Allpreviousissues from "@/pages/newsletter/Allpreviousissues";
+import NewsletterOverview from "@/pages/newsletter/NewsletterOverview";
+import Subscribefornewsletter from "@/pages/newsletter/Subscribefornewsletter";
+import Doyouknow from "@/pages/newsroom/Doyouknow";
+import NewsroomOverview from "@/pages/newsroom/NewsroomOverview";
+import UpcomingEvent from "@/pages/newsroom/UpcomingEvent";
 import Articles from "@/pages/resources/Articles";
 import Books from "@/pages/resources/Books";
 import CommentariesBlogs from "@/pages/resources/CommentariesBlogs";
@@ -150,6 +157,40 @@ const router = createBrowserRouter([
       {
         path: "/bookmarks/useful-sites",
         element: <UsefulSites />,
+      },
+
+      //! Newsroom
+      {
+        path: "/newsroom/overview",
+        element: <NewsroomOverview />,
+      },
+      {
+        path: "/newsroom/upcoming-events",
+        element: <UpcomingEvent />,
+      },
+      {
+        path: "/newsroom/do-you-know",
+        element: <Doyouknow />,
+      },
+
+      // ! Newsletter
+      {
+        path: "/newsletter/overview",
+        element: <NewsletterOverview />,
+      },
+      {
+        path: "/newsletter/subscribe-for-newsletter",
+        element: <Subscribefornewsletter />,
+      },
+      {
+        path: "/newsletter/all-previous-issues",
+        element: <Allpreviousissues />,
+      },
+
+      //! Contact
+      {
+        path: "/contact/stay-connected",
+        element: <StayConnected />,
       },
     ],
   },

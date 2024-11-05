@@ -10,7 +10,7 @@ const ActivitiesAndApproach = () => {
     <div className="text-gray-800 ">
       <div className="max-w-screen-xl mx-auto">
         {/* Activities Section */}
-        <div className="p-8 mb-12 bg-white rounded-lg shadow-lg">
+        <div className="p-8 mb-12 bg-white">
           <PageTitle children="Activities and Approach" />
           <h1 className="text-base leading-relaxed text-gray-700">
             In order to be aligned with the vision and mission of Health Systems
