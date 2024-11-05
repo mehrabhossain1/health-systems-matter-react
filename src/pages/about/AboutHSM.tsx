@@ -1,7 +1,6 @@
-import { motion } from "framer-motion";
-import heroImage from "../../assets/youtube/bg.jpeg"; // Replace with actual image path
 import contentImage from "../../assets/ownerImg.png"; // Replace with actual image path
 import { useEffect } from "react";
+import PageTitle from "@/components/shared/PageTitle";
 
 const AboutHSM = () => {
   useEffect(() => {
@@ -9,39 +8,13 @@ const AboutHSM = () => {
   }, []);
 
   return (
-    <div className="p-8 text-gray-800 bg-gray-100 md:p-12 lg:p-20">
-      <div className="max-w-screen-xl mx-auto">
+    <div className="text-gray-800 ">
+      <div className="max-w-screen-xl p-8 mx-auto mb-12">
         {/* Hero Section */}
-        <motion.div
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="relative mb-12 overflow-hidden rounded-lg shadow-lg"
-        >
-          <img
-            src={heroImage}
-            alt="Health Systems"
-            className="object-cover w-full h-96"
-          />
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 1 }}
-            className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50"
-          >
-            <h1 className="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
-              Health Systems Matter
-            </h1>
-          </motion.div>
-        </motion.div>
+        <PageTitle children="About HSM" />
 
         {/* Content Section */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 1 }}
-          className="grid grid-cols-1 gap-8 lg:grid-cols-2"
-        >
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div className="space-y-6">
             <p className="text-lg leading-relaxed md:text-xl lg:text-2xl">
               “Information is power” and “Evidence lies at the heart of public
@@ -64,25 +37,17 @@ const AboutHSM = () => {
               opportunities.
             </p>
           </div>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="overflow-hidden rounded-lg shadow-lg"
-          >
+          <div className="overflow-hidden rounded-lg shadow-lg">
             <img
               src={contentImage}
               alt="Public Health"
               className="object-cover w-full h-full"
             />
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
 
         {/* Features Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.5, duration: 1 }}
-          className="p-8 mt-12 bg-white rounded-lg shadow-lg"
-        >
+        <div className="p-8 mt-12 bg-white rounded-lg shadow-lg">
           <h2 className="mb-4 text-2xl font-semibold md:text-3xl">
             Why Choose Health Systems Matter?
           </h2>
@@ -110,7 +75,7 @@ const AboutHSM = () => {
             Monaemul Islam Sizear, hopes to enlighten many and foster impactful
             careers.
           </p>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

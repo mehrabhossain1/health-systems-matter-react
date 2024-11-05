@@ -1,5 +1,4 @@
-import { motion } from "framer-motion";
-import heroImage from "../../assets/youtube/bg.jpeg"; // Replace with actual image path
+import PageTitle from "@/components/shared/PageTitle";
 import { useEffect } from "react";
 
 const VisionMission = () => {
@@ -8,43 +7,12 @@ const VisionMission = () => {
   }, []);
 
   return (
-    <div className="p-8 text-gray-800 bg-gray-100 md:p-12 lg:p-20">
+    <div className="text-gray-800 ">
       <div className="max-w-screen-xl mx-auto">
-        {/* Hero Section */}
-        <motion.div
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="relative mb-12 overflow-hidden rounded-lg shadow-lg"
-        >
-          <img
-            src={heroImage}
-            alt="Health Systems"
-            className="object-cover w-full h-96"
-          />
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 1 }}
-            className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50"
-          >
-            <h1 className="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
-              Health Systems Matter
-            </h1>
-          </motion.div>
-        </motion.div>
-
         {/* Content Section */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 1 }}
-          className="p-8 mb-12 bg-white rounded-lg shadow-lg"
-        >
-          <h2 className="mb-4 text-2xl font-semibold">
-            Our Vision and Mission
-          </h2>
-          <h1 className="text-base leading-relaxed text-gray-700">
+        <div className="p-8 mb-12 bg-white rounded-lg shadow-lg ">
+          <PageTitle children="Vision and Mission" />
+          <p className="w-3/4 mx-auto text-2xl leading-relaxed text-gray-700">
             The vision of Health Systems Matter is to create an evidence-based
             platform that empowers emerging public health professionals to
             become informed and confident global health advocates, dedicated to
@@ -58,8 +26,8 @@ const VisionMission = () => {
             this initiative is to cultivate passionate and confident health
             system advocates who recognize the importance of robust health
             systems and are committed to advancing global health.
-          </h1>
-        </motion.div>
+          </p>
+        </div>
       </div>
     </div>
   );

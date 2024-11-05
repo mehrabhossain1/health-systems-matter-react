@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import PageTitle from "@/components/shared/PageTitle";
 import { useEffect } from "react";
 
 const ActivitiesAndApproach = () => {
@@ -7,23 +7,16 @@ const ActivitiesAndApproach = () => {
   }, []);
 
   return (
-    <div className="p-8 text-gray-800 bg-gray-100 md:p-12 lg:p-20">
+    <div className="text-gray-800 ">
       <div className="max-w-screen-xl mx-auto">
         {/* Activities Section */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 1 }}
-          className="p-8 mb-12 bg-white rounded-lg shadow-lg"
-        >
-          <h2 className="mb-4 text-2xl font-semibold">
-            Activities and Approach
-          </h2>
+        <div className="p-8 mb-12 bg-white rounded-lg shadow-lg">
+          <PageTitle children="Activities and Approach" />
           <h1 className="text-base leading-relaxed text-gray-700">
             In order to be aligned with the vision and mission of Health Systems
             Matter, the specific activities are as follows:
           </h1>
-          <ul className="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+          <ul className="mt-4 space-y-2 text-xl text-gray-700 list-disc list-inside">
             <li>Showcasing health system and global health documents daily.</li>
             <li>Generating and regenerating demand for impactful documents.</li>
             <li>Disseminating major public health events and milestones.</li>
@@ -46,7 +39,7 @@ const ActivitiesAndApproach = () => {
             topics rather than organizations, promoting news without bias or
             political agenda.
           </p>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

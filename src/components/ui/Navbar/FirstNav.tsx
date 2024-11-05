@@ -8,6 +8,7 @@ import "./css/blink.css";
 const FirstNav = () => {
   return (
     <div className="p-2 text-sm header-top h-full bg-[#0A2240]">
+      {/*  sticky top-0 z-50 */}
       <div className="flex items-center justify-between h-full">
         {/* Grid 1 */}
         <div className="flex items-center gap-2">
