@@ -33,16 +33,18 @@ const HeroSection = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="mb-2 font-sans text-3xl font-bold underline-offset-[14px] leading-tight md:text-5xl text-[#003161] underline"
+            className="mb-10 font-sans text-3xl font-bold underline-offset-[14px] leading-tight md:text-5xl text-[#EE8922] underline"
           >
             Knowledge for Solutions!
           </motion.h2>
           <motion.h2
             variants={itemVariants}
-            className="mb-2 font-serif text-2xl font-light leading-tight md:text-5xl md:mb-10 md:mt-5"
+            className="mb-2 font-serif text-2xl font-light md:text-4xl md:mb-10 md:mt-5"
           >
             Don't Settle. Explore to be Enriched with{" "}
-            <span className="text-[#EE8922] font-semibold">HSM</span>
+            <span className="inline-block px-6 py-2 bg-[#EE8922] text-white font-semibold rounded-full cursor-pointer hover:bg-[#D57A1F] transition-colors">
+              HSM
+            </span>
           </motion.h2>
         </motion.div>
 

@@ -58,12 +58,12 @@ const ResourcesSection = () => {
   ];
 
   return (
-    <section className="py-12 bg-gray-300">
+    <section className="py-12 bg-[#DBF4F5]">
       <div className="max-w-screen-xl pb-10 mx-auto">
         <div className="flex items-center justify-center gap-6 py-10 pb-20">
-          <div className="flex-1 h-px bg-gray-800"></div>
-          <h2 className="font-serif text-6xl text-gray-700">Resources</h2>
-          <div className="flex-1 h-px bg-gray-800"></div>
+          <div className="flex-1 h-px bg-[#01748D]"></div>
+          <h2 className="font-serif text-6xl text-[#01748D]">Resources</h2>
+          <div className="flex-1 h-px bg-[#01748D]"></div>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {resourcesSubLinks.map((link, index) => (

@@ -29,15 +29,15 @@ const newsletterSubLinks = [
 const NewsletterSection = () => {
   return (
     <section className="relative overflow-hidden bg-slate-200">
-      <div className="absolute inset-x-0 top-0 h-32 bg-[#383F6D] rounded-b-full transform -translate-y-1/2"></div>
-      <div className="absolute inset-x-0 bottom-0 h-32 bg-[#383F6D] rounded-t-full transform translate-y-1/2"></div>
+      <div className="absolute inset-x-0 top-0 h-32 bg-[#23728D] rounded-b-full transform -translate-y-1/2"></div>
+      <div className="absolute inset-x-0 bottom-0 h-32 bg-[#23728D] rounded-t-full transform translate-y-1/2"></div>
 
       <div className="max-w-screen-xl py-12 pb-24 mx-auto">
         <div className="flex flex-row-reverse items-center gap-10 py-10 pt-20">
-          <h2 className="text-6xl font-serif font-semibold text-[#003161] pe-10">
+          <h2 className="text-6xl font-serif font-semibold text-[#01748D] pe-10">
             Newsletter
           </h2>
-          <div className="flex-1 ml-4 border-t border-gray-800"></div>
+          <div className="flex-1 ml-4 border-t border-[#01748D]"></div>
         </div>
         <p className="w-3/4 pb-20 mx-auto text-2xl italic text-center text-gray-600">
           Welcome to <span className="font-bold">Health Systems Matter!</span>{" "}

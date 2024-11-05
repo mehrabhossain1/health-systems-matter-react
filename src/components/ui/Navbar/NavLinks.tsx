@@ -215,13 +215,13 @@ export default function NavLinks() {
 
                       {/* Nested Links */}
                       {link.nestedLinks && link.nestedLinks.length > 0 && (
-                        <ul className="absolute top-0 z-10 hidden w-full bg-[#383F6D] mt-1 border rounded-sm left-20 group-hover:block">
+                        <ul className="absolute top-0 z-10 hidden w-full bg-[#DBF4F5] text-gray-800 mt-1 border rounded-sm left-20 group-hover:block">
                           {link.nestedLinks.map((nestedLink) => (
                             <li key={nestedLink.title}>
                               <ListItem
                                 title={nestedLink.title}
                                 to={nestedLink.href}
-                                className="p-3 m-1 transition-all duration-300 ease-in-out transform bg-[#383F6D]" // Add styles for nested items
+                                className="p-3 m-1 transition-all duration-300 ease-in-out transform bg-[#DBF4F5]" // Add styles for nested items
                               />
                             </li>
                           ))}
@@ -403,7 +403,7 @@ const ListItem = React.forwardRef<
         <Link
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none decoration-[#55D5FE] no-underline outline-none transition-transform transform hover:underline underline-offset-8",
+            "block select-none space-y-1 rounded-md p-3 leading-none decoration-[#F18A00] hover:text-[#F18A00] no-underline outline-none transition-transform transform hover:underline underline-offset-8",
             className
           )}
           {...props}

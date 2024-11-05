@@ -28,13 +28,13 @@ const NewsletterCard: React.FC<NewsletterCardProps> = ({
       className={`flex bg-[#003161] flex-col justify-between h-full p-4 transition-all transform border-none rounded-none shadow-lg hover:shadow-2xl hover:-translate-y-1 ${cardClassName}`}
     >
       <div className="relative flex justify-center">
-        <div className="absolute flex items-center justify-center w-12 h-12 text-[#FFF4B7] top-4 right-4">
+        <div className="absolute flex items-center justify-center w-12 h-12 text-[#DBF4F5] top-4 right-4">
           {icon}
         </div>
         <CardHeader>
           <Link
             to={href}
-            className="text-xl font-bold text-white decoration-[#FFF4B7] underline-offset-2 hover:underline transition-colors"
+            className="text-xl font-bold text-white decoration-[#DBF4F5] underline-offset-2 hover:underline transition-colors"
           >
             <CardTitle>{title}</CardTitle>
           </Link>

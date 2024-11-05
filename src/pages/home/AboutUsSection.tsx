@@ -14,21 +14,21 @@ import "../../App.css";
 const AboutUsSection = () => {
   return (
     <section
-      className="relative py-12 pb-40 bg-center bg-cover bg-slate-700"
+      className="relative py-12 pb-40 bg-center bg-cover"
       style={{
         backgroundImage: `url(${aboutbg})`,
       }}
     >
       {/* Optional: Overlay for better text readability */}
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="absolute inset-0 opacity-50"></div>
 
       <div className="relative max-w-screen-xl mx-auto">
         {/* Title with horizontal line */}
         <div className="flex items-center gap-10 py-10 pb-20 mb-5">
-          <h2 className="pl-10 font-serif text-6xl font-semibold text-white">
+          <h2 className="pl-10 font-serif text-6xl font-semibold text-[#01748D]">
             About
           </h2>
-          <div className="flex-1 ml-4 border-t border-white"></div>
+          <div className="flex-1 ml-4 border-t border-[#01748D]"></div>
         </div>
 
         <Swiper
