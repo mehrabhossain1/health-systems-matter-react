@@ -1,7 +1,18 @@
 import { motion } from "framer-motion";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import lottie from "../../lotties/banner.json";
+import Lottie from "lottie-react";
 
 const HeroSection = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: lottie,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   // Animation variants for stagger effect
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -23,6 +34,12 @@ const HeroSection = () => {
       <div className="flex flex-col items-center justify-between max-w-screen-xl mx-auto md:flex-row-reverse md:p-12">
         <div className="flex justify-center mb-6 md:w-1/2 md:justify-end md:mt-0">
           {/* Lottie animation placeholder */}
+          <Lottie
+            animationData={defaultOptions.animationData}
+            loop={defaultOptions.loop}
+            autoplay={defaultOptions.autoplay}
+            style={{ height: "400px", width: "400px" }}
+          />
         </div>
 
         <motion.div
