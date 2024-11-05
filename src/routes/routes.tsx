@@ -3,6 +3,17 @@ import AboutHSM from "@/pages/about/AboutHSM";
 import ActivitiesAndApproach from "@/pages/about/ActivitiesAndApproach";
 import Testimonials from "@/pages/about/Testimonials";
 import VisionMission from "@/pages/about/VisionMission";
+import BookmarksNewsletter from "@/pages/bookmarks/BookmarksNewsletter";
+import BookmarksOverview from "@/pages/bookmarks/BookmarksOverview";
+import BookmarksYouTube from "@/pages/bookmarks/BookmarksYouTube";
+import CareerScope from "@/pages/bookmarks/CareerScope";
+import DataandFacts from "@/pages/bookmarks/DataandFacts";
+import Journals from "@/pages/bookmarks/Journals";
+import Podcast from "@/pages/bookmarks/Podcast";
+import PublicHealthOrganizations from "@/pages/bookmarks/PublicHealthOrganizations";
+import Scholarship from "@/pages/bookmarks/Scholarship";
+import TrainingAndCourses from "@/pages/bookmarks/TrainingAndCourses";
+import UsefulSites from "@/pages/bookmarks/UsefulSites";
 import Home from "@/pages/home";
 import Articles from "@/pages/resources/Articles";
 import Books from "@/pages/resources/Books";
@@ -93,6 +104,52 @@ const router = createBrowserRouter([
       {
         path: "/resources/tools-and-resources",
         element: <ToolsResources />,
+      },
+
+      //! Bookmarks
+      {
+        path: "/bookmarks/overview",
+        element: <BookmarksOverview />,
+      },
+      {
+        path: "/bookmarks/key-public-health-organizations",
+        element: <PublicHealthOrganizations />,
+      },
+      {
+        path: "/bookmarks/journals",
+        element: <Journals />,
+      },
+      {
+        path: "/bookmarks/data-and-facts",
+        element: <DataandFacts />,
+      },
+      {
+        path: "/bookmarks/training-and-courses",
+        element: <TrainingAndCourses />,
+      },
+      {
+        path: "/bookmarks/career-scope",
+        element: <CareerScope />,
+      },
+      {
+        path: "/bookmarks/scholarship",
+        element: <Scholarship />,
+      },
+      {
+        path: "/bookmarks/newsletter",
+        element: <BookmarksNewsletter />,
+      },
+      {
+        path: "/bookmarks/youtube",
+        element: <BookmarksYouTube />,
+      },
+      {
+        path: "/bookmarks/podcast",
+        element: <Podcast />,
+      },
+      {
+        path: "/bookmarks/useful-sites",
+        element: <UsefulSites />,
       },
     ],
   },

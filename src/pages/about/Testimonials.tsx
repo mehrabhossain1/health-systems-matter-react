@@ -5,7 +5,7 @@ const Testimonials = () => {
     <div className="text-gray-800">
       <div className="max-w-screen-xl mx-auto">
         {/* Testimonials Section */}
-        <div className="p-8 bg-white rounded-lg shadow-lg">
+        <div className="p-8 bg-white">
           <PageTitle children="Testimonials" />
           <p className="w-3/4 mx-auto text-2xl leading-relaxed text-gray-700">
             Since the site is new, there are no testimonials yet. We will add

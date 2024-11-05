@@ -86,47 +86,47 @@ const BookmarksSubLinks: {
 }[] = [
   {
     title: "Overview",
-    href: "/docs/primitives/alert-dialog",
+    href: "/bookmarks/overview",
   },
   {
     title: "Key public health organizations",
-    href: "/docs/primitives/hover-card",
+    href: "/bookmarks/key-public-health-organizations",
   },
   {
-    title: "Major journals",
-    href: "/docs/primitives/progress",
+    title: "Journals",
+    href: "/bookmarks/journals",
   },
   {
     title: "Data and facts",
-    href: "/docs/primitives/scroll-area",
+    href: "/bookmarks/data-and-facts",
   },
   {
     title: "Training and courses",
-    href: "/docs/primitives/scroll-area",
+    href: "/bookmarks/training-and-courses",
   },
   {
     title: "Career scope",
-    href: "/docs/primitives/scroll-area",
+    href: "/bookmarks/career-scope",
   },
   {
     title: "Scholarship",
-    href: "/docs/primitives/scroll-area",
+    href: "/bookmarks/scholarship",
   },
   {
     title: "Newsletter",
-    href: "/docs/primitives/scroll-area",
+    href: "/bookmarks/newsletter",
   },
   {
     title: "YouTube",
-    href: "/docs/primitives/scroll-area",
+    href: "/bookmarks/youtube",
   },
   {
     title: "Podcast",
-    href: "/docs/primitives/scroll-area",
+    href: "/bookmarks/podcast",
   },
   {
     title: "Useful sites",
-    href: "/docs/primitives/scroll-area",
+    href: "/bookmarks/useful-sites",
   },
 ];
 
