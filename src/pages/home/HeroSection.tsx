@@ -19,7 +19,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="relative h-screen ">
+    <div className="relative">
       <div className="flex flex-col items-center justify-between max-w-screen-xl mx-auto md:flex-row-reverse md:p-12">
         <div className="flex justify-center mb-6 md:w-1/2 md:justify-end md:mt-0">
           {/* Lottie animation placeholder */}

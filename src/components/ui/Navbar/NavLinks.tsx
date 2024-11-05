@@ -20,14 +20,17 @@ const resourcesSubLinks = [
   },
   {
     title: "Essential reading list",
-    href: "/resources/reading-list",
+    href: "/resources/essential-reading-list",
   },
   {
     title: "Reports",
     href: "/resources/reports",
     nestedLinks: [
-      { title: "1. Topic Wise Reports", href: "/resources/reports/topic-wise" },
-      { title: "2. Major Reports", href: "/resources/reports/major" },
+      {
+        title: "1. Topic Wise Reports",
+        href: "/resources/reports/topic-wise-reports",
+      },
+      { title: "2. Major Reports", href: "/resources/reports/major-reports" },
     ],
   },
   {
@@ -36,7 +39,7 @@ const resourcesSubLinks = [
   },
   {
     title: "Policy primer and Presentations",
-    href: "/resources/policy-primer",
+    href: "/resources/policy-primer-and-presentation",
   },
   {
     title: "Books",
@@ -44,15 +47,15 @@ const resourcesSubLinks = [
   },
   {
     title: "Interviews and insights",
-    href: "/resources/interviews",
+    href: "/resources/interviews-insights",
   },
   {
     title: "Commentaries and blogs",
-    href: "/resources/commentaries",
+    href: "/resources/commentaries-blogs",
   },
   {
     title: "Tools and Resources",
-    href: "/resources/tools",
+    href: "/resources/tools-and-resources",
   },
 ];
 
