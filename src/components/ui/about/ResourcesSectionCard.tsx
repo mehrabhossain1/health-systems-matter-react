@@ -29,13 +29,13 @@ const ResourcesSectionCard: React.FC<ResourcesSectionCardProps> = ({
         <img src={imageUrl} alt={title} className="object-cover w-full h-40" />
         <CardHeader>
           <CardTitle className="relative group">
-            <span className="cursor-pointer transition-colors duration-200 group-hover:underline group-hover:text-[#003161]">
+            <span className="line-clamp-1 cursor-pointer transition-colors duration-200 group-hover:underline group-hover:text-[#003161]">
               {title}
             </span>
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <p>{description}</p>
+          <p className="line-clamp-1">{description}</p>
         </CardContent>
         <CardFooter className="flex justify-end">
           <button className="px-4 py-2 text-sm font-medium flex items-center justify-center gap-2 text-white bg-[#000B58] hover:bg-[#01748D] transition">
