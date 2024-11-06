@@ -340,6 +340,7 @@ export default function NavLinks() {
                     to="/about-sizear/career-summary"
                     title="Career"
                   ></ListItem>
+
                   <ListItem
                     to="/docs/primitives/typography"
                     title="Current Professional Affiliations"
@@ -353,11 +354,9 @@ export default function NavLinks() {
                     Styles for headings, paragraphs, lists...etc
                   </ListItem>
                   <ListItem
-                    to="/docs/primitives/typography"
+                    to="/about-sizear/publications"
                     title="Publications"
-                  >
-                    Styles for headings, paragraphs, lists...etc
-                  </ListItem>
+                  ></ListItem>
 
                   <ListItem to="/docs/primitives/typography" title="Contact me">
                     Styles for headings, paragraphs, lists...etc

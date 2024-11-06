@@ -8,6 +8,7 @@ import AboutTheSiteOwner from "@/pages/aboutSizear/AboutTheSiteOwner";
 import Career from "@/pages/aboutSizear/Career";
 import Education from "@/pages/aboutSizear/Education";
 import ProfileSummary from "@/pages/aboutSizear/ProfileSummary";
+import Publications from "@/pages/aboutSizear/Publications";
 import BookmarksNewsletter from "@/pages/bookmarks/BookmarksNewsletter";
 import BookmarksOverview from "@/pages/bookmarks/BookmarksOverview";
 import BookmarksYouTube from "@/pages/bookmarks/BookmarksYouTube";
@@ -220,8 +221,8 @@ const router = createBrowserRouter([
         element: <Education />,
       },
       {
-        path: "/about-sizear/education",
-        element: <Education />,
+        path: "/about-sizear/publications",
+        element: <Publications />,
       },
     ],
   },
