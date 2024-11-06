@@ -7,12 +7,13 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { IconType } from "react-icons"; // Import the type for icons
+import { Link } from "react-router-dom";
 
 interface BookMarksSectionCardProps {
   title: string;
   description: string;
   href: string;
-  Icon: IconType; // Expecting an icon component from react-icons
+  Icon: IconType;
 }
 
 const BookMarksSectionCard: React.FC<BookMarksSectionCardProps> = ({
@@ -28,25 +29,25 @@ const BookMarksSectionCard: React.FC<BookMarksSectionCardProps> = ({
         <Icon className="text-7xl text-[#01748D] mb-4" />
 
         <CardTitle>
-          <a
-            href={href}
-            className="text-2xl font-semibold text-gray-700 hover:underline"
+          <Link
+            to={href}
+            className="text-xl font-semibold text-gray-700 hover:underline line-clamp-1"
           >
             {title}
-          </a>
+          </Link>
         </CardTitle>
-        <CardDescription className="mt-2 text-sm text-gray-600">
+        <CardDescription className="mt-2 text-sm text-gray-600 line-clamp-2">
           {description}
         </CardDescription>
       </CardHeader>
 
       <CardFooter className="mt-6">
-        <a
-          href={href}
+        <Link
+          to={href}
           className="px-4 py-2 text-sm flex justify-center items-center gap-2 font-medium text-gray-700 transition-colors border border-[#01748D] hover:text-white hover:bg-[#01748D] hover:border-[#01748D]"
         >
           Read More <span className="text-xl">→</span>
-        </a>
+        </Link>
       </CardFooter>
     </Card>
   );

@@ -1,82 +1,90 @@
 import BookMarksSectionCard from "@/components/ui/about/BookMarksSectionCard";
-// import bg from "../../assets/bookmarks/bg.webp";
 import {
   FaBook,
   FaHeartbeat,
   FaUniversity,
   FaInfoCircle,
+  FaYoutube,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const bookmarksData = [
   {
     title: "Overview",
-    href: "/docs/primitives/alert-dialog",
+    href: "/bookmarks/overview",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "The Global Health Bookmarks section indicates the resources either document...",
     Icon: FaBook,
   },
   {
     title: "Key public health organizations",
-    href: "/docs/primitives/hover-card",
+    href: "/bookmarks/key-public-health-organizations",
     description:
-      "For sighted users to preview content available behind a link.",
+      "Many organizations, both large and small, have long been dedicated to public health and ...",
     Icon: FaHeartbeat,
   },
   {
-    title: "Major journals",
-    href: "/docs/primitives/progress",
+    title: "Journals",
+    href: "/bookmarks/journals",
     description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "This list offers an overview of major reputable journals focused on public health and ",
     Icon: FaUniversity,
   },
   {
     title: "Data and facts",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    href: "/bookmarks/data-and-facts",
+    description:
+      "Since the foundation of the World Health Organization in 1948, the world has experienced.",
     Icon: FaInfoCircle,
   },
   {
     title: "Training and courses",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    href: "/bookmarks/training-and-courses",
+    description:
+      "This list of online training and courses in global health and health systems can help you choose and enroll in programs to ",
     Icon: FaBook,
   },
   {
     title: "Career scope",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    href: "/bookmarks/career-scope",
+    description:
+      "This platform offers information on job openings and fellowship opportunities from various organizations. Regularly ",
     Icon: FaInfoCircle,
   },
-  {
-    title: "Scholarship",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-    Icon: FaUniversity,
-  },
+
   {
     title: "Newsletter",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    href: "/bookmarks/newsletter",
+    description:
+      "A series of blogs and newsletters maintained by organizations and dedicated professionals is available. This section provides ",
     Icon: FaBook,
   },
   {
     title: "YouTube",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-    Icon: FaUniversity,
+    href: "/bookmarks/youtube",
+    description:
+      "In today's digital landscape, visual platforms are highly engaging, and public health professionals are no exception. Many organizations",
+    Icon: FaYoutube,
+  },
+
+  {
+    title: "Useful sites",
+    href: "/bookmarks/useful-sites",
+    description:
+      "In addition to the resources mentioned above, there are several other valuable sites that may not fit neatly into specific categories. These",
+    Icon: FaBook,
   },
   {
     title: "Podcast",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    href: "/bookmarks/podcast",
+    description: "Coming soon...",
     Icon: FaInfoCircle,
   },
   {
-    title: "Useful sites",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-    Icon: FaBook,
+    title: "Scholarship",
+    href: "/bookmarks/scholarship",
+    description: "Coming soon...",
+    Icon: FaUniversity,
   },
 ];
 

@@ -1,13 +1,11 @@
 import AboutSectionCard from "@/components/ui/about/AboutSectionCard";
 import aboutbg from "../../assets/about/dots-block-aqua.png";
-// Import Swiper React components
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
-// Import required modules
 import { Pagination, Autoplay } from "swiper/modules";
 import "../../App.css";
 

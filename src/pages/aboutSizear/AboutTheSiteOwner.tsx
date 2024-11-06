@@ -35,7 +35,7 @@ const AboutTheSiteOwner = () => {
             journals. The Health Systems Matter page indicate the passion and
             dedication of Sizear to explore the global health and knowledge
             dissemination in greater arena. Click here to know more about{" "}
-            <Link to="/aboutSizear" className="text-blue-500 underline ">
+            <Link to="/about-sizear" className="text-blue-500 underline ">
               Sizear.
             </Link>
           </p>

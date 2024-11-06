@@ -2,11 +2,9 @@ import {
   Card,
   CardContent,
   CardDescription,
-  // CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-// import dummyImage from "../../../assets/hero4.webp";
 
 const AboutSectionCard = ({
   title,

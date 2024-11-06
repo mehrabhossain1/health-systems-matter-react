@@ -10,7 +10,7 @@ const VisionMission = () => {
     <div className="text-gray-800 ">
       <div className="max-w-screen-xl mx-auto">
         {/* Content Section */}
-        <div className="p-8 mb-12 bg-white rounded-lg shadow-lg ">
+        <div className="p-8 mb-12 bg-white">
           <PageTitle children="Vision and Mission" />
           <p className="w-3/4 mx-auto text-2xl leading-relaxed text-gray-700">
             The vision of Health Systems Matter is to create an evidence-based
