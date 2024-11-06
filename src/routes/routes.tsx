@@ -6,6 +6,7 @@ import VisionMission from "@/pages/about/VisionMission";
 import AboutSizear from "@/pages/aboutSizear/AboutSizear";
 import AboutTheSiteOwner from "@/pages/aboutSizear/AboutTheSiteOwner";
 import Career from "@/pages/aboutSizear/Career";
+import Education from "@/pages/aboutSizear/Education";
 import ProfileSummary from "@/pages/aboutSizear/ProfileSummary";
 import BookmarksNewsletter from "@/pages/bookmarks/BookmarksNewsletter";
 import BookmarksOverview from "@/pages/bookmarks/BookmarksOverview";
@@ -213,6 +214,14 @@ const router = createBrowserRouter([
       {
         path: "/about-sizear/profile-summary",
         element: <ProfileSummary />,
+      },
+      {
+        path: "/about-sizear/education",
+        element: <Education />,
+      },
+      {
+        path: "/about-sizear/education",
+        element: <Education />,
       },
     ],
   },

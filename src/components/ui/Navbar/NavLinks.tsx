@@ -331,15 +331,15 @@ export default function NavLinks() {
                   <ListItem
                     to="/about-sizear/profile-summary"
                     title="Profile summary"
-                  >
-                    Re-usable components built using Radix UI and Tailwind CSS.
-                  </ListItem>
-                  <ListItem to="/docs/installation" title="Education">
-                    How to install dependencies and structure your app.
-                  </ListItem>
-                  <ListItem to="/about-sizear/career-summary" title="Career">
-                    Styles for headings, paragraphs, lists...etc
-                  </ListItem>
+                  ></ListItem>
+                  <ListItem
+                    to="/about-sizear/education"
+                    title="Education"
+                  ></ListItem>
+                  <ListItem
+                    to="/about-sizear/career-summary"
+                    title="Career"
+                  ></ListItem>
                   <ListItem
                     to="/docs/primitives/typography"
                     title="Current Professional Affiliations"
