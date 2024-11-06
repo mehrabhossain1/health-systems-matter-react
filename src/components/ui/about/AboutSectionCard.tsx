@@ -22,7 +22,7 @@ const AboutSectionCard = ({
       className={`h-full flex flex-col shadow-lg border-none ${bgColor} rounded-none transition-transform transform hover:scale-105`}
     >
       <CardHeader className="p-6">
-        <CardTitle className="pt-5 text-2xl font-medium text-white transition-colors cursor-pointer decoration-[#55D5FE] hover:underline underline-offset-4">
+        <CardTitle className="pt-5 text-2xl font-medium text-white transition-colors cursor-pointer decoration-[#01748D] hover:underline underline-offset-4">
           {title}
         </CardTitle>
       </CardHeader>
@@ -34,18 +34,10 @@ const AboutSectionCard = ({
 
         <hr className="my-4 border-gray-300" />
 
-        <p className="pl-8 text-sm font-medium text-white underline-offset-4 transition-colors cursor-pointer decoration-[#55D5FE] hover:underline">
+        <p className="pl-8 text-sm font-medium text-white underline-offset-4 transition-colors cursor-pointer decoration-[#01748D] hover:underline">
           Read More <span className="text-xl">→</span>
         </p>
       </CardContent>
-
-      {/* <CardFooter className="flex justify-end p-0 mt-4">
-        <img
-          src={dummyImage}
-          alt="Dummy"
-          className="object-cover w-full pl-8 rounded-none h-60"
-        />
-      </CardFooter> */}
     </Card>
   );
 };

@@ -10,7 +10,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { Link } from "react-router-dom";
-import ownerImg from "../../../assets/ownerImg.png";
+import ownerImg from "../../../assets/ownerImg.webp";
 
 // Main Resources items
 const resourcesSubLinks = [

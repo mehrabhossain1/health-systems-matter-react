@@ -1,29 +1,25 @@
 import { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import testimonialImage1 from "../../assets/hero1.webp";
-import testimonialImage2 from "../../assets/hero2.webp";
-import testimonialImage3 from "../../assets/hero3.webp";
-import "../../App.css"; // For custom animations if needed
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const testimonials = [
   {
-    image: testimonialImage1,
+    image: "",
     name: "Dr. John Doe",
     title: "Global Health Specialist",
     quote:
       "Health Systems Matter has been an invaluable resource. Their commitment to promoting impactful health system resources is commendable.",
   },
   {
-    image: testimonialImage2,
+    image: "",
     name: "Dr. Jane Smith",
     title: "Public Health Consultant",
     quote:
       "Thanks to Health Systems Matter, I was able to stay up-to-date with the latest global health events and milestones. I can't recommend them enough.",
   },
   {
-    image: testimonialImage3,
+    image: "",
     name: "Dr. Emily Davis",
     title: "Health Policy Analyst",
     quote:
@@ -75,12 +71,15 @@ const TestimonialsSection = () => {
     <section
       data-aos="fade-right"
       data-aos-duration="1000"
-      className="py-32 bg-gray-50 dark:bg-gray-900"
+      className="py-12 pb-20"
     >
       <div className="max-w-screen-xl px-6 mx-auto">
-        <h2 className="mb-16 text-5xl font-light text-center text-gray-800 dark:text-gray-300">
-          What People Are Saying
-        </h2>
+        <div className="flex flex-row-reverse items-center justify-center gap-10 py-10 pt-20">
+          <h2 className="text-6xl font-serif font-semibold text-[#01748D] pe-10 mb-10">
+            Testimonials
+          </h2>
+          <div className="flex-1 ml-4 border-t border-[#01748D]"></div>
+        </div>
 
         {/* Carousel */}
         <div className="relative flex items-center justify-center">
@@ -108,13 +107,13 @@ const TestimonialsSection = () => {
           {/* Carousel Controls */}
           <button
             onClick={handlePrev}
-            className="absolute left-0 p-3 text-gray-700 transition transform -translate-y-1/2 bg-gray-200 rounded-full shadow-md dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 top-1/2"
+            className="absolute left-0 p-3 m-3 text-gray-700 transition transform -translate-y-1/2 bg-gray-200 rounded-full shadow-md dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 top-1/2"
           >
             <FaChevronLeft size={20} />
           </button>
           <button
             onClick={handleNext}
-            className="absolute right-0 p-3 text-gray-700 transition transform -translate-y-1/2 bg-gray-200 rounded-full shadow-md dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 top-1/2"
+            className="absolute right-0 p-3 m-3 text-gray-700 transition transform -translate-y-1/2 bg-gray-200 rounded-full shadow-md dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 top-1/2"
           >
             <FaChevronRight size={20} />
           </button>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ownerImg from "../../../assets/ownerImg.png";
+import ownerImg from "../../../assets/ownerImg.webp";
 import { Button } from "../button";
 import BlinkingButton from "../blinkingButton/BlinkingButton";
 import logo from "../../../assets/logo3.png";

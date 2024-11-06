@@ -38,7 +38,7 @@ const ResourcesSectionCard: React.FC<ResourcesSectionCardProps> = ({
           <p>{description}</p>
         </CardContent>
         <CardFooter className="flex justify-end">
-          <button className="px-4 py-2 text-sm font-medium flex items-center justify-center gap-2 text-white bg-[#000B58] hover:bg-[#003161] transition">
+          <button className="px-4 py-2 text-sm font-medium flex items-center justify-center gap-2 text-white bg-[#000B58] hover:bg-[#01748D] transition">
             More Details <span className="text-xl">→</span>
           </button>
         </CardFooter>

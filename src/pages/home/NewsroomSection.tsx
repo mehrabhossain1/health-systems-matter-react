@@ -33,14 +33,11 @@ const NewsroomSection = () => {
   return (
     <section className="py-12 bg-gray-100">
       <div className="max-w-screen-xl mx-auto">
-        <div className="flex flex-row items-center gap-10 py-10 pb-20">
-          <h2
-            className="pl-10 text-6xl font-semibold text-gray-700 pe-10"
-            style={{ fontFamily: "DynaPuff" }}
-          >
+        <div className="flex items-center gap-10 py-10 pb-20 mb-5 ">
+          <h2 className="pl-10 font-serif text-6xl font-semibold text-[#01748D]">
             Newsroom
           </h2>
-          <div className="flex-1 ml-4 border-t border-black"></div>
+          <div className="flex-1 ml-4 border-t border-[#01748D]"></div>
         </div>
         <div className="grid grid-cols-1 gap-2 pb-20 sm:grid-cols-2 lg:grid-cols-3">
           {newsroomSubLinks.map((item, index) => (

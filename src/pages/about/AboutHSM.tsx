@@ -1,4 +1,4 @@
-import contentImage from "../../assets/ownerImg.png"; // Replace with actual image path
+import contentImage from "../../assets/ownerImg.webp"; // Replace with actual image path
 import { useEffect } from "react";
 import PageTitle from "@/components/shared/PageTitle";
 

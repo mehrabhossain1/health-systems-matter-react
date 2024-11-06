@@ -34,14 +34,11 @@ const ContactSection: React.FC = () => {
   return (
     <section className="py-12 bg-gray-100">
       <div className="max-w-screen-xl pb-20 mx-auto text-center">
-        <div className="flex flex-row-reverse items-center gap-10 py-10 ">
-          <h2
-            className="text-6xl font-semibold text-gray-800 pe-10"
-            style={{ fontFamily: "DynaPuff" }}
-          >
+        <div className="flex flex-row-reverse items-center gap-10 py-10 pt-20 mb-10">
+          <h2 className="text-6xl font-serif font-semibold text-[#01748D] pe-10">
             Contact
           </h2>
-          <div className="flex-1 ml-4 border-t border-black"></div>
+          <div className="flex-1 ml-4 border-t border-[#01748D]"></div>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {contactSubLinks.map((link, index) => (

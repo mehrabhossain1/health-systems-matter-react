@@ -34,7 +34,7 @@ const NewsletterCard: React.FC<NewsletterCardProps> = ({
         <CardHeader>
           <Link
             to={href}
-            className="text-xl font-bold text-white decoration-[#DBF4F5] underline-offset-2 hover:underline transition-colors"
+            className="text-xl font-bold text-white transition-colors underline-offset-2 hover:underline"
           >
             <CardTitle>{title}</CardTitle>
           </Link>
@@ -46,7 +46,7 @@ const NewsletterCard: React.FC<NewsletterCardProps> = ({
       <CardFooter className="mt-6">
         <Link
           to={href}
-          className="inline-block w-full px-4 py-2 text-sm font-medium text-center text-white bg-[#185e94] transition-colors hover:bg-[#1e73b4]"
+          className="inline-block w-full px-4 py-2 text-sm font-medium text-center text-white bg-[#185e94] transition-colors hover:bg-[#01748D]"
           style={{ borderRadius: 0 }}
         >
           Learn More

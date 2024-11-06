@@ -1,5 +1,4 @@
 import React from "react";
-import ownerImg from "../../assets/ownerImg.png";
 
 interface ListItemProps {
   href: string;
@@ -9,33 +8,24 @@ interface ListItemProps {
 
 const ListItem: React.FC<ListItemProps> = ({ href, title, children }) => {
   return (
-    <div className="p-6 transition-transform duration-300 transform bg-white border border-gray-300 shadow-md hover:scale-105 hover:shadow-xl">
-      <h2 className="mb-2 text-2xl font-semibold text-gray-800">
-        <a href={href} className="text-blue-700 hover:underline">
+    <div className="p-6 transition-all duration-300 transform border border-gray-300 shadow-lg hover:scale-105 hover:shadow-xl hover:shadow-orange-500">
+      <h2 className="mb-4 text-2xl font-semibold text-[#F18A00]">
+        <a href={href} className=" hover:underline">
           {title}
         </a>
       </h2>
-      <p className="text-gray-600">{children}</p>
+      <p className="leading-relaxed text-gray-300">{children}</p>
     </div>
   );
 };
 
 const AboutSizearSection: React.FC = () => {
   return (
-    <div
-      className="bg-fixed bg-top bg-no-repeat bg-cover"
-      style={{
-        backgroundImage: `url(${ownerImg})`,
-        backgroundAttachment: "fixed",
-      }}
-    >
-      <div className="bg-gray-700 bg-opacity-75">
-        <div className="max-w-screen-xl px-6 py-20 mx-auto ">
+    <div className="bg-fixed bg-top bg-no-repeat bg-cover bg-[#23728D]">
+      <div className="bg-opacity-75">
+        <div className="max-w-screen-xl px-6 py-20 mx-auto">
           <div className="flex flex-row items-center gap-10 py-10 pb-20">
-            <h2
-              className="pl-10 text-6xl font-semibold text-white "
-              style={{ fontFamily: "DynaPuff" }}
-            >
+            <h2 className="pl-10 font-serif text-6xl font-semibold text-white">
               About Sizear
             </h2>
             <div className="flex-1 ml-4 border-t border-white"></div>
@@ -49,25 +39,43 @@ const AboutSizearSection: React.FC = () => {
               How to install dependencies and structure your app.
             </ListItem>
             <ListItem href="/docs/primitives/typography" title="Career">
-              Styles for headings, paragraphs, lists...etc.
+              Styles for headings, paragraphs, lists, etc.
             </ListItem>
             <ListItem
               href="/docs/primitives/typography"
               title="Current Professional Affiliations"
             >
-              Styles for headings, paragraphs, lists...etc.
+              Overview of professional memberships and organizations.
             </ListItem>
             <ListItem
               href="/docs/primitives/typography"
               title="Achievement and Awards"
             >
-              Styles for headings, paragraphs, lists...etc.
+              Recognized for contributions to the industry.
             </ListItem>
             <ListItem href="/docs/primitives/typography" title="Publications">
-              Styles for headings, paragraphs, lists...etc.
+              Publications in various journals and conferences.
+            </ListItem>
+            <ListItem href="/docs/primitives/typography" title="Family">
+              Personal information about family life.
+            </ListItem>
+            <ListItem href="/docs/primitives/typography" title="Me in Numbers">
+              A statistical look at my achievements and impact.
+            </ListItem>
+            <ListItem href="/docs/primitives/typography" title="My Book">
+              Information about my upcoming or published book.
+            </ListItem>
+            <ListItem
+              href="/docs/primitives/typography"
+              title="Featured in Media"
+            >
+              Press features and media coverage of my work.
+            </ListItem>
+            <ListItem href="/docs/primitives/typography" title="Travel History">
+              Places I've traveled and experiences shared.
             </ListItem>
             <ListItem href="/docs/primitives/typography" title="Contact me">
-              Styles for headings, paragraphs, lists...etc.
+              Ways to get in touch with me directly.
             </ListItem>
           </div>
         </div>

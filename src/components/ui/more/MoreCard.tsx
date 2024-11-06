@@ -18,7 +18,7 @@ const MoreCard: React.FC<ContactCardProps> = ({
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
-      className="overflow-hidden transition-all transform bg-[#003161] rounded-lg shadow-lg hover:shadow-xl"
+      className="overflow-hidden transition-all transform bg-[#003161] shadow-lg hover:shadow-xl"
     >
       <a href={href} className="flex h-full">
         {/* Icon Section */}
@@ -28,7 +28,7 @@ const MoreCard: React.FC<ContactCardProps> = ({
 
         {/* Text Section */}
         <div className="flex-1 p-6">
-          <h3 className="text-xl font-semibold text-gray-100 transition-all duration-300 hover:underline decoration-[#FFF4B7]">
+          <h3 className="text-xl font-semibold text-gray-100 transition-all duration-300 hover:underline decoration-[#01748D]">
             {title}
           </h3>
           <p className="mt-2 text-gray-300">{description}</p>
