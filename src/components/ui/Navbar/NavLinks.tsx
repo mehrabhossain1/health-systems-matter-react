@@ -320,7 +320,7 @@ export default function NavLinks() {
                     <NavigationMenuLink asChild>
                       <a
                         className="flex flex-col items-center justify-center w-full h-full p-6 no-underline rounded-md outline-none select-none from-muted/50 to-muted focus:shadow-md"
-                        href="/"
+                        href="/about-sizear"
                       >
                         <div className="w-24 h-24 mt-4 mb-2">
                           <img src={ownerImg} className="rounded-full" alt="" />
@@ -328,13 +328,16 @@ export default function NavLinks() {
                       </a>
                     </NavigationMenuLink>
                   </li>
-                  <ListItem to="/docs" title="Profile summary">
+                  <ListItem
+                    to="/about-sizear/profile-summary"
+                    title="Profile summary"
+                  >
                     Re-usable components built using Radix UI and Tailwind CSS.
                   </ListItem>
                   <ListItem to="/docs/installation" title="Education">
                     How to install dependencies and structure your app.
                   </ListItem>
-                  <ListItem to="/docs/primitives/typography" title="Career">
+                  <ListItem to="/about-sizear/career-summary" title="Career">
                     Styles for headings, paragraphs, lists...etc
                   </ListItem>
                   <ListItem

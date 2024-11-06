@@ -11,7 +11,12 @@ const AboutTheSiteOwner = () => {
           <p className="w-3/4 mx-auto text-2xl leading-relaxed text-gray-700">
             The <span className="font-bold">“Health Systems Matter”</span>{" "}
             website and page in social media created and maintained by{" "}
-            <span className="font-bold underline">Monaemul Islam Sizear.</span>{" "}
+            <Link
+              to="/about-sizear"
+              className="font-bold text-blue-500 underline"
+            >
+              Monaemul Islam Sizear.
+            </Link>{" "}
             He is an enthusiastic public health professional with more than 10
             years of experience with the government and development partners in
             the health system, health financing, public financial management,
