@@ -311,7 +311,7 @@ export default function NavLinks() {
           <div>
             <NavigationMenuItem>
               <NavigationMenuTrigger className="p-2 text-xl font-semibold text-[#F18A00] hover:decoration-[#ffb452] hover:text-[#ffb452] transition duration-300 ease-in-out transform hover:scale-105 pulse-animation">
-                About Sizear
+                <Link to="/about-sizear">About Sizear</Link>
               </NavigationMenuTrigger>
 
               <NavigationMenuContent>

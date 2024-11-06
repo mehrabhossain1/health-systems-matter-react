@@ -3,6 +3,8 @@ import AboutHSM from "@/pages/about/AboutHSM";
 import ActivitiesAndApproach from "@/pages/about/ActivitiesAndApproach";
 import Testimonials from "@/pages/about/Testimonials";
 import VisionMission from "@/pages/about/VisionMission";
+import AboutSizear from "@/pages/aboutSizear/AboutSizear";
+import AboutTheSiteOwner from "@/pages/aboutSizear/AboutTheSiteOwner";
 import BookmarksNewsletter from "@/pages/bookmarks/BookmarksNewsletter";
 import BookmarksOverview from "@/pages/bookmarks/BookmarksOverview";
 import BookmarksYouTube from "@/pages/bookmarks/BookmarksYouTube";
@@ -191,6 +193,16 @@ const router = createBrowserRouter([
       {
         path: "/contact/stay-connected",
         element: <StayConnected />,
+      },
+
+      //! About Sizear
+      {
+        path: "/about-the-site-owner",
+        element: <AboutTheSiteOwner />,
+      },
+      {
+        path: "/about-sizear",
+        element: <AboutSizear />,
       },
     ],
   },
