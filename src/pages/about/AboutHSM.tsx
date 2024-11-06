@@ -8,13 +8,13 @@ const AboutHSM = () => {
 
   return (
     <div className="text-gray-800 ">
-      <div className="max-w-screen-xl p-8 mx-auto mb-12">
+      <div className="max-w-screen-xl p-8 mx-auto mb-12 ">
         {/* Hero Section */}
         <PageTitle children="About HSM" />
 
         {/* Content Section */}
 
-        <div className="space-y-6">
+        <div className="w-3/4 mx-auto space-y-6">
           <p className="text-lg leading-relaxed md:text-xl lg:text-2xl">
             “Information is power” and “Evidence lies at the heart of public
             health policy.” Inspired by the principles of valuing information

@@ -12,11 +12,11 @@ const ActivitiesAndApproach = () => {
         {/* Activities Section */}
         <div className="p-8 mb-12 bg-white">
           <PageTitle children="Activities and Approach" />
-          <h1 className="text-base leading-relaxed text-gray-700">
+          <p className="w-3/4 mx-auto text-base leading-relaxed text-gray-700">
             In order to be aligned with the vision and mission of Health Systems
             Matter, the specific activities are as follows:
-          </h1>
-          <ul className="mt-4 space-y-2 text-xl text-gray-700 list-disc list-inside">
+          </p>
+          <ul className="w-3/4 mx-auto mt-4 space-y-2 text-xl text-gray-700 list-disc list-inside">
             <li>Showcasing health system and global health documents daily.</li>
             <li>Generating and regenerating demand for impactful documents.</li>
             <li>Disseminating major public health events and milestones.</li>
