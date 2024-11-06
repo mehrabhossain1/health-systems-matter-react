@@ -1,4 +1,3 @@
-import contentImage from "../../assets/ownerImg.webp"; // Replace with actual image path
 import { useEffect } from "react";
 import PageTitle from "@/components/shared/PageTitle";
 
@@ -14,36 +13,25 @@ const AboutHSM = () => {
         <PageTitle children="About HSM" />
 
         {/* Content Section */}
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-          <div className="space-y-6">
-            <p className="text-lg leading-relaxed md:text-xl lg:text-2xl">
-              “Information is power” and “Evidence lies at the heart of public
-              health policy.” Inspired by the principles of valuing information
-              and evidence, Health Systems Matter (HSM) offers essential
-              resources on health systems, public health events, and career
-              opportunities.
-            </p>
-            <p className="text-lg leading-relaxed md:text-xl lg:text-2xl">
-              HSM serves as an independent, comprehensive global health
-              resource, providing updates on public health issues and career
-              opportunities. The site hunts crucial reports, current
-              information, and impactful articles from global entities, ensuring
-              proper referencing.
-            </p>
-            <p className="text-lg leading-relaxed md:text-xl lg:text-2xl">
-              By subscribing or visiting regularly, users can stay informed
-              about a wide range of documents and news related to global health
-              issues from various organizations and life changing career
-              opportunities.
-            </p>
-          </div>
-          <div className="overflow-hidden rounded-lg shadow-lg">
-            <img
-              src={contentImage}
-              alt="Public Health"
-              className="object-cover w-full h-full"
-            />
-          </div>
+
+        <div className="space-y-6">
+          <p className="text-lg leading-relaxed md:text-xl lg:text-2xl">
+            “Information is power” and “Evidence lies at the heart of public
+            health policy.” Inspired by the principles of valuing information
+            and evidence, Health Systems Matter (HSM) offers essential resources
+            on health systems, public health events, and career opportunities.
+          </p>
+          <p className="text-lg leading-relaxed md:text-xl lg:text-2xl">
+            HSM serves as an independent, comprehensive global health resource,
+            providing updates on public health issues and career opportunities.
+            The site hunts crucial reports, current information, and impactful
+            articles from global entities, ensuring proper referencing.
+          </p>
+          <p className="text-lg leading-relaxed md:text-xl lg:text-2xl">
+            By subscribing or visiting regularly, users can stay informed about
+            a wide range of documents and news related to global health issues
+            from various organizations and life changing career opportunities.
+          </p>
         </div>
 
         {/* Features Section */}
