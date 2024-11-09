@@ -79,6 +79,21 @@ const ResourcesSection = () => {
               description={`Description for ${link.title}`}
               imageUrl={link.img}
               href={link.href}
+              // Add two buttons to the "Reports" card only
+              hasTwoButtons={link.title === "Reports"} // Only the Reports card gets two buttons
+              buttonLabels={
+                link.title === "Reports"
+                  ? ["Major Reports", "Topic Wise Reports"]
+                  : ["Read More"] // Other cards get only one button
+              }
+              buttonLinks={
+                link.title === "Reports"
+                  ? [
+                      "/resources/reports/major-reports", // Major Reports link
+                      "/resources/reports/topic-wise-reports", // Topic Wise Reports link
+                    ]
+                  : [link.href] // Other cards get their default href
+              }
             />
           ))}
         </div>
