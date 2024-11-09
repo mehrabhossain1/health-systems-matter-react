@@ -185,7 +185,7 @@ const contactSubLinks: {
 
 export default function NavLinks() {
   return (
-    <div className="bg-[#01748D]">
+    <div className="bg-[#5ACDC1]">
       <NavigationMenu className="h-16 max-w-screen-xl gap-5 mx-auto border-b">
         <NavigationMenuList className="flex md:gap-20">
           <div className="flex">

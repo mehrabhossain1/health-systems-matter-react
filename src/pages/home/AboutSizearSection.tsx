@@ -11,7 +11,7 @@ const ListItem: React.FC<ListItemProps> = ({ href, title, children }) => {
   return (
     <div className="p-6 transition-all duration-300 transform border border-gray-300 shadow-lg hover:scale-105 hover:shadow-xl hover:shadow-orange-500">
       <h2 className="mb-4 text-2xl font-semibold text-[#F18A00]">
-        <Link to={href} className=" hover:underline">
+        <Link to={href} className="hover:underline">
           {title}
         </Link>
       </h2>
@@ -39,7 +39,7 @@ const AboutSizearSection: React.FC = () => {
             <ListItem href="/docs/installation" title="Education">
               How to install dependencies and structure your app.
             </ListItem>
-            <ListItem href="/career-summary" title="Career">
+            <ListItem href="/about-sizear/career-summary" title="Career">
               Sizear has worked in various national and international
               organizations in the research and program sectors.
             </ListItem>
