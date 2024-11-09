@@ -175,11 +175,11 @@ const contactSubLinks: {
   },
   {
     title: "Subscribe",
-    href: "/docs/primitives/hover-card",
+    href: "/contact/subscribe",
   },
   {
     title: "Support",
-    href: "/docs/primitives/progress",
+    href: "/contact/support",
   },
 ];
 
@@ -342,7 +342,7 @@ export default function NavLinks() {
                   ></ListItem>
 
                   <ListItem
-                    to="/docs/primitives/typography"
+                    to="/about-sizear/current-professional-affiliations"
                     title="Current Professional Affiliations"
                   >
                     Styles for headings, paragraphs, lists...etc
@@ -358,19 +358,19 @@ export default function NavLinks() {
                     title="Publications"
                   ></ListItem>
 
-                  <ListItem to="/docs/primitives/typography" title="Contact me">
+                  <ListItem to="/about-sizear/contact-me" title="Contact me">
                     Styles for headings, paragraphs, lists...etc
                   </ListItem>
-                  <ListItem to="/docs/primitives/typography" title="Family">
+                  <ListItem to="/about-sizear/family" title="Family">
                     Styles for headings, paragraphs, lists...etc
                   </ListItem>
                   <ListItem
-                    to="/docs/primitives/typography"
+                    to="/about-sizear/me-in-numbers"
                     title="Me in Numbers"
                   >
                     Styles for headings, paragraphs, lists...etc
                   </ListItem>
-                  <ListItem to="/docs/primitives/typography" title="My Book">
+                  <ListItem to="/about-sizear/my-books" title="My Books">
                     Styles for headings, paragraphs, lists...etc
                   </ListItem>
                   <ListItem
@@ -380,7 +380,7 @@ export default function NavLinks() {
                     Styles for headings, paragraphs, lists...etc
                   </ListItem>
                   <ListItem
-                    to="/docs/primitives/typography"
+                    to="/about-sizear/travel-history"
                     title="Travel history"
                   >
                     Styles for headings, paragraphs, lists...etc

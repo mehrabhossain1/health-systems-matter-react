@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
 
             <div className="flex mt-6 space-x-4">
               <a
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/p/health-systems-matter-61564171250656"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-[#3b5998] text-white rounded-full shadow-lg hover:shadow-xl transition"
@@ -111,7 +111,7 @@ const Footer: React.FC = () => {
                 <FaFacebook size={30} />
               </a>
               <a
-                href="https://www.facebook.com"
+                href="https://www.linkedin.com/company/104141138/admin/dashboard"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-[#0077b5] text-white rounded-full shadow-lg hover:shadow-xl transition"

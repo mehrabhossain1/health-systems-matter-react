@@ -37,7 +37,9 @@ export const theme = {
         "100%": { transform: "translateX(100%)", opacity: 0 },
       },
     },
-
+    fontFamily: {
+      sans: ["Roboto", "sans-serif"], // Set 'Roboto' as the default sans-serif font
+    },
     colors: {
       border: "hsl(var(--border))",
       input: "hsl(var(--input))",

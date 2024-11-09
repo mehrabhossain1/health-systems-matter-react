@@ -8,13 +8,13 @@ import img3 from "../../assets/about/testimonials.jfif";
 
 const AboutUsSection = () => {
   return (
-    <section className="mt-20" id="about">
+    <section className="pt-20 pb-20 bg-[#F3F4F4]" id="about">
       {/* Optional: Overlay for better text readability */}
       <div className="inset-0 opacity-50"></div>
 
       <div className="max-w-screen-xl mx-auto">
         {/* Title with horizontal line */}
-        <div className="flex items-center gap-10 mb-10">
+        <div className="flex items-center gap-10 pb-10">
           <h2 className="pl-10 text-5xl font-semibold text-[#01748D]">About</h2>
           <div className="flex-1 ml-4 border-t border-[#01748D]"></div>
         </div>

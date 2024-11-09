@@ -58,7 +58,7 @@ const ListItem: React.FC<ListItemProps> = ({
 
 const AboutSizearSection: React.FC = () => {
   return (
-    <section className="bg-opacity-75" id="about-sizear">
+    <section className="bg-opacity-75 bg-[#D7D1CB]" id="about-sizear">
       <div className="max-w-screen-xl px-6 py-20 mx-auto">
         <div className="flex flex-row items-center gap-10 mb-10">
           <h2 className="pl-10 text-5xl font-semibold text-[#23728D]">
@@ -91,7 +91,7 @@ const AboutSizearSection: React.FC = () => {
             organizations in the research and program sectors.
           </ListItem>
           <ListItem
-            href="/docs/primitives/typography"
+            href="/about-sizear/current-professional-affiliations"
             title="Current Professional Affiliations"
             imageUrl={img12}
           >
@@ -111,23 +111,19 @@ const AboutSizearSection: React.FC = () => {
           >
             Publications in various journals and conferences.
           </ListItem>
-          <ListItem
-            href="/docs/primitives/typography"
-            title="Family"
-            imageUrl={img11}
-          >
+          <ListItem href="/about-sizear/family" title="Family" imageUrl={img11}>
             Personal information about family life.
           </ListItem>
           <ListItem
-            href="/docs/primitives/typography"
+            href="/about-sizear/me-in-numbers"
             title="Me in Numbers"
             imageUrl={img1}
           >
             A statistical look at my achievements and impact.
           </ListItem>
           <ListItem
-            href="/docs/primitives/typography"
-            title="My Book"
+            href="/about-sizear/my-books"
+            title="My Books"
             imageUrl={img5}
           >
             Information about my upcoming or published book.
@@ -140,14 +136,14 @@ const AboutSizearSection: React.FC = () => {
             Press features and media coverage of my work.
           </ListItem>
           <ListItem
-            href="/docs/primitives/typography"
+            href="/about-sizear/travel-history"
             title="Travel History"
             imageUrl={img6}
           >
             Places I've traveled and experiences shared.
           </ListItem>
           <ListItem
-            href="/docs/primitives/typography"
+            href="/about-sizear/contact-me"
             title="Contact me"
             imageUrl={img4}
           >
