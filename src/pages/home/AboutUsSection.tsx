@@ -8,9 +8,9 @@ const AboutUsSection = () => {
       {/* Optional: Overlay for better text readability */}
       <div className="absolute inset-0 opacity-50"></div>
 
-      <div className="relative max-w-screen-xl mx-auto mb-10">
+      <div className="relative max-w-screen-xl mx-auto">
         {/* Title with horizontal line */}
-        <div className="flex items-center gap-10">
+        <div className="flex items-center gap-10 mb-10">
           <h2 className="pl-10 text-5xl font-semibold text-[#01748D]">About</h2>
           <div className="flex-1 ml-4 border-t border-[#01748D]"></div>
         </div>
