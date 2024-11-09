@@ -58,11 +58,11 @@ const ResourcesSection = () => {
   ];
 
   return (
-    <section className="bg-[#DBF4F5]">
-      <div className="max-w-screen-xl mx-auto">
-        <div className="flex items-center justify-center gap-6">
+    <section className="">
+      <div className="max-w-screen-xl mx-auto mt-20">
+        <div className="flex items-center justify-center gap-6 mb-10">
           <div className="flex-1 h-px bg-[#01748D]"></div>
-          <h2 className="font-serif text-6xl text-[#01748D]">Resources</h2>
+          <h2 className="text-5xl text-[#01748D]">Resources</h2>
           <div className="flex-1 h-px bg-[#01748D]"></div>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

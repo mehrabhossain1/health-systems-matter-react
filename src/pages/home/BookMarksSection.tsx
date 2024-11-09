@@ -96,10 +96,10 @@ const itemVariants = {
 
 const BookMarksSection = () => {
   return (
-    <section className="relative py-20 bg-fixed bg-center bg-cover md:py-28 bg-[#F4F3F0]">
+    <section className="mt-20 bg-center bg-cover ">
       <div className="max-w-screen-xl mx-auto">
-        <div className="flex items-center gap-10 py-10 pb-20 mb-5 ">
-          <h2 className="pl-10 font-serif text-6xl font-semibold text-[#01748D]">
+        <div className="flex items-center gap-10 mb-10">
+          <h2 className="pl-10 text-5xl font-semibold text-[#01748D]">
             Bookmarks
           </h2>
           <div className="flex-1 ml-4 border-t border-[#01748D]"></div>

@@ -30,7 +30,7 @@ const AboutSectionCard = ({
           {description}
         </CardDescription>
 
-        <p className="text-sm font-medium flex items-center justify-end mt-4 text-gray-800 underline-offset-8 transition-colors cursor-pointer decoration-[#01748D]">
+        <p className="text-sm font-medium flex outline-none items-center justify-end mt-4 text-gray-800 underline-offset-8 transition-colors cursor-pointer decoration-[#01748D]">
           <span className="px-4 text-lg border rounded-sm hover:bg-[#01748D] hover:text-white">
             →
           </span>
