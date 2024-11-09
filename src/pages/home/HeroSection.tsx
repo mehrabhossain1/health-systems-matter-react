@@ -1,9 +1,9 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 
-import img1 from "../../assets/hero/WhatsApp Image 2024-11-09 at 10.58.34 (1).jpeg";
-import img2 from "../../assets/hero/WhatsApp Image 2024-11-09 at 10.58.34 (2).jpeg";
-import img3 from "../../assets/hero/WhatsApp Image 2024-11-09 at 10.58.34.jpeg";
+// import img1 from "../../assets/hero/WhatsApp Image 2024-11-09 at 10.58.34 (1).jpeg";
+// import img2 from "../../assets/hero/WhatsApp Image 2024-11-09 at 10.58.34 (2).jpeg";
+// import img3 from "../../assets/hero/WhatsApp Image 2024-11-09 at 10.58.34.jpeg";
 
 const HeroSection = () => {
   // Animation variants for stagger effect
