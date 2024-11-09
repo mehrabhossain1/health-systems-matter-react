@@ -28,10 +28,7 @@ const ListItem: React.FC<ListItemProps> = ({
   imageUrl,
 }) => {
   return (
-    <section
-      className="flex flex-col items-center p-6 transition-all duration-300 transform border border-[#23728D] rounded-md shadow-sm hover:scale-105 hover:shadow-md hover:shadow-orange-500 md:flex-row"
-      id="about-sizear"
-    >
+    <div className="flex flex-col items-center p-6 transition-all duration-300 transform border border-[#23728D] rounded-md shadow-sm hover:scale-105 hover:shadow-md hover:shadow-orange-500 md:flex-row">
       {/* Left side: Text Content */}
       <div className="flex-1">
         <h2 className="mb-4 text-2xl font-semibold text-gray-800">
@@ -55,112 +52,110 @@ const ListItem: React.FC<ListItemProps> = ({
           className="object-cover w-full h-full rounded-md"
         />
       </div>
-    </section>
+    </div>
   );
 };
 
 const AboutSizearSection: React.FC = () => {
   return (
-    <div className="">
-      <div className="bg-opacity-75">
-        <div className="max-w-screen-xl px-6 py-20 mx-auto">
-          <div className="flex flex-row items-center gap-10 mb-10">
-            <h2 className="pl-10 text-5xl font-semibold text-[#23728D]">
-              About Sizear
-            </h2>
-            <div className="flex-1 ml-4 border-t border-[#23728D]"></div>
-          </div>
-          {/* Section Title */}
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <ListItem
-              href="/about-sizear/profile-summary"
-              title="Profile summary"
-              imageUrl={img8}
-            >
-              Re-usable components built using Radix UI and Tailwind CSS.
-            </ListItem>
-            <ListItem
-              href="/about-sizear/education"
-              title="Education"
-              imageUrl={img9}
-            >
-              How to install dependencies and structure your app.
-            </ListItem>
-            <ListItem
-              href="/about-sizear/career-summary"
-              title="Career"
-              imageUrl={img10}
-            >
-              Sizear has worked in various national and international
-              organizations in the research and program sectors.
-            </ListItem>
-            <ListItem
-              href="/docs/primitives/typography"
-              title="Current Professional Affiliations"
-              imageUrl={img12}
-            >
-              Overview of professional memberships and organizations.
-            </ListItem>
-            <ListItem
-              href="/about-sizear/achievement-awards"
-              title="Achievement and Awards"
-              imageUrl={img3}
-            >
-              Recognized for contributions to the industry.
-            </ListItem>
-            <ListItem
-              href="/about-sizear/publications"
-              title="Publications"
-              imageUrl={img7}
-            >
-              Publications in various journals and conferences.
-            </ListItem>
-            <ListItem
-              href="/docs/primitives/typography"
-              title="Family"
-              imageUrl={img11}
-            >
-              Personal information about family life.
-            </ListItem>
-            <ListItem
-              href="/docs/primitives/typography"
-              title="Me in Numbers"
-              imageUrl={img1}
-            >
-              A statistical look at my achievements and impact.
-            </ListItem>
-            <ListItem
-              href="/docs/primitives/typography"
-              title="My Book"
-              imageUrl={img5}
-            >
-              Information about my upcoming or published book.
-            </ListItem>
-            <ListItem
-              href="/about-sizear/featured-in-media"
-              title="Featured in Media"
-              imageUrl={img2}
-            >
-              Press features and media coverage of my work.
-            </ListItem>
-            <ListItem
-              href="/docs/primitives/typography"
-              title="Travel History"
-              imageUrl={img6}
-            >
-              Places I've traveled and experiences shared.
-            </ListItem>
-            <ListItem
-              href="/docs/primitives/typography"
-              title="Contact me"
-              imageUrl={img4}
-            >
-              Ways to get in touch with me directly.
-            </ListItem>
-          </div>
+    <section className="bg-opacity-75" id="about-sizear">
+      <div className="max-w-screen-xl px-6 py-20 mx-auto">
+        <div className="flex flex-row items-center gap-10 mb-10">
+          <h2 className="pl-10 text-5xl font-semibold text-[#23728D]">
+            About Sizear
+          </h2>
+          <div className="flex-1 ml-4 border-t border-[#23728D]"></div>
+        </div>
+        {/* Section Title */}
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <ListItem
+            href="/about-sizear/profile-summary"
+            title="Profile summary"
+            imageUrl={img8}
+          >
+            Re-usable components built using Radix UI and Tailwind CSS.
+          </ListItem>
+          <ListItem
+            href="/about-sizear/education"
+            title="Education"
+            imageUrl={img9}
+          >
+            How to install dependencies and structure your app.
+          </ListItem>
+          <ListItem
+            href="/about-sizear/career-summary"
+            title="Career"
+            imageUrl={img10}
+          >
+            Sizear has worked in various national and international
+            organizations in the research and program sectors.
+          </ListItem>
+          <ListItem
+            href="/docs/primitives/typography"
+            title="Current Professional Affiliations"
+            imageUrl={img12}
+          >
+            Overview of professional memberships and organizations.
+          </ListItem>
+          <ListItem
+            href="/about-sizear/achievement-awards"
+            title="Achievement and Awards"
+            imageUrl={img3}
+          >
+            Recognized for contributions to the industry.
+          </ListItem>
+          <ListItem
+            href="/about-sizear/publications"
+            title="Publications"
+            imageUrl={img7}
+          >
+            Publications in various journals and conferences.
+          </ListItem>
+          <ListItem
+            href="/docs/primitives/typography"
+            title="Family"
+            imageUrl={img11}
+          >
+            Personal information about family life.
+          </ListItem>
+          <ListItem
+            href="/docs/primitives/typography"
+            title="Me in Numbers"
+            imageUrl={img1}
+          >
+            A statistical look at my achievements and impact.
+          </ListItem>
+          <ListItem
+            href="/docs/primitives/typography"
+            title="My Book"
+            imageUrl={img5}
+          >
+            Information about my upcoming or published book.
+          </ListItem>
+          <ListItem
+            href="/about-sizear/featured-in-media"
+            title="Featured in Media"
+            imageUrl={img2}
+          >
+            Press features and media coverage of my work.
+          </ListItem>
+          <ListItem
+            href="/docs/primitives/typography"
+            title="Travel History"
+            imageUrl={img6}
+          >
+            Places I've traveled and experiences shared.
+          </ListItem>
+          <ListItem
+            href="/docs/primitives/typography"
+            title="Contact me"
+            imageUrl={img4}
+          >
+            Ways to get in touch with me directly.
+          </ListItem>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
