@@ -28,7 +28,10 @@ const ListItem: React.FC<ListItemProps> = ({
   imageUrl,
 }) => {
   return (
-    <div className="flex flex-col items-center p-6 transition-all duration-300 transform border border-[#23728D] rounded-md shadow-sm hover:scale-105 hover:shadow-md hover:shadow-orange-500 md:flex-row">
+    <section
+      className="flex flex-col items-center p-6 transition-all duration-300 transform border border-[#23728D] rounded-md shadow-sm hover:scale-105 hover:shadow-md hover:shadow-orange-500 md:flex-row"
+      id="about-sizear"
+    >
       {/* Left side: Text Content */}
       <div className="flex-1">
         <h2 className="mb-4 text-2xl font-semibold text-gray-800">
@@ -52,7 +55,7 @@ const ListItem: React.FC<ListItemProps> = ({
           className="object-cover w-full h-full rounded-md"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

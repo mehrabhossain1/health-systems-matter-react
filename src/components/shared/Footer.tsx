@@ -64,28 +64,29 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="#newsroom" className="hover:underline">
-                  Newsroom
-                </a>
-              </li>
-              <li>
-                <a href="#blog" className="hover:underline">
-                  Blog
-                </a>
-              </li>
-              <li>
                 <a href="#newsletter" className="hover:underline">
                   Newsletter
                 </a>
               </li>
+              <li>
+                <a href="#newsroom" className="hover:underline">
+                  Newsroom
+                </a>
+              </li>
+
               <li>
                 <a href="#youtube" className="hover:underline">
                   YouTube
                 </a>
               </li>
               <li>
-                <a href="#site-owner" className="hover:underline">
-                  About the Site Owner
+                <a href="#contact" className="hover:underline">
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href="#about-sizear" className="hover:underline">
+                  About Sizear
                 </a>
               </li>
             </ul>

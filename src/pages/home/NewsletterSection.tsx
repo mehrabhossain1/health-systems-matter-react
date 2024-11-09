@@ -28,7 +28,7 @@ const newsletterSubLinks = [
 
 const NewsletterSection = () => {
   return (
-    <section className="relative overflow-hidden bg-slate-100">
+    <section className="relative overflow-hidden bg-slate-100" id="newsletter">
       <div className="absolute inset-x-0 top-0 h-32 bg-[#23728D] rounded-b-full transform -translate-y-1/2"></div>
       <div className="absolute inset-x-0 bottom-0 h-32 bg-[#23728D] rounded-t-full transform translate-y-1/2"></div>
 

@@ -9,7 +9,7 @@ const YoutubeSection = () => {
   }, []);
 
   return (
-    <section className="bg-[#0A2240] pt-20 pb-20">
+    <section className="bg-[#0A2240] pt-20 pb-20" id="youtube">
       <div className="flex flex-col items-center justify-center max-w-screen-xl mx-auto overflow-x-hidden lg:flex-row">
         {/* Text Section */}
         <div className="mb-8 lg:w-1/2 lg:mb-0 lg:pr-8" data-aos="fade-right">

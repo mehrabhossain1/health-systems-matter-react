@@ -8,7 +8,7 @@ import img3 from "../../assets/about/testimonials.jfif";
 
 const AboutUsSection = () => {
   return (
-    <section className="mt-20">
+    <section className="mt-20" id="about">
       {/* Optional: Overlay for better text readability */}
       <div className="inset-0 opacity-50"></div>
 

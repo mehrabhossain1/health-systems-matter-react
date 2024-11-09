@@ -64,7 +64,7 @@ const resourcesSubLinks = [
 
 const ResourcesSection = () => {
   return (
-    <section className="">
+    <section className="" id="resources">
       <div className="max-w-screen-xl mx-auto mt-20">
         <div className="flex items-center justify-center gap-6 mb-10">
           <div className="flex-1 h-px bg-[#01748D]"></div>

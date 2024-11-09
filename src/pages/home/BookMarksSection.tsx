@@ -96,7 +96,7 @@ const itemVariants = {
 
 const BookMarksSection = () => {
   return (
-    <section className="mt-20 mb-10">
+    <section className="mt-20 mb-10" id="bookmarks">
       <div className="max-w-screen-xl mx-auto">
         <div className="flex items-center gap-10 mb-10">
           <h2 className="pl-10 text-5xl font-semibold text-[#01748D]">
