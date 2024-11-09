@@ -348,7 +348,7 @@ export default function NavLinks() {
                     Styles for headings, paragraphs, lists...etc
                   </ListItem>
                   <ListItem
-                    to="/docs/primitives/typography"
+                    to="/about-sizear/achievement-awards"
                     title="Achievement and Awards"
                   >
                     Styles for headings, paragraphs, lists...etc
@@ -374,7 +374,7 @@ export default function NavLinks() {
                     Styles for headings, paragraphs, lists...etc
                   </ListItem>
                   <ListItem
-                    to="/docs/primitives/typography"
+                    to="/about-sizear/featured-in-media"
                     title="Featured in media"
                   >
                     Styles for headings, paragraphs, lists...etc

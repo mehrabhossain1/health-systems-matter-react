@@ -72,11 +72,15 @@ const AboutSizearSection: React.FC = () => {
           </div>
           {/* Section Title */}
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <ListItem href="/docs" title="Profile summary" imageUrl={img8}>
+            <ListItem
+              href="/about-sizear/profile-summary"
+              title="Profile summary"
+              imageUrl={img8}
+            >
               Re-usable components built using Radix UI and Tailwind CSS.
             </ListItem>
             <ListItem
-              href="/docs/installation"
+              href="/about-sizear/education"
               title="Education"
               imageUrl={img9}
             >
@@ -98,14 +102,14 @@ const AboutSizearSection: React.FC = () => {
               Overview of professional memberships and organizations.
             </ListItem>
             <ListItem
-              href="/docs/primitives/typography"
+              href="/about-sizear/achievement-awards"
               title="Achievement and Awards"
               imageUrl={img3}
             >
               Recognized for contributions to the industry.
             </ListItem>
             <ListItem
-              href="/docs/primitives/typography"
+              href="/about-sizear/publications"
               title="Publications"
               imageUrl={img7}
             >
@@ -133,7 +137,7 @@ const AboutSizearSection: React.FC = () => {
               Information about my upcoming or published book.
             </ListItem>
             <ListItem
-              href="/docs/primitives/typography"
+              href="/about-sizear/featured-in-media"
               title="Featured in Media"
               imageUrl={img2}
             >
