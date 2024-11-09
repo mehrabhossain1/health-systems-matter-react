@@ -1,12 +1,12 @@
 import AboutSectionCard from "@/components/ui/about/AboutSectionCard";
 
 import "../../App.css";
-
+import img4 from "../../assets/about/actv.jfif";
 const AboutUsSection = () => {
   return (
     <section className="mt-20">
       {/* Optional: Overlay for better text readability */}
-      <div className="absolute inset-0 opacity-50"></div>
+      <div className="inset-0 opacity-50"></div>
 
       <div className="max-w-screen-xl mx-auto">
         {/* Title with horizontal line */}
@@ -18,22 +18,30 @@ const AboutUsSection = () => {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <AboutSectionCard
             title="About HSM"
-            description="52 percent of maternal deaths occur in the postpartum period..."
+            description="Information is power” and “Evidence lies at the heart of public health policy.” Inspired by t"
+            href="/about/about-hsm"
+            imageUrl="/src/assets/about/activites.jfif"
           />
 
           <AboutSectionCard
             title="Vision and Mission"
-            description="28 states saw drug overdose deaths increase than 30.."
+            description="The vision of Health Systems Matter is to create an evidence-based platform that empowers emerging"
+            href="/about/vision-mission"
+            imageUrl="/src/assets/about/vision.jfif"
           />
 
           <AboutSectionCard
             title="Activities and Approach"
-            description="At least 3.8 million people have lost their Medicaid coverage..."
+            description="In order to be aligned with the vision and mission of Health Systems Matter, "
+            href="/about/activities-approach"
+            imageUrl={img4}
           />
 
           <AboutSectionCard
             title="Testimonials"
-            description="At least 3.8 million people have lost their Medicaid coverage..."
+            description="Since the site is new, there are no testimonials yet. We will add them as they come in. If you'd like, yo"
+            href="/about/testimonials"
+            imageUrl="/src/assets/about/testimonials.jfif"
           />
         </div>
       </div>

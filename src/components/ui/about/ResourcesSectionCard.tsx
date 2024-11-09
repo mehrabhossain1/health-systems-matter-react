@@ -62,10 +62,12 @@ const ResourcesSectionCard: React.FC<ResourcesSectionCardProps> = ({
 
           {/* Right Arrow Icon */}
           <CardFooter className="flex items-center justify-end">
-            <button className="px-3 py-1 text-xs font-medium flex transition-all duration-300 transform rounded-md items-center gap-2 text-white bg-[#F18A00] hover:scale-105 hover:bg-[#01748D]">
-              {/* "Read More" text with arrow */}
-              Read More <span className="text-xl">→</span>
-            </button>
+            <Link to={href}>
+              <button className="px-3 py-1 text-xs font-medium flex transition-all duration-300 transform rounded-md items-center gap-2 text-white bg-[#F18A00] hover:scale-105 hover:bg-[#01748D]">
+                {/* "Read More" text with arrow */}
+                Read More <span className="text-xl">→</span>
+              </button>
+            </Link>
           </CardFooter>
         </div>
       </Card>
