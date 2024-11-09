@@ -1,17 +1,30 @@
 import ResourcesSectionCard from "@/components/ui/about/ResourcesSectionCard";
 
+import img1 from "../../assets/resources/overview.jpeg";
+import img2 from "../../assets/resources/reading-list.jfif";
+import img3 from "../../assets/resources/reports.jpeg";
+import img4 from "../../assets/resources/articles.jfif";
+import img5 from "../../assets/resources/policies.jfif";
+import img6 from "../../assets/resources/books.jfif";
+import img7 from "../../assets/resources/interviews.jfif";
+import img8 from "../../assets/resources/blogs.jfif";
+import img9 from "../../assets/resources/tools.jfif";
+
 const resourcesSubLinks = [
   {
     title: "Overview",
     href: "/resources/overview",
+    img: img1,
   },
   {
     title: "Essential reading list",
     href: "/resources/reading-list",
+    img: img2,
   },
   {
     title: "Reports",
     href: "/resources/reports",
+    img: img3,
     nestedLinks: [
       { title: "1. Topic Wise Reports", href: "/resources/reports/topic-wise" },
       { title: "2. Major Reports", href: "/resources/reports/major" },
@@ -20,43 +33,36 @@ const resourcesSubLinks = [
   {
     title: "Articles",
     href: "/resources/articles",
+    img: img4,
   },
   {
     title: "Policy primer and Presentations",
     href: "/resources/policy-primer",
+    img: img5,
   },
   {
     title: "Books",
     href: "/resources/books",
+    img: img6,
   },
   {
     title: "Interviews and insights",
     href: "/resources/interviews",
+    img: img7,
   },
   {
     title: "Commentaries and blogs",
     href: "/resources/commentaries",
+    img: img8,
   },
   {
     title: "Tools and Resources",
     href: "/resources/tools",
+    img: img9,
   },
 ];
 
 const ResourcesSection = () => {
-  // Mock image URLs for demonstration
-  const images = [
-    "/src/assets/resources/overview.jpeg",
-    "/src/assets/resources/reading-list.jfif",
-    "/src/assets/resources/reports.jpeg",
-    "/src/assets/resources/articles.jfif",
-    "/src/assets/resources/policies.jfif",
-    "/src/assets/resources/books.jfif",
-    "/src/assets/resources/interviews.jfif",
-    "/src/assets/resources/blogs.jfif",
-    "/src/assets/resources/tools.jfif",
-  ];
-
   return (
     <section className="">
       <div className="max-w-screen-xl mx-auto mt-20">
@@ -71,7 +77,7 @@ const ResourcesSection = () => {
               key={index}
               title={link.title}
               description={`Description for ${link.title}`}
-              imageUrl={images[index]}
+              imageUrl={link.img}
               href={link.href}
             />
           ))}
