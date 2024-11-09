@@ -4,11 +4,11 @@ import "../../App.css";
 
 const AboutUsSection = () => {
   return (
-    <section className="relative mt-20 bg-center bg-cover">
+    <section className="mt-20">
       {/* Optional: Overlay for better text readability */}
       <div className="absolute inset-0 opacity-50"></div>
 
-      <div className="relative max-w-screen-xl mx-auto">
+      <div className="max-w-screen-xl mx-auto">
         {/* Title with horizontal line */}
         <div className="flex items-center gap-10 mb-10">
           <h2 className="pl-10 text-5xl font-semibold text-[#01748D]">About</h2>

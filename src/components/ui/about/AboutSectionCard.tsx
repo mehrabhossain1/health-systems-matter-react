@@ -26,11 +26,11 @@ const AboutSectionCard = ({
       </CardHeader>
 
       <CardContent className="p-3">
-        <CardDescription className="text-sm text-slate-600">
+        <CardDescription className="text-sm text-slate-600 line-clamp-1">
           {description}
         </CardDescription>
 
-        <p className="text-sm font-medium flex items-center justify-end mt-4 text-gray-800 underline-offset-8 transition-colors cursor-pointer decoration-[#01748D]">
+        <p className="flex items-center justify-end mt-4 text-sm text-gray-800 transition-colors cursor-pointer">
           <span className="px-4 text-lg border border-[#F18A00] text-[#F18A00] rounded-sm hover:bg-[#F18A00] hover:text-white hover:border-[#F18A00]">
             →
           </span>
