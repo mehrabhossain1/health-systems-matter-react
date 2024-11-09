@@ -5,26 +5,23 @@ interface NewsroomCardProps {
   title: string;
   description: string;
   href: string;
-  image: string; // New prop for the image
 }
 
 const NewsroomCard: React.FC<NewsroomCardProps> = ({
   title,
   description,
   href,
-  image,
 }) => {
   return (
-    <div className="overflow-hidden transition-transform transform bg-gray-300 shadow-lg hover:scale-105">
-      <img src={image} alt={title} className="object-cover w-full h-40" />
+    <div className="p-3 hover:border-[#01748D] overflow-hidden transition-transform transform bg-gray-100 border border-[#F18A00] rounded-md shadow-lg hover:scale-105">
       <div className="p-4">
         <Link
           to={href}
-          className="block mb-2 text-lg font-semibold text-gray-800 hover:text-[#000B58] hover:underline transition-colors"
+          className="block underline-offset-4 hover:text-[#F18A00] mb-2 text-lg font-medium text-gray-700 hover:underline transition-colors"
         >
           {title}
         </Link>
-        <p className="text-gray-600">{description}</p>
+        <p className="text-xs text-gray-600 line-clamp-1">{description}</p>
       </div>
     </div>
   );
