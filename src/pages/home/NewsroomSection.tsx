@@ -1,28 +1,31 @@
 import NewsroomCard from "@/components/ui/about/NewsroomCard";
 import { motion } from "framer-motion";
 
-// Sample image URLs, replace with actual paths to your images
+import img1 from "../../assets/newsroom/overviwe.jfif";
+import img2 from "../../assets/newsroom/upcoming-events.jfif";
+import img3 from "../../assets/newsroom/do.jfif";
+
 const newsroomSubLinks = [
   {
     title: "Overview",
     href: "/newsroom/overview",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
-    img: "/src/assets/newsroom/overviwe.jfif",
+    img: img1,
   },
   {
     title: "Upcoming events",
     href: "/newsroom/upcoming-events",
     description:
       "For sighted users to preview content available behind a link.",
-    img: "/src/assets/newsroom/upcoming-events.jfif",
+    img: img2,
   },
   {
     title: "Do you know?",
     href: "/newsroom/do-you-know",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-    img: "/src/assets/newsroom/do.jfif",
+    img: img3,
   },
 ];
 
