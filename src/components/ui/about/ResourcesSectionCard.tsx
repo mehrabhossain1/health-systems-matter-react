@@ -7,17 +7,20 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 interface ResourcesSectionCardProps {
   title: string;
   description: string;
   imageUrl: string;
+  href: string;
 }
 
 const ResourcesSectionCard: React.FC<ResourcesSectionCardProps> = ({
   title,
   description,
   imageUrl,
+  href,
 }) => {
   return (
     <motion.div
@@ -40,12 +43,14 @@ const ResourcesSectionCard: React.FC<ResourcesSectionCardProps> = ({
           {/* Title and Description */}
           <div className="flex flex-col justify-center h-full">
             <CardHeader>
-              <CardTitle className="relative text-lg group">
-                {/* Smaller title */}
-                <span className="line-clamp-1 underline-offset-4 font-medium cursor-pointer transition-colors duration-200 group-hover:underline group-hover:text-[#F18A00]">
-                  {title}
-                </span>
-              </CardTitle>
+              <Link to={href}>
+                <CardTitle className="relative text-lg group">
+                  {/* Smaller title */}
+                  <span className="line-clamp-1 underline-offset-4 font-medium cursor-pointer transition-colors duration-200 group-hover:underline group-hover:text-[#F18A00]">
+                    {title}
+                  </span>
+                </CardTitle>
+              </Link>
             </CardHeader>
             <CardContent>
               <p className="text-xs text-slate-600 line-clamp-1">

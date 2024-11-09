@@ -9,24 +9,29 @@ interface ListItemProps {
 
 const ListItem: React.FC<ListItemProps> = ({ href, title, children }) => {
   return (
-    <div className="p-6 transition-all duration-300 transform border border-gray-300 shadow-lg hover:scale-105 hover:shadow-xl hover:shadow-orange-500">
-      <h2 className="mb-4 text-2xl font-semibold text-[#F18A00]">
-        <Link to={href} className="hover:underline">
+    <div className="p-6 transition-all duration-300 transform border border-[#F18A00] rounded-md shadow-sm hover:scale-105 hover:shadow-md hover:shadow-orange-500">
+      <h2 className="mb-4 text-2xl font-semibold text-gray-50">
+        <Link
+          to={href}
+          className="text-lg hover:underline underline-offset-4 decoration-[#F18A00]"
+        >
           {title}
         </Link>
       </h2>
-      <p className="leading-relaxed text-gray-300">{children}</p>
+      <p className="text-xs leading-relaxed text-gray-200 line-clamp-2">
+        {children}
+      </p>
     </div>
   );
 };
 
 const AboutSizearSection: React.FC = () => {
   return (
-    <div className="bg-fixed bg-top bg-no-repeat bg-cover bg-[#23728D]">
+    <div className="bg-[#23728D]">
       <div className="bg-opacity-75">
         <div className="max-w-screen-xl px-6 py-20 mx-auto">
-          <div className="flex flex-row items-center gap-10 py-10 pb-20">
-            <h2 className="pl-10 font-serif text-6xl font-semibold text-white">
+          <div className="flex flex-row items-center gap-10 mb-10 ">
+            <h2 className="pl-10 font-semibold text-white pl-10text-5xl">
               About Sizear
             </h2>
             <div className="flex-1 ml-4 border-t border-white"></div>

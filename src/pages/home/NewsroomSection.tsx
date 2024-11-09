@@ -5,21 +5,24 @@ import { motion } from "framer-motion";
 const newsroomSubLinks = [
   {
     title: "Overview",
-    href: "/docs/primitives/alert-dialog",
+    href: "/newsroom/overview",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
+    img: "/src/assets/newsroom/overviwe.jfif",
   },
   {
     title: "Upcoming events",
-    href: "/docs/primitives/hover-card",
+    href: "/newsroom/upcoming-events",
     description:
       "For sighted users to preview content available behind a link.",
+    img: "/src/assets/newsroom/upcoming-events.jfif",
   },
   {
     title: "Do you know?",
-    href: "/docs/primitives/progress",
+    href: "/newsroom/do-you-know",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    img: "/src/assets/newsroom/do.jfif",
   },
 ];
 
@@ -46,6 +49,7 @@ const NewsroomSection = () => {
                 title={item.title}
                 description={item.description}
                 href={item.href}
+                imageUrl={item.img}
               />
             </motion.div>
           ))}

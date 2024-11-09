@@ -32,7 +32,7 @@ const contactSubLinks: {
 
 const ContactSection: React.FC = () => {
   return (
-    <section className="pt-20 bg-gray-100">
+    <section className="pt-20 pb-10 bg-gray-100">
       <div className="max-w-screen-xl pb-10 mx-auto text-center">
         <div className="flex flex-row-reverse items-center gap-10 mb-10">
           <h2 className="text-5xl font-semibold text-[#01748D] pe-10">

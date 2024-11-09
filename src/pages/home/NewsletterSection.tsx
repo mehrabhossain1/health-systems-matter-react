@@ -5,21 +5,21 @@ import { FaInfoCircle, FaEnvelope, FaFileAlt } from "react-icons/fa"; // Import 
 const newsletterSubLinks = [
   {
     title: "Overview",
-    href: "/docs/primitives/alert-dialog",
+    href: "/newsletter/overview",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
     icon: <FaInfoCircle className="w-6 h-6" />,
   },
   {
     title: "Subscribe for newsletter",
-    href: "/docs/primitives/hover-card",
+    href: "/newsletter/subscribe-for-newsletter",
     description:
       "For sighted users to preview content available behind a link.",
     icon: <FaEnvelope className="w-6 h-6" />,
   },
   {
     title: "All previous issues",
-    href: "/docs/primitives/progress",
+    href: "/newsletter/all-previous-issues",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
     icon: <FaFileAlt className="w-6 h-6" />,

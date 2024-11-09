@@ -46,15 +46,15 @@ const resourcesSubLinks = [
 const ResourcesSection = () => {
   // Mock image URLs for demonstration
   const images = [
-    "https://via.placeholder.com/300x200?text=Overview",
-    "https://via.placeholder.com/300x200?text=Reading+List",
-    "https://via.placeholder.com/300x200?text=Reports",
-    "https://via.placeholder.com/300x200?text=Articles",
-    "https://via.placeholder.com/300x200?text=Policy+Primer",
-    "https://via.placeholder.com/300x200?text=Books",
-    "https://via.placeholder.com/300x200?text=Interviews",
-    "https://via.placeholder.com/300x200?text=Commentaries",
-    "https://via.placeholder.com/300x200?text=Tools+and+Resources",
+    "/src/assets/resources/overview.jpeg",
+    "/src/assets/resources/reading-list.jfif",
+    "/src/assets/resources/reports.jpeg",
+    "/src/assets/resources/articles.jfif",
+    "/src/assets/resources/policies.jfif",
+    "/src/assets/resources/books.jfif",
+    "/src/assets/resources/interviews.jfif",
+    "/src/assets/resources/blogs.jfif",
+    "/src/assets/resources/tools.jfif",
   ];
 
   return (
@@ -72,6 +72,7 @@ const ResourcesSection = () => {
               title={link.title}
               description={`Description for ${link.title}`}
               imageUrl={images[index]}
+              href={link.href}
             />
           ))}
         </div>
