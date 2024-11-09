@@ -2,6 +2,10 @@ import AboutSectionCard from "@/components/ui/about/AboutSectionCard";
 
 import "../../App.css";
 import img4 from "../../assets/about/actv.jfif";
+import img1 from "../../assets/about/activites.jfif";
+import img2 from "../../assets/about/vision.jfif";
+import img3 from "../../assets/about/testimonials.jfif";
+
 const AboutUsSection = () => {
   return (
     <section className="mt-20">
@@ -20,14 +24,14 @@ const AboutUsSection = () => {
             title="About HSM"
             description="Information is power” and “Evidence lies at the heart of public health policy.” Inspired by t"
             href="/about/about-hsm"
-            imageUrl="/src/assets/about/activites.jfif"
+            imageUrl={img1}
           />
 
           <AboutSectionCard
             title="Vision and Mission"
             description="The vision of Health Systems Matter is to create an evidence-based platform that empowers emerging"
             href="/about/vision-mission"
-            imageUrl="/src/assets/about/vision.jfif"
+            imageUrl={img2}
           />
 
           <AboutSectionCard
@@ -41,7 +45,7 @@ const AboutUsSection = () => {
             title="Testimonials"
             description="Since the site is new, there are no testimonials yet. We will add them as they come in. If you'd like, yo"
             href="/about/testimonials"
-            imageUrl="/src/assets/about/testimonials.jfif"
+            imageUrl={img3}
           />
         </div>
       </div>
