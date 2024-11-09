@@ -28,10 +28,10 @@ const ListItem: React.FC<ListItemProps> = ({
   imageUrl,
 }) => {
   return (
-    <div className="p-6 transition-all duration-300 transform border border-[#F18A00] rounded-md shadow-sm hover:scale-105 hover:shadow-md hover:shadow-orange-500 flex flex-col md:flex-row items-center">
+    <div className="flex flex-col items-center p-6 transition-all duration-300 transform border border-[#23728D] rounded-md shadow-sm hover:scale-105 hover:shadow-md hover:shadow-orange-500 md:flex-row">
       {/* Left side: Text Content */}
       <div className="flex-1">
-        <h2 className="mb-4 text-2xl font-semibold text-gray-50">
+        <h2 className="mb-4 text-2xl font-semibold text-gray-800">
           <Link
             to={href}
             className="text-lg hover:underline underline-offset-4 decoration-[#F18A00]"
@@ -39,7 +39,7 @@ const ListItem: React.FC<ListItemProps> = ({
             {title}
           </Link>
         </h2>
-        <p className="text-xs leading-relaxed text-gray-200 line-clamp-2">
+        <p className="text-xs leading-relaxed text-gray-500 line-clamp-2">
           {children}
         </p>
       </div>
@@ -58,14 +58,14 @@ const ListItem: React.FC<ListItemProps> = ({
 
 const AboutSizearSection: React.FC = () => {
   return (
-    <div className="bg-[#23728D]">
+    <div className="">
       <div className="bg-opacity-75">
         <div className="max-w-screen-xl px-6 py-20 mx-auto">
           <div className="flex flex-row items-center gap-10 mb-10">
-            <h2 className="pl-10 text-5xl font-semibold text-white">
+            <h2 className="pl-10 text-5xl font-semibold text-[#23728D]">
               About Sizear
             </h2>
-            <div className="flex-1 ml-4 border-t border-white"></div>
+            <div className="flex-1 ml-4 border-t border-[#23728D]"></div>
           </div>
           {/* Section Title */}
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
