@@ -16,21 +16,21 @@ const FirstNav = () => {
             <img
               src={ownerImg}
               alt="owner image"
-              className="w-8 rounded-full"
+              className="w-12 rounded-full"
             />
           </Link>
           <Link
             to="/about-the-site-owner"
-            className="p-2 text-xl decoration-[#F18A00] font-normal text-[#F18A00] hover:text-[#ffb452] hover:decoration-[#ffb452] transition duration-300 ease-in-out transform rounded-md shadow-lg hover:scale-110 pulse-animation hover:underline underline-offset-8"
+            className="p-2 underline text-xl decoration-[#F18A00] font-normal text-[#F18A00] hover:text-[#ffb452] hover:decoration-[#ffb452] transition duration-300 ease-in-out transform rounded-md shadow-lg hover:scale-110 pulse-animation hover:underline underline-offset-8"
           >
-            | Sizear
+            Sizear
           </Link>
         </div>
 
         {/* Grid 2. I want logo here */}
         <Link to="/">
-          <img className="h-12" src={logo} alt="Logo" />
-          <p className="text-[#F18A00] text-center italic blink">
+          <img className=" h-14" src={logo} alt="Logo" />
+          <p className="text-[#F18A00] text-center italic ">
             Becoming a better global health leader
           </p>
         </Link>

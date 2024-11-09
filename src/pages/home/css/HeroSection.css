@@ -1,0 +1,13 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Hide images that move out of the container */
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  width: 100%; /* Make sure images fill the container */
+  object-fit: cover;
+  position: absolute; /* Absolute positioning to stack the images on top of each other */
+}

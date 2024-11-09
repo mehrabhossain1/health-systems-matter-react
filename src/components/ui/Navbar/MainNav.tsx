@@ -15,7 +15,7 @@ const MainNav = () => {
         {/* Centered Logo */}
         <div className="flex justify-center">
           <Link to="/" className="flex items-center">
-            <img src={logo} className="h-10" alt="Logo" />
+            <img src={logo} className="h-14" alt="Logo" />
           </Link>
         </div>
 

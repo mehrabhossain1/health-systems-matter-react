@@ -58,9 +58,9 @@ const ResourcesSection = () => {
   ];
 
   return (
-    <section className="py-12 bg-[#DBF4F5]">
-      <div className="max-w-screen-xl pb-10 mx-auto">
-        <div className="flex items-center justify-center gap-6 py-10 pb-20">
+    <section className="bg-[#DBF4F5]">
+      <div className="max-w-screen-xl mx-auto">
+        <div className="flex items-center justify-center gap-6">
           <div className="flex-1 h-px bg-[#01748D]"></div>
           <h2 className="font-serif text-6xl text-[#01748D]">Resources</h2>
           <div className="flex-1 h-px bg-[#01748D]"></div>
