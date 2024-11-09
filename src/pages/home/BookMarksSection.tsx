@@ -96,7 +96,7 @@ const itemVariants = {
 
 const BookMarksSection = () => {
   return (
-    <section className="mt-20 bg-center bg-cover ">
+    <section className="mt-20 mb-10">
       <div className="max-w-screen-xl mx-auto">
         <div className="flex items-center gap-10 mb-10">
           <h2 className="pl-10 text-5xl font-semibold text-[#01748D]">
@@ -113,7 +113,7 @@ const BookMarksSection = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }} // Adjusts when animation triggers
-              transition={{ duration: 0.4, delay: index * 0.1 }} // Staggered effect
+              transition={{ duration: 0.2, delay: index * 0.1 }} // Staggered effect
             >
               <BookMarksSectionCard
                 title={bookmark.title}

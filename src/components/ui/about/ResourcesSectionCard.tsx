@@ -25,7 +25,7 @@ const ResourcesSectionCard: React.FC<ResourcesSectionCardProps> = ({
       whileTap={{ scale: 0.95 }} // Scale effect on click
       transition={{ type: "spring", stiffness: 300 }}
     >
-      <Card className="flex h-full overflow-hidden border-[#01748D] rounded-md shadow-lg bg-gray-50">
+      <Card className="flex h-full hover:border-[#01748D] overflow-hidden border-[#F18A00] rounded-md shadow-lg ">
         {/* Left Side: Image */}
         <div className="w-1/3 h-full">
           <img
@@ -40,7 +40,7 @@ const ResourcesSectionCard: React.FC<ResourcesSectionCardProps> = ({
           {/* Title and Description */}
           <div className="flex flex-col justify-center h-full">
             <CardHeader>
-              <CardTitle className="relative text-xl group">
+              <CardTitle className="relative text-lg group">
                 {/* Smaller title */}
                 <span className="line-clamp-1 underline-offset-4 font-medium cursor-pointer transition-colors duration-200 group-hover:underline group-hover:text-[#F18A00]">
                   {title}
@@ -48,7 +48,7 @@ const ResourcesSectionCard: React.FC<ResourcesSectionCardProps> = ({
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-slate-600 line-clamp-1">
+              <p className="text-xs text-slate-600 line-clamp-1">
                 {description}
               </p>
               {/* Smaller description */}
@@ -57,7 +57,7 @@ const ResourcesSectionCard: React.FC<ResourcesSectionCardProps> = ({
 
           {/* Right Arrow Icon */}
           <CardFooter className="flex items-center justify-end">
-            <button className="px-3 py-1 text-sm font-medium flex rounded-md items-center gap-2 text-white bg-[#F18A00] transition hover:bg-[#01748D]">
+            <button className="px-3 py-1 text-xs font-medium flex transition-all duration-300 transform rounded-md items-center gap-2 text-white bg-[#F18A00] hover:scale-105 hover:bg-[#01748D]">
               {/* "Read More" text with arrow */}
               Read More <span className="text-xl">→</span>
             </button>

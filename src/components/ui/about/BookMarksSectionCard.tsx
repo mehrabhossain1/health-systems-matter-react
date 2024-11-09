@@ -23,13 +23,13 @@ const BookMarksSectionCard: React.FC<BookMarksSectionCardProps> = ({
   Icon,
 }) => {
   return (
-    <Card className="border border-[#01748D] p-4 transition-transform transform rounded-md shadow-sm bg-[#F4F3F0] hover:shadow-md hover:-translate-y-1">
+    <Card className="border border-[#01748D] hover:border-[#F18A00] p-4 transition-transform transform rounded-md shadow-sm bg-[#F4F3F0] hover:shadow-md hover:-translate-y-1">
       <CardHeader className="flex flex-col items-center justify-center space-y-2">
         {/* Icon at the top, smaller size */}
         <Icon className="text-4xl text-[#01748D]" />
 
         {/* Title */}
-        <CardTitle className="text-sm font-semibold text-center text-gray-700">
+        <CardTitle className="text-lg font-medium text-center text-gray-700 underline-offset-4 hover:decoration-[#F18A00]">
           <Link to={href} className="hover:underline line-clamp-1">
             {title}
           </Link>
@@ -45,7 +45,7 @@ const BookMarksSectionCard: React.FC<BookMarksSectionCardProps> = ({
       <CardFooter className="flex items-center justify-center mt-4">
         <Link
           to={href}
-          className="px-4 py-1 text-xs font-medium text-white bg-[#01748D] rounded-full flex justify-center items-center gap-1 transition-all duration-300 transform hover:bg-[#015f7f] hover:scale-105 hover:shadow-sm"
+          className="px-4 py-1 text-xs font-medium text-white bg-[#01748D] rounded-full flex justify-center items-center gap-1 transition-all duration-300 transform hover:bg-[#F18A00] hover:scale-105 hover:shadow-sm"
         >
           <span>Read More</span>
           <span className="text-sm">→</span> {/* Smaller arrow */}
