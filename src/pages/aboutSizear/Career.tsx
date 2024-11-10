@@ -7,7 +7,7 @@ const Career = () => {
         {/* Career Summary Section */}
         <div className="p-8 bg-white">
           <PageTitle children="Career Summary" />
-          <p className="w-3/4 mx-auto text-2xl leading-relaxed text-gray-700">
+          <p className="w-3/4 mx-auto text-lg leading-relaxed text-gray-700">
             Sizear has worked in various national and international
             organizations in the research and program sectors. As an
             anthropologist, he trained in Public Health at the James P. Grant
