@@ -8,7 +8,7 @@ const CommentariesBlogs = () => {
         <div className="p-8 mb-12 bg-white rounded-lg shadow-lg">
           <PageTitle children="Commentaries and Blogs" />
 
-          <p className="text-base text-xl leading-relaxed text-gray-700">
+          <p className="w-3/4 mx-auto text-lg leading-relaxed text-gray-700">
             A series of blogs and newsletters maintained by organizations and
             dedicated professionals is available. This section provides a list
             of these valuable resources. By subscribing to your preferred sites,
@@ -16,7 +16,7 @@ const CommentariesBlogs = () => {
             The list is extensive but not exhaustive and is updated
             periodically.
           </p>
-          <ul className="w-3/4 mx-auto mt-4 space-y-2 text-xl text-blue-500 underline list-disc list-inside cursor-pointer">
+          <ul className="w-3/4 mx-auto mt-4 space-y-2 text-lg text-blue-500 underline list-disc list-inside cursor-pointer ps-10">
             <li>
               Commentaries and blogs of WB, Lancet, CGD, Think Global Health
               etc.

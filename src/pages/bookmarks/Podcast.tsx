@@ -7,7 +7,7 @@ const Podcast = () => {
         {/* Testimonials Section */}
         <div className="p-8 bg-white">
           <PageTitle children="Podcast" />
-          <p className="w-3/4 mx-auto text-2xl leading-relaxed text-gray-700">
+          <p className="w-3/4 mx-auto text-lg leading-relaxed text-gray-700">
             Coming soon...
           </p>
         </div>

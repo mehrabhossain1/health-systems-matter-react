@@ -1,13 +1,26 @@
 import PageTitle from "@/components/shared/PageTitle";
+import img from "../../assets/resources/overview.jpeg";
 
 const Overview = () => {
   return (
     <div className="text-gray-800">
       <div className="max-w-screen-xl mx-auto">
-        {/* Testimonials Section */}
-        <div className="p-8 bg-white">
+        {/* Resources Overview Section */}
+        <div className="p-8 bg-white rounded-lg shadow-lg">
+          {/* Image at the top */}
+          <div className="w-full mb-8 overflow-hidden rounded-lg">
+            <img
+              src={img}
+              alt="Resources Overview"
+              className="object-cover mx-auto rounded-md size-80"
+            />
+          </div>
+
+          {/* Title */}
           <PageTitle children="Resources Overview" />
-          <p className="w-3/4 mx-auto text-2xl leading-relaxed text-gray-700">
+
+          {/* Description Section */}
+          <p className="w-3/4 mx-auto mt-6 text-lg leading-relaxed text-gray-700">
             The Health System Library aspires to be a comprehensive repository
             of essential resources on health systems and global health. By
             compiling major reports, books, groundbreaking publications,

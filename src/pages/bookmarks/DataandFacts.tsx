@@ -7,7 +7,7 @@ const DataandFacts = () => {
         {/* Testimonials Section */}
         <div className="p-8 bg-white">
           <PageTitle children="Data and Facts" />
-          <p className="w-3/4 mx-auto text-2xl leading-relaxed text-blue-500 underline cursor-pointer">
+          <p className="w-3/4 mx-auto text-lg leading-relaxed text-blue-500 underline cursor-pointer">
             <a
               href="https://www.who.int/campaigns/75-years-of-improving-public-health/milestones#year-1981"
               target="_blank"

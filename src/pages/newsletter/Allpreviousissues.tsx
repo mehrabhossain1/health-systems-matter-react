@@ -44,10 +44,10 @@ const Allpreviousissues = () => {
           {newsletterIssues.map((issue, index) => (
             <div
               key={index}
-              className="flex items-center p-6 space-x-6 overflow-hidden bg-white rounded-lg shadow-lg"
+              className="flex items-center w-3/4 p-6 mx-auto space-x-6 overflow-hidden bg-white rounded-lg shadow-lg"
             >
               {/* Image Section */}
-              <div className="flex-shrink-0 w-40 h-40">
+              <div className="flex-shrink-0 w-40 h-40 ">
                 <img
                   src={issue.imageUrl}
                   alt={`Issue of ${issue.month}`}

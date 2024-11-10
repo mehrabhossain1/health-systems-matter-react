@@ -7,7 +7,7 @@ const BookmarksYouTube = () => {
         {/* Testimonials Section */}
         <div className="p-8 bg-white">
           <PageTitle children="Youtube" />
-          <p className="w-3/4 mx-auto text-2xl leading-relaxed text-gray-700">
+          <p className="w-3/4 mx-auto text-lg leading-relaxed text-gray-700">
             In today's digital landscape, visual platforms are highly engaging,
             and public health professionals are no exception. Many organizations
             and individuals leverage platforms like YouTube to share timely and
