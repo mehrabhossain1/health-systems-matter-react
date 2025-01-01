@@ -5,10 +5,10 @@ const MajorReports = () => {
     <div className="text-gray-800 ">
       <div className="max-w-screen-xl mx-auto">
         {/* Activities Section */}
-        <div className="p-8 mb-12 bg-white rounded-lg shadow-lg">
+        <div className="p-8 mb-12">
           <PageTitle children="Major Reports" />
 
-          <ul className="w-3/4 mx-auto mt-4 space-y-2 text-xl text-gray-700 list-disc list-inside">
+          <ul className="w-3/4 mx-auto mt-4 space-y-2 text-lg text-gray-700 list-disc list-inside">
             <li>WHO’s report</li>
             <li>UNICEF’s report</li>
             <li>World Bank’s report</li>

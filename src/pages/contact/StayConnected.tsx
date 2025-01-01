@@ -23,12 +23,12 @@ const StayConnected = () => {
         {/* Left Section */}
         <div className="mb-10 md:w-1/2 md:mb-0 md:pr-8">
           <PageTitle children="Stay Connected" />
-          <p className="text-gray-600 dark:text-gray-400">
+          <p className="text-lg text-gray-600">
             Hi there! Thank you for your interest in this work. Please leave a
             message, and I will get back to you as soon as possible.
           </p>
 
-          <p className="mt-20 text-2xl text-[#F18A00] animate-pulse">
+          <p className="mt-20 text-center text-xl text-[#F18A00] animate-pulse">
             Your feedback makes us better!
           </p>
         </div>

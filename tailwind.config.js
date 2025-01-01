@@ -16,6 +16,30 @@ export const theme = {
     },
   },
   extend: {
+    animation: {
+      "move-right-left": "moveRightLeft 6s ease-in-out infinite",
+      "move-left-right": "moveLeftRight 8s ease-in-out infinite",
+      "move-left-right-two": "moveLeftRight 5s ease-in-out infinite",
+    },
+    keyframes: {
+      // Move from right to left and pause
+      moveRightLeft: {
+        "0%": { transform: "translateX(100%)", opacity: 0 },
+        "50%": { transform: "translateX(-50)", opacity: 1 },
+        "75%": { transform: "translateX(0)", opacity: 1 }, // Stay in the middle for 2 seconds
+        "100%": { transform: "translateX(-100%)", opacity: 0 },
+      },
+      // Move from left to right and pause
+      moveLeftRight: {
+        "0%": { transform: "translateX(-100%)", opacity: 0 },
+        "50%": { transform: "translateX(0)", opacity: 1 },
+        "75%": { transform: "translateX(-50)", opacity: 1 }, // Stay in the middle for 2 seconds
+        "100%": { transform: "translateX(100%)", opacity: 0 },
+      },
+    },
+    fontFamily: {
+      sans: ["Roboto", "sans-serif"], // Set 'Roboto' as the default sans-serif font
+    },
     colors: {
       border: "hsl(var(--border))",
       input: "hsl(var(--input))",
@@ -55,20 +79,6 @@ export const theme = {
       lg: "var(--radius)",
       md: "calc(var(--radius) - 2px)",
       sm: "calc(var(--radius) - 4px)",
-    },
-    keyframes: {
-      "accordion-down": {
-        from: { height: "0" },
-        to: { height: "var(--radix-accordion-content-height)" },
-      },
-      "accordion-up": {
-        from: { height: "var(--radix-accordion-content-height)" },
-        to: { height: "0" },
-      },
-    },
-    animation: {
-      "accordion-down": "accordion-down 0.2s ease-out",
-      "accordion-up": "accordion-up 0.2s ease-out",
     },
   },
 };

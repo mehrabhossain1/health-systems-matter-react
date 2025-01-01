@@ -7,7 +7,7 @@ const BookmarksNewsletter = () => {
         {/* Testimonials Section */}
         <div className="p-8 bg-white">
           <PageTitle children="Newsletters" />
-          <p className="w-3/4 mx-auto text-2xl leading-relaxed text-gray-700">
+          <p className="w-3/4 mx-auto text-lg leading-relaxed text-gray-700">
             A series of blogs and newsletters maintained by organizations and
             dedicated professionals is available. This section provides a list
             of these valuable resources. By subscribing to your preferred sites,

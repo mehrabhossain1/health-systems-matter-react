@@ -7,7 +7,7 @@ const PublicHealthOrganizations = () => {
         {/* Testimonials Section */}
         <div className="p-8 bg-white">
           <PageTitle children="Key/Dedicated Public Health Organizations" />
-          <p className="w-3/4 mx-auto text-2xl leading-relaxed text-gray-700">
+          <p className="w-3/4 mx-auto text-lg leading-relaxed text-gray-700">
             Many organizations, both large and small, have long been dedicated
             to public health and health system strengthening. Understanding
             their work and plans to promote public health is both enlightening

@@ -7,7 +7,7 @@ const CareerScope = () => {
         {/* Testimonials Section */}
         <div className="p-8 bg-white">
           <PageTitle children="Career Scope" />
-          <p className="w-3/4 mx-auto text-2xl leading-relaxed text-gray-700">
+          <p className="w-3/4 mx-auto text-lg leading-relaxed text-gray-700">
             This platform offers information on job openings and fellowship
             opportunities from various organizations. Regularly checking these
             sites can help you advance your career and discover rewarding

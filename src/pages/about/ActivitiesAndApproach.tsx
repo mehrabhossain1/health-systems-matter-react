@@ -12,11 +12,11 @@ const ActivitiesAndApproach = () => {
         {/* Activities Section */}
         <div className="p-8 mb-12 bg-white">
           <PageTitle children="Activities and Approach" />
-          <p className="w-3/4 mx-auto text-base leading-relaxed text-gray-700">
+          <p className="w-3/4 mx-auto text-xl leading-relaxed text-gray-700">
             In order to be aligned with the vision and mission of Health Systems
             Matter, the specific activities are as follows:
           </p>
-          <ul className="w-3/4 mx-auto mt-4 space-y-2 text-xl text-gray-700 list-disc list-inside">
+          <ul className="w-3/4 mx-auto mt-4 space-y-2 text-lg text-gray-700 list-disc list-inside">
             <li>Showcasing health system and global health documents daily.</li>
             <li>Generating and regenerating demand for impactful documents.</li>
             <li>Disseminating major public health events and milestones.</li>
@@ -32,7 +32,7 @@ const ActivitiesAndApproach = () => {
               Highlighting organizations working on public health agendas.
             </li>
           </ul>
-          <p className="mt-4 text-base leading-relaxed text-gray-700">
+          <p className="w-3/4 mx-auto mt-12 text-base leading-relaxed text-gray-700">
             To carry out these activities, the site systematically documents and
             showcases resources, creatively posts on social media to reach
             users, and ensures proper credit to organizations. The focus is on

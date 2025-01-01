@@ -1,33 +1,42 @@
 import React, { useState, useEffect } from "react";
-import { FaFacebookF, FaInstagram, FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 
 const SubscribeModal: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Set a timer to open the modal after 30 seconds
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsModalOpen(true);
-    }, 3000); // 30 seconds
+    // Check if the user has already seen the modal
+    const hasSeenModal = localStorage.getItem("hasSeenModal");
 
-    // Clean up the timer if the component is unmounted
-    return () => clearTimeout(timer);
+    if (!hasSeenModal) {
+      // If the user hasn't seen the modal, set a timer to show the modal after 3 seconds
+      const timer = setTimeout(() => {
+        setIsModalOpen(true);
+      }, 3000); // 3 seconds for demo (can be adjusted to 30 seconds)
+
+      // Clean up the timer if the component is unmounted
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   // Function to close the modal
-  const closeModal = () => setIsModalOpen(false);
+  const closeModal = () => {
+    // Store in localStorage that the user has seen the modal
+    localStorage.setItem("hasSeenModal", "true");
+    setIsModalOpen(false);
+  };
 
   // Function to handle form submission
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Add form submission logic here
-    closeModal();
+    closeModal(); // Close the modal after submitting the form
   };
 
   return (
     <>
       {isModalOpen && (
-        <div className="fixed bottom-0 right-0 z-50 flex items-center justify-center w-1/3 p-6 bg-gray-800 rounded-md shadow-lg bg-opacity-90">
+        <div className="fixed bottom-0 right-0 z-50 flex items-center justify-center w-1/3 p-4 bg-gray-800 rounded-md shadow-lg">
           <div className="relative w-full max-w-xs">
             {/* Close button */}
             <button
@@ -39,11 +48,11 @@ const SubscribeModal: React.FC = () => {
             </button>
 
             {/* Modal Content */}
-            <div className="w-full ">
+            <div className="w-full">
               {/* Modal Title */}
-              <p className="text-xl text-white">
+              <p className="text-lg text-white">
                 Subscribe to{" "}
-                <span className="mb-4 text-3xl font-bold text-slate-100">
+                <span className="mb-4 text-xl font-bold text-slate-100">
                   <span className="text-[#EE8922]">HSM</span> Monthly Newsletter
                 </span>
               </p>
@@ -51,42 +60,23 @@ const SubscribeModal: React.FC = () => {
               {/* Subscription Form */}
               <form
                 onSubmit={handleSubmit}
-                className="flex items-center justify-center mb-4 space-x-2"
+                className="flex items-center justify-center pt-2 mb-4 space-x-2"
               >
                 <input
                   type="email"
                   placeholder="Enter your email"
                   required
-                  className="flex-1 px-4 py-2 text-gray-800 rounded focus:outline-none focus:ring-2 focus:ring-[#01748D]"
+                  className="flex-1 px-3 py-2 text-gray-800 rounded focus:outline-none focus:ring-2 focus:ring-[#01748D]"
                 />
                 <button
                   type="submit"
-                  className="px-4 py-2 text-lg font-semibold text-[#01748D] bg-white rounded-md hover:bg-gray-200"
+                  className="px-3 py-2 text-sm font-medium text-[#01748D] bg-white rounded-md hover:bg-gray-200"
                 >
                   Subscribe
                 </button>
               </form>
 
               {/* Follow HSM Links */}
-              <div className="flex items-center justify-center space-x-4">
-                <p className="text-lg font-semibold text-white">Follow HSM:</p>
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white transition transform hover:scale-110 hover:text-[#3B5997]"
-                >
-                  <FaFacebookF size={24} />
-                </a>
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white transition transform hover:scale-110 hover:text-red-500"
-                >
-                  <FaInstagram size={24} />
-                </a>
-              </div>
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ const Education = () => {
         {/* Career Summary Section */}
         <div className="p-8 bg-white">
           <PageTitle children="Education" />
-          <p className="w-3/4 mx-auto text-2xl leading-relaxed text-gray-700">
+          <p className="w-3/4 mx-auto text-lg leading-relaxed text-gray-700">
             My expertise in knowledge generation spans several disciplines,
             starting with a foundation in Anthropology. I furthered my education
             with two master's degrees: one in Public Health from the James P.
@@ -23,7 +23,7 @@ const Education = () => {
         </div>
         <div className="p-8 bg-white">
           <PageTitle children="Education Journey" />
-          <p className="w-3/4 mx-auto text-2xl leading-relaxed text-gray-700">
+          <p className="w-3/4 mx-auto text-lg leading-relaxed text-gray-700">
             <div className="overflow-x-auto bg-white rounded-lg shadow-md">
               <table className="min-w-full table-auto">
                 <thead className="text-gray-800 bg-gray-100">

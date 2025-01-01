@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 
-// import img1 from "../../assets/hero/WhatsApp Image 2024-11-09 at 10.58.34 (1).jpeg";
-// import img2 from "../../assets/hero/WhatsApp Image 2024-11-09 at 10.58.34 (2).jpeg";
-// import img3 from "../../assets/hero/WhatsApp Image 2024-11-09 at 10.58.34.jpeg";
+import img1 from "../../assets/hero/hero1.jpeg";
+import img2 from "../../assets/hero/hero2.jpeg";
+import img3 from "../../assets/hero/hero3.jpeg";
 
 const HeroSection = () => {
   // Animation variants for stagger effect
@@ -12,7 +12,7 @@ const HeroSection = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3,
+        staggerChildren: 0.5,
       },
     },
   };
@@ -25,48 +25,22 @@ const HeroSection = () => {
   return (
     <div className="relative">
       <div className="flex flex-col items-center justify-between max-w-screen-xl mx-auto md:flex-row-reverse md:p-12">
-        <div className="flex justify-center mb-6 image-container md:w-1/2 md:justify-end md:mt-0">
-          {/* <AnimatePresence>
-            <motion.img
-              src={img1}
-              alt="Image 1"
-              className="image"
-              initial={{ opacity: 0, x: 100, scale: 0.8 }}
-              animate={{ opacity: 1, x: 0, scale: 1 }}
-              exit={{ opacity: 0, x: -100, scale: 1.2 }}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                delay: 0,
-              }}
-            />
-            <motion.img
-              src={img2}
-              alt="Image 2"
-              className="image"
-              initial={{ opacity: 0, x: 100, scale: 0.8 }}
-              animate={{ opacity: 1, x: 0, scale: 1 }}
-              exit={{ opacity: 0, x: -100, scale: 1.2 }}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                delay: 2,
-              }}
-            />
-            <motion.img
-              src={img3}
-              alt="Image 3"
-              className="image"
-              initial={{ opacity: 0, x: 100, scale: 0.8 }}
-              animate={{ opacity: 1, x: 0, scale: 1 }}
-              exit={{ opacity: 0, x: -100, scale: 1.2 }}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                delay: 4,
-              }}
-            />
-          </AnimatePresence> */}
+        <div className="relative flex items-center justify-center w-full h-56 max-w-screen-sm p-4 mx-auto mb-6 overflow-hidden md:w-1/2">
+          <img
+            className="absolute w-48 animate-move-right-left"
+            src={img1}
+            alt="Image 1"
+          />
+          <img
+            className="absolute h-full animate-move-left-right"
+            src={img2}
+            alt="Image 2"
+          />
+          <img
+            className="absolute w-56 animate-move-left-right-two"
+            src={img3}
+            alt="Image 3"
+          />
         </div>
 
         <motion.div
@@ -95,7 +69,7 @@ const HeroSection = () => {
         {/* Sticky Social Media Icons */}
         <div className="fixed right-0 z-50 flex-col hidden mr-6 space-y-4 transform -translate-y-1/2 md:flex top-1/2">
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/p/health-systems-matter-61564171250656"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 bg-[#3b5998] text-white rounded-full shadow-lg hover:shadow-xl transition"
@@ -103,7 +77,7 @@ const HeroSection = () => {
             <FaFacebook size={30} />
           </a>
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/company/104141138/admin/dashboard"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 bg-[#0077b5] text-white rounded-full shadow-lg hover:shadow-xl transition"

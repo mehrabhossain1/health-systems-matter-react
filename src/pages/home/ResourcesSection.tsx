@@ -18,7 +18,7 @@ const resourcesSubLinks = [
   },
   {
     title: "Essential reading list",
-    href: "/resources/reading-list",
+    href: "/resources/essential-reading-list",
     img: img2,
   },
   {
@@ -37,7 +37,7 @@ const resourcesSubLinks = [
   },
   {
     title: "Policy primer and Presentations",
-    href: "/resources/policy-primer",
+    href: "/resources/policy-primer-and-presentation",
     img: img5,
   },
   {
@@ -47,26 +47,26 @@ const resourcesSubLinks = [
   },
   {
     title: "Interviews and insights",
-    href: "/resources/interviews",
+    href: "/resources/interviews-insights",
     img: img7,
   },
   {
     title: "Commentaries and blogs",
-    href: "/resources/commentaries",
+    href: "/resources/commentaries-blogs",
     img: img8,
   },
   {
     title: "Tools and Resources",
-    href: "/resources/tools",
+    href: "/resources/tools-and-resources",
     img: img9,
   },
 ];
 
 const ResourcesSection = () => {
   return (
-    <section className="" id="resources">
-      <div className="max-w-screen-xl mx-auto mt-20">
-        <div className="flex items-center justify-center gap-6 mb-10">
+    <section className="bg-[#F8EFE0] pb-20" id="resources">
+      <div className="max-w-screen-xl pt-10 mx-auto">
+        <div className="flex items-center justify-center gap-6 pb-10">
           <div className="flex-1 h-px bg-[#01748D]"></div>
           <h2 className="text-5xl text-[#01748D]">Resources</h2>
           <div className="flex-1 h-px bg-[#01748D]"></div>
@@ -79,6 +79,21 @@ const ResourcesSection = () => {
               description={`Description for ${link.title}`}
               imageUrl={link.img}
               href={link.href}
+              // Add two buttons to the "Reports" card only
+              hasTwoButtons={link.title === "Reports"} // Only the Reports card gets two buttons
+              buttonLabels={
+                link.title === "Reports"
+                  ? ["Major Reports", "Topic Wise Reports"]
+                  : ["Read More"] // Other cards get only one button
+              }
+              buttonLinks={
+                link.title === "Reports"
+                  ? [
+                      "/resources/reports/major-reports", // Major Reports link
+                      "/resources/reports/topic-wise-reports", // Topic Wise Reports link
+                    ]
+                  : [link.href] // Other cards get their default href
+              }
             />
           ))}
         </div>

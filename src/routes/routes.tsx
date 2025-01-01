@@ -5,10 +5,17 @@ import Testimonials from "@/pages/about/Testimonials";
 import VisionMission from "@/pages/about/VisionMission";
 import AboutSizear from "@/pages/aboutSizear/AboutSizear";
 import AboutTheSiteOwner from "@/pages/aboutSizear/AboutTheSiteOwner";
+import AchivementAndAwards from "@/pages/aboutSizear/AchivementAndAwards";
 import Career from "@/pages/aboutSizear/Career";
+import ContactMe from "@/pages/aboutSizear/ContactMe";
 import Education from "@/pages/aboutSizear/Education";
+import Family from "@/pages/aboutSizear/Family";
+import FeaturedInMedia from "@/pages/aboutSizear/FeaturedInMedia";
+import MeinNumbers from "@/pages/aboutSizear/MeinNumbers";
+import MyBook from "@/pages/aboutSizear/MyBook";
 import ProfileSummary from "@/pages/aboutSizear/ProfileSummary";
 import Publications from "@/pages/aboutSizear/Publications";
+import TravelHistory from "@/pages/aboutSizear/TravelHistory";
 import BookmarksNewsletter from "@/pages/bookmarks/BookmarksNewsletter";
 import BookmarksOverview from "@/pages/bookmarks/BookmarksOverview";
 import BookmarksYouTube from "@/pages/bookmarks/BookmarksYouTube";
@@ -21,7 +28,10 @@ import Scholarship from "@/pages/bookmarks/Scholarship";
 import TrainingAndCourses from "@/pages/bookmarks/TrainingAndCourses";
 import UsefulSites from "@/pages/bookmarks/UsefulSites";
 import StayConnected from "@/pages/contact/StayConnected";
+import Subscribe from "@/pages/contact/Subscribe";
+import Support from "@/pages/contact/Support";
 import Home from "@/pages/home";
+import ProfessionalAffiliations from "@/pages/home/ProfessionalAffiliations";
 import Allpreviousissues from "@/pages/newsletter/Allpreviousissues";
 import NewsletterOverview from "@/pages/newsletter/NewsletterOverview";
 import Subscribefornewsletter from "@/pages/newsletter/Subscribefornewsletter";
@@ -198,6 +208,14 @@ const router = createBrowserRouter([
         path: "/contact/stay-connected",
         element: <StayConnected />,
       },
+      {
+        path: "/contact/subscribe",
+        element: <Subscribe />,
+      },
+      {
+        path: "/contact/support",
+        element: <Support />,
+      },
 
       //! About Sizear
       {
@@ -223,6 +241,38 @@ const router = createBrowserRouter([
       {
         path: "/about-sizear/publications",
         element: <Publications />,
+      },
+      {
+        path: "/about-sizear/achievement-awards",
+        element: <AchivementAndAwards />,
+      },
+      {
+        path: "/about-sizear/featured-in-media",
+        element: <FeaturedInMedia />,
+      },
+      {
+        path: "/about-sizear/me-in-numbers",
+        element: <MeinNumbers />,
+      },
+      {
+        path: "/about-sizear/my-books",
+        element: <MyBook />,
+      },
+      {
+        path: "/about-sizear/travel-history",
+        element: <TravelHistory />,
+      },
+      {
+        path: "/about-sizear/contact-me",
+        element: <ContactMe />,
+      },
+      {
+        path: "/about-sizear/family",
+        element: <Family />,
+      },
+      {
+        path: "/about-sizear/current-professional-affiliations",
+        element: <ProfessionalAffiliations />,
       },
     ],
   },

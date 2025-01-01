@@ -9,21 +9,21 @@ const contactSubLinks: {
 }[] = [
   {
     title: "Stay Connected",
-    href: "/docs/primitives/alert-dialog",
+    href: "/contact/stay-connected",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
     icon: <FaEnvelope className="w-16 h-16" />,
   },
   {
     title: "Subscribe",
-    href: "/docs/primitives/hover-card",
+    href: "/contact/subscribe",
     description:
       "For sighted users to preview content available behind a link.",
     icon: <FaBell className="w-16 h-16" />,
   },
   {
     title: "Support",
-    href: "/docs/primitives/progress",
+    href: "/contact/support",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
     icon: <FaQuestionCircle className="w-16 h-16" />,
