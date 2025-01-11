@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 
-import img1 from "../../assets/hero/hero1.jpeg";
-import img2 from "../../assets/hero/hero2.jpeg";
-import img3 from "../../assets/hero/hero3.jpeg";
+// import img1 from "../../assets/hero/hero1.jpeg";
+// import img2 from "../../assets/hero/hero2.jpeg";
+// import img3 from "../../assets/hero/hero3.jpeg";
 
 const HeroSection = () => {
   // Animation variants for stagger effect
@@ -25,7 +25,7 @@ const HeroSection = () => {
   return (
     <div className="relative">
       <div className="flex flex-col items-center justify-between max-w-screen-xl mx-auto md:flex-row-reverse md:p-12">
-        <div className="relative flex items-center justify-center w-full h-56 max-w-screen-sm p-4 mx-auto mb-6 overflow-hidden md:w-1/2">
+        {/* <div className="relative flex items-center justify-center w-full h-56 max-w-screen-sm p-4 mx-auto mb-6 overflow-hidden md:w-1/2">
           <img
             className="absolute w-48 animate-move-right-left"
             src={img1}
@@ -41,7 +41,7 @@ const HeroSection = () => {
             src={img3}
             alt="Image 3"
           />
-        </div>
+        </div> */}
 
         <motion.div
           className="text-[#243642] text-center md:text-left md:w-1/2"
